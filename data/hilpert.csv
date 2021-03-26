@@ -1,0 +1,37 @@
+Type,Acc,Sentence,Template
+CM,1,The audience laughed Bob off the stage.,The SINGLE laughed Bob off the SINGLE.
+CM,1,John chopped carrots into the salad.,John chopped PLURAL into the SINGLE.
+CM,1,The professor invited us into his office.,The SINGLE invited us into his SINGLE.
+CM,0,The key allowed John into the house.,The SINGLE allowed John into the SINGLE.
+CM,0,The gun threatened the hostages into the back office.,The SINGLE threatened the PLURAL into the back SINGLE.
+CM,0,The knife chopped the carrots into the salad.,The SINGLE chopped the PLURAL into the SINGLE.
+CM,0,John chopped the carrots onto the floor.,John chopped the PLURAL onto the SINGLE.
+CM,0,Bob poured milk next to his glass.,Bob poured SINGLE next to his SINGLE.
+CM,1,He sneezed his tooth right across town.,He sneezed his SINGLE right across SINGLE.
+CM,0,The audience laughed Bob home.,The SINGLE laughed Bob SINGLE.
+CM,0,Mary allowed the dog to the next village.,Mary allowed the SINGLE to the next SINGLE.
+CM,0,Bob threw the stone to the bottom of the lake.,Bob threw the SINGLE to the bottom of the SINGLE.
+CM,1,John threw the ball over the fence.,John threw the SINGLE over the SINGLE.
+CM,1,Franz kicked the ball into the goal.,Franz kicked the SINGLE into the SINGLE.
+CM,1,She pulled a handkerchief out of her pocket.,She pulled a SINGLE out of her SINGLE.
+CM,1,John helped Mary out of the car.,John helped Mary out of the SINGLE.
+CM,1,John locked the dog into the bathroom.,John locked the SINGLE into the SINGLE.
+CM,1,Mary allowed the dog out of the bathroom.,Mary allowed the SINGLE out of the SINGLE.
+CM,1,The professor invited us into his office.,The SINGLE invited us into his SINGLE.
+Way,1,Frank dug his way out of prison.,Frank dug his way out of SINGLE.
+Way,1,John elbowed his way across the room.,John elbowed his way across the SINGLE.
+Way,1,She slowly climbed her way up through the branches.,She slowly climbed her way up through the PLURAL.
+Way,0,She quickly climbed her escape route down the stairs.,She quickly climbed her SINGLE down the SINGLE.
+Way,0,She steadily climbed her track up to the summit.,She steadily climbed her SINGLE up to the SINGLE.
+Way,0,She moved her way into the room.,She moved her way into the SINGLE.
+Way,1,She stepped her way down the stairs.,She stepped her way down the PLURAL.
+Way,1,Sally was crunching her way through a bag of potato chips.,Sally was crunching her way through a SINGLE.
+Way,1,Bob worked his way to the top of his profession.,Bob worked his way to the top of his SINGLE.
+Way,1,The three girls sang their way into the hearts of the audience.,The PLURAL sang their way into the PLURAL.
+Way,1,Sam joked his way into the meeting.,Sam joked his way into the SINGLE.
+Way,1,John was whistling his way down the street.,John was whistling his way down the SINGLE.
+Way,1,Triathlete Paula Finlay cried her way across the finish line.,Triathlete Paula Finlay cried her way across the SINGLE.
+Way,1,He climbed his way up a cliff.,He climbed his way up a SINGLE.
+Way,0,He jumped his way off a cliff.,He jumped his way off a SINGLE.
+Way,0,The snow melts its way into the river.,The SINGLE melts its way into the SINGLE.
+Way,1,The probe melts its way through the glacier.,The SINGLE melts its way through the SINGLE.
