@@ -1,0 +1,73 @@
+﻿Type,Acc,Sentence1,Sentence2,Rating1,Rating2
+CM,1,The audience laughed Bob off the stage.,The performers laughed Bob off the theatre.,5,3
+CM,1,The audience laughed Bob off the stage.,The singers laughed Bob off the movie.,5,0
+CM,1,John chopped carrots into the salad.,John chopped potatoes into the soup.,5,5
+CM,1,John chopped carrots into the salad.,John chopped oranges into the bread.,5,1
+CM,1,The professor invited us into his office.,The student invited us into his studio.,5,5
+CM,1,The professor invited us into his office.,The teacher invited us into his desk.,5,0
+CM,0,The key allowed John into the house.,The lock allowed John into the apartment.,4,5
+CM,0,The key allowed John into the house.,The door allowed John into the condo.,4,0
+CM,0,The gun threatened the hostages into the back office.,The rifle threatened the victims into the studio.,1,0
+CM,0,The gun threatened the hostages into the back office.,The sword threatened the policemen into the desk.,1,0
+CM,0,The knife chopped the carrots into the salad.,The plate chopped the potatoes into the soup.,0,0
+CM,0,The knife chopped the carrots into the salad.,The spoon chopped the oranges into the bread.,0,0
+CM,0,John chopped the carrots onto the floor.,John chopped the potatoes onto the ground.,5,4
+CM,0,John chopped the carrots onto the floor.,John chopped the oranges onto the roof.,5,0
+CM,0,Bob poured milk next to his glass.,Bob poured butter next to his cup.,3,0
+CM,0,Bob poured milk next to his glass.,Bob poured coffee next to his bottle.,3,0
+CM,1,He sneezed his tooth right across town.,He sneezed his mouth right across city.,3,0
+CM,1,He sneezed his tooth right across town.,He sneezed his tongue right across province.,3,0
+CM,0,The audience laughed Bob home.,The performers laughed Bob family.,5,0
+CM,0,The audience laughed Bob home.,The singers laughed Bob hometown.,5,0
+CM,0,Mary allowed the dog to the next village.,Mary allowed the cat to the next city.,4,2
+CM,0,Mary allowed the dog to the next village.,Mary allowed the rabbit to the next farm.,4,2
+CM,0,Bob threw the stone to the bottom of the lake.,Bob threw the rock to the bottom of the sea.,5,5
+CM,0,Bob threw the stone to the bottom of the lake.,Bob threw the pebble to the bottom of the ocean.,5,4
+CM,1,John threw the ball over the fence.,John threw the racket over the wall.,5,5
+CM,1,John threw the ball over the fence.,John threw the basketball over the gate.,5,5
+CM,1,Franz kicked the ball into the goal.,Franz kicked the racket into the objective.,5,3
+CM,1,Franz kicked the ball into the goal.,Franz kicked the basketball into the achievement.,5,0
+CM,1,She pulled a handkerchief out of her pocket.,She pulled a cloth out of her pants.,5,5
+CM,1,She pulled a handkerchief out of her pocket.,She pulled a tissue out of her jacket.,5,5
+CM,1,John helped Mary out of the car.,John helped Mary out of the truck.,5,5
+CM,1,John helped Mary out of the car.,John helped Mary out of the airplane.,5,5
+CM,1,John locked the dog into the bathroom.,John locked the cat into the kitchen.,5,3
+CM,1,John locked the dog into the bathroom.,John locked the rabbit into the bathtub.,5,2
+CM,1,Mary allowed the dog out of the bathroom.,Mary allowed the cat out of the kitchen.,5,4
+CM,1,Mary allowed the dog out of the bathroom.,Mary allowed the rabbit out of the bathtub.,5,5
+CM,1,The professor invited us into his office.,The student invited us into his studio.,5,5
+CM,1,The professor invited us into his office.,The teacher invited us into his desk.,5,0
+Way,1,Frank dug his way out of prison.,Frank dug his way out of cell.,5,0
+Way,1,Frank dug his way out of prison.,Frank dug his way out of courthouse.,5,0
+Way,1,John elbowed his way across the room.,John elbowed his way across the hotel.,5,4
+Way,1,John elbowed his way across the room.,John elbowed his way across the building.,5,5
+Way,1,She slowly climbed her way up through the branches.,She slowly climbed her way up through the trees.,5,4
+Way,1,She slowly climbed her way up through the branches.,She slowly climbed her way up through the logs.,5,4
+Way,0,She quickly climbed her escape route down the stairs.,She quickly climbed her exit down the elevators.,2,0
+Way,0,She quickly climbed her escape route down the stairs.,She quickly climbed her entrance down the escalators.,2,0
+Way,0,She steadily climbed her track up to the summit.,She steadily climbed her road up to the peak.,1,5
+Way,0,She steadily climbed her track up to the summit.,She steadily climbed her path up to the mountain.,1,3
+Way,0,She moved her way into the room.,She moved her way into the hotel.,5,5
+Way,0,She moved her way into the room.,She moved her way into the building.,5,5
+Way,1,She stepped her way down the stairs.,She stepped her way down the elevators.,4,1
+Way,1,She stepped her way down the stairs.,She stepped her way down the escalators.,4,4
+Way,1,Sally was crunching her way through a bag of potato chips.,Sally was crunching her way through a basket of apples.,3,4
+Way,1,Sally was crunching her way through a bag of potato chips.,Sally was crunching her way through a grocery bag.,3,1
+Way,1,Bob worked his way to the top of his profession.,Bob worked his way to the top of his career.,5,4
+Way,1,Bob worked his way to the top of his profession.,Bob worked his way to the top of his degree.,5,2
+Way,1,The three girls sang their way into the hearts of the audience.,The three women sang their way into the hearts of the performers.,3,3
+Way,1,The three girls sang their way into the hearts of the audience.,The three teenagers sang their way into the hearts of the singers.,3,3
+Way,1,Sam joked his way into the meeting.,Sam joked his way into the call.,4,3
+Way,1,Sam joked his way into the meeting.,Sam joked his way into the date.,4,0
+Way,1,John was whistling his way down the street.,John was whistling his way down the road.,4,5
+Way,1,John was whistling his way down the street.,John was whistling his way down the avenue.,4,4
+Way,1,Triathlete Paula Finlay cried her way across the finish line.,Triathlete Paula Finlay cried her way across the completion.,4,0
+Way,1,Triathlete Paula Finlay cried her way across the finish line.,Triathlete Paula Finlay cried her way across the end date.,4,0
+Way,1,He climbed his way up a cliff.,He climbed his way up a peak.,5,4
+Way,1,He climbed his way up a cliff.,He climbed his way up a mountain.,5,5
+Way,0,He jumped his way off a cliff.,He jumped his way off a peak.,1,0
+Way,0,He jumped his way off a cliff.,He jumped his way off a mountain.,1,0
+Way,0,The snow melts its way into the river.,The rain melts its way into the ocean.,3,3
+Way,0,The snow melts its way into the river.,The ice melts its way into the stream.,3,5
+Way,1,The probe melts its way through the glacier.,The spaceship melts its way through the iceberg.,3,1
+Way,1,The probe melts its way through the glacier.,The drone melts its way through the permafrost.,3,1
