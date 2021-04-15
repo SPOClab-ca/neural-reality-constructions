@@ -109,3 +109,36 @@ for _, row in data.iterrows():
   print(f'Sentence {1 if result else 2} is better')
   print()
 
+
+# ## Run GPT2
+
+# In[ ]:
+
+
+from transformers import GPT2LMHeadModel, GPT2TokenizerFast
+model = GPT2LMHeadModel.from_pretrained('gpt2')
+tokenizer = GPT2TokenizerFast.from_pretrained('gpt2')
+
+
+# In[23]:
+
+
+def get_lm_loss(sent):
+  input_ids = torch.tensor(tokenizer.encode(sent))
+  with torch.no_grad():
+    lm_loss = model(input_ids, labels=input_ids)[0]
+  return float(lm_loss)
+
+
+# In[31]:
+
+
+data['GPTScore1'] = data['Sentence1'].apply(get_lm_loss)
+data['GPTScore2'] = data['Sentence2'].apply(get_lm_loss)
+
+
+# In[34]:
+
+
+data.to_csv("../results/paired-sents-gpt.csv", index=False)
+
