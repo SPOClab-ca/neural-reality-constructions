@@ -97,3 +97,36 @@ noun_target_sents = [sent for sent in short_sentences if has_noun_target(sent)]
 
 len(noun_target_sents)
 
+
+# ## Export random selection to CSV
+
+# In[21]:
+
+
+random.seed(12345)
+export_sents = random.sample(noun_target_sents, 100)
+
+
+# In[39]:
+
+
+df = []
+for sent in export_sents:
+  annotations = []
+  for span_start, span_end, fe_name in sent.FE[0]:
+    annotations.append(f"{fe_name}: '{sent.text[span_start:span_end]}'")
+    
+  df.append(pd.Series({
+    'fn_id': sent.ID,
+    'frame': sent.frame.name,
+    'text': sent.text,
+    'annotations': '\n'.join(annotations),
+  }))
+df = pd.DataFrame(df)
+
+
+# In[40]:
+
+
+df.to_csv("short_fn_exemplars.csv", index=False, encoding='utf-8')
+
