@@ -8,7 +8,7 @@
 # * Length of sentence must be <= 10 tokens. (16k sentences remaining)
 # * One of the frame elements must be <= 3 tokens and contain a noun. (10k sentences remaining)
 
-# In[57]:
+# In[1]:
 
 
 import numpy as np
@@ -56,32 +56,32 @@ len(short_sentences)
 def is_overlapping(start1, end1, start2, end2):
   return (start1 <= start2 and end1 > start2) or (start2 <= start1 and end2 > start1)
 
-print(is_overlapping(1, 2, 3, 4)) #False
-print(is_overlapping(1, 2, 2, 4)) #False
-print(is_overlapping(1, 2, 1, 4)) #True
-print(is_overlapping(1, 4, 1, 2)) #True
-print(is_overlapping(1, 4, 2, 3)) #True
-print(is_overlapping(1, 4, 4, 5)) #False
-print(is_overlapping(1, 4, 3, 5)) #True
-print(is_overlapping(1, 4, 0, 1)) #False
-print(is_overlapping(1, 4, 0, 5)) #True
-print(is_overlapping(1, 4, 0, 3)) #True
+assert not is_overlapping(1, 2, 3, 4)
+assert not is_overlapping(1, 2, 2, 4)
+assert is_overlapping(1, 2, 1, 4)
+assert is_overlapping(1, 4, 1, 2)
+assert is_overlapping(1, 4, 2, 3)
+assert not is_overlapping(1, 4, 4, 5)
+assert is_overlapping(1, 4, 3, 5)
+assert not is_overlapping(1, 4, 0, 1)
+assert is_overlapping(1, 4, 0, 5)
+assert is_overlapping(1, 4, 0, 3)
 
 
-# In[63]:
+# In[5]:
 
 
 # Filters for common (non-proper) nouns in PENN and BNC tagsets
 def pos_is_noun(pos_tag):
   return 'nn' in pos_tag.lower() and 'np' not in pos_tag.lower()
 
-print(pos_is_noun('VB')) #False
-print(pos_is_noun('NN1')) #True
-print(pos_is_noun('NNPS')) #False
-print(pos_is_noun('NN1-NP0')) #False
+assert not pos_is_noun('VB')
+assert pos_is_noun('NN1')
+assert not pos_is_noun('NNPS')
+assert not pos_is_noun('NN1-NP0')
 
 
-# In[64]:
+# In[6]:
 
 
 def get_noun_targets(sent):
@@ -101,7 +101,7 @@ for sent in short_sentences:
     noun_target_sents.append((sent, noun_targets))
 
 
-# In[65]:
+# In[7]:
 
 
 len(noun_target_sents)
@@ -109,14 +109,14 @@ len(noun_target_sents)
 
 # ## Export random selection to CSV
 
-# In[66]:
+# In[8]:
 
 
 random.seed(12345)
 export_sents = random.sample(noun_target_sents, 100)
 
 
-# In[81]:
+# In[9]:
 
 
 df = []
@@ -135,7 +135,7 @@ for sent, noun_targets in export_sents:
 df = pd.DataFrame(df)
 
 
-# In[83]:
+# In[10]:
 
 
 df.to_csv("short_fn_exemplars.csv", index=False, encoding='utf-8')
