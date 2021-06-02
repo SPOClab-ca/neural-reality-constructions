@@ -8,7 +8,7 @@
 # * Length of sentence must be <= 10 tokens. (16k sentences remaining)
 # * One of the frame elements must be <= 3 tokens and contain a noun. (10k sentences remaining)
 
-# In[1]:
+# In[57]:
 
 
 import numpy as np
@@ -21,6 +21,7 @@ from collections import defaultdict
 import random
 import math
 import pickle
+import json
 import nltk
 from nltk.corpus import framenet as fn
 
@@ -67,32 +68,40 @@ print(is_overlapping(1, 4, 0, 5)) #True
 print(is_overlapping(1, 4, 0, 3)) #True
 
 
-# In[5]:
+# In[63]:
 
 
+# Filters for common (non-proper) nouns in PENN and BNC tagsets
 def pos_is_noun(pos_tag):
-  return 'nn' in pos_tag.lower()
+  return 'nn' in pos_tag.lower() and 'np' not in pos_tag.lower()
 
+print(pos_is_noun('VB')) #False
 print(pos_is_noun('NN1')) #True
-print(pos_is_noun('PROPN')) #False
+print(pos_is_noun('NNPS')) #False
+print(pos_is_noun('NN1-NP0')) #False
 
 
-# In[6]:
+# In[64]:
 
 
-def has_noun_target(sent):
+def get_noun_targets(sent):
+  noun_targets = []
   for fe_start, fe_end, fe_name in sent.FE[0]:
     fe_text = sent.text[fe_start:fe_end]
     if approx_len(fe_text) <= 3:
       for pos_start, pos_end, pos_tag in sent.POS:
         if pos_is_noun(pos_tag) and is_overlapping(fe_start, fe_end, pos_start, pos_end):
-          return True
-  return False
+          noun_targets.append(sent.text[pos_start:pos_end])
+  return noun_targets
 
-noun_target_sents = [sent for sent in short_sentences if has_noun_target(sent)]
+noun_target_sents = []
+for sent in short_sentences:
+  noun_targets = get_noun_targets(sent)
+  if noun_targets != []:
+    noun_target_sents.append((sent, noun_targets))
 
 
-# In[7]:
+# In[65]:
 
 
 len(noun_target_sents)
@@ -100,32 +109,33 @@ len(noun_target_sents)
 
 # ## Export random selection to CSV
 
-# In[21]:
+# In[66]:
 
 
 random.seed(12345)
 export_sents = random.sample(noun_target_sents, 100)
 
 
-# In[39]:
+# In[81]:
 
 
 df = []
-for sent in export_sents:
+for sent, noun_targets in export_sents:
   annotations = []
+  annotations.append(('Target', sent.text[sent.Target[0][0]:sent.Target[0][1]]))
   for span_start, span_end, fe_name in sent.FE[0]:
-    annotations.append(f"{fe_name}: '{sent.text[span_start:span_end]}'")
+    annotations.append((fe_name, sent.text[span_start:span_end]))
     
   df.append(pd.Series({
-    'fn_id': sent.ID,
     'frame': sent.frame.name,
     'text': sent.text,
-    'annotations': '\n'.join(annotations),
+    'noun_targets': json.dumps(noun_targets),
+    'annotations': json.dumps(annotations),
   }))
 df = pd.DataFrame(df)
 
 
-# In[40]:
+# In[83]:
 
 
 df.to_csv("short_fn_exemplars.csv", index=False, encoding='utf-8')
