@@ -20,3 +20,9 @@ class TestWordVecPerturbation(unittest.TestCase):
     assert 'cows' in self.perturb.closest_matching_words("pigs")
     assert 'Cow' in self.perturb.closest_matching_words("Pig")
     assert 'Cows' in self.perturb.closest_matching_words("Pigs")
+
+
+  def test_perturb_sentence(self):
+    new_sent, new_word = self.perturb.perturb_sentence("Pigs are eaten for food", "Pigs")
+    assert new_sent == "Chickens are eaten for food"
+    assert new_word == "Chickens"

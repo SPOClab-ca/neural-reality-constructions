@@ -1,3 +1,4 @@
+import random
 from gensim.models import KeyedVectors
 import nltk
 
@@ -33,3 +34,26 @@ class WordVecPerturbation:
           w in self.nouns_pl and sim_w in self.nouns_pl:
         ans.append(self.capitalize(sim_w) if is_caps else sim_w)
     return ans[:topn]
+
+
+  def perturb_sentence(self, sent, target_word, randomness=1):
+    """Perturb target word of sentence. Randomly pick replacement word from top r closest vectors."""
+    toks = sent.split(' ')
+    assert target_word in toks
+
+    if target_word.lower() not in self.w2v.vocab:
+      return None, None
+
+    ans = []
+    replaced_word = None
+    for tok in toks:
+      if tok == target_word:
+        choices = self.closest_matching_words(target_word, topn=randomness)
+        if len(choices) == 0:
+          return None, None
+
+        ans.append(random.choice(choices))
+        replaced_word = ans[-1]
+      else:
+        ans.append(tok)
+    return ' '.join(ans), replaced_word
