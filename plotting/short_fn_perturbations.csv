@@ -1,0 +1,116 @@
+frame,original_sent,replaced_sent,original_word,replaced_word,frame_element
+Moving_in_place,Shadows quivered in his fallen cheeks .,Glimpses quivered in his fallen cheeks .,Shadows,Glimpses,Theme
+Accoutrements,She glanced at her name badge .,She glanced at her right badge .,name,right,Style
+Accoutrements,She glanced at her name badge .,She glanced at her name banner .,badge,banner,Accoutrement
+Fluidic_motion,All the poetry had dribbled out of her .,All the reading had dribbled out of her .,poetry,reading,Fluid
+Lively_place,The place is buzzing with fashion ideas .,The good is buzzing with fashion ideas .,place,good,Location
+Lively_place,The place is buzzing with fashion ideas .,The place is buzzing with footwear ideas .,fashion,footwear,Activity
+Lively_place,The place is buzzing with fashion ideas .,The place is buzzing with fashion themes .,ideas,themes,Activity
+Containers,A fork and two teaspoons .,A fork and two cubes .,teaspoons,cubes,Container
+Experiencer_obj,At best her rejection could only frustrate him .,At best her response could only frustrate him .,rejection,response,Stimulus
+Stimulus_focus,Dazzling tuberous begonias and pelargoniums form an exhilarating patio display,Dazzling tuberous begonias and pelargoniums form an exhilarating flooring display,patio,flooring,Stimulus
+Stimulus_focus,Dazzling tuberous begonias and pelargoniums form an exhilarating patio display,Dazzling tuberous begonias and pelargoniums form an exhilarating patio array,display,array,Stimulus
+Part_orientational,One in front of the location .,One in top of the location .,front,top,Part
+Part_orientational,One in front of the location .,One in front of the access .,location,access,Whole
+Location_of_light,Its silk hangings shimmered .,Its tapestry hangings shimmered .,silk,tapestry,Figure
+Cause_harm,He cuffed his mate 's ear with the paper .,He cuffed his mate 's ear with the watercolor .,paper,watercolor,Instrument
+Operating_a_system,THIS PROJECT IS MANAGED BY FERMANAGH ENTERPRISE LTD .,THIS Feasibility IS MANAGED BY FERMANAGH ENTERPRISE LTD .,PROJECT,Feasibility,System
+Stimulus_focus,The response was heart-warming .,The sending was heart-warming .,response,sending,Stimulus
+Commerce_sell,Manufacturers and retailers of the handheld games disagree .,Manufacturers and brokers of the handheld games disagree .,retailers,brokers,Seller
+Wearing,Two expensively dressed girls approached their table .,Two expensively dressed cheerleaders approached their table .,girls,cheerleaders,Wearer
+Spelling_and_pronouncing,She pronounced the dog 's name with special contempt .,She pronounced the dog 's name with special injustice .,contempt,injustice,Manner
+Self_motion,The police filed into the office .,The victims filed into the office .,police,victims,Self_mover
+Self_motion,The police filed into the office .,The police filed into the mail .,office,mail,Goal
+Motion,Ruth 's tongue snaked out to moisten her lips .,Ruth 's ear snaked out to moisten her lips .,tongue,ear,Theme
+Roadways,That evening I walked the streets again .,That evening I walked the walkways again .,streets,walkways,Roadway
+Clothing_parts,"` Will you sew on my button ? "" ","` Will you sew on my pocket ? "" ",button,pocket,Subpart
+Change_posture,He rose from his chair and embraced her warmly .,He rose from his bookcase and embraced her warmly .,chair,bookcase,Source
+Cotheme,He dismounted to lead his mare across .,He dismounted to lead his terrier across .,mare,terrier,Cotheme
+Body_parts,Karlinsky stroked his beard and smiled .,Karlinsky stroked his pale and smiled .,beard,pale,Body_part
+Containers,Breakfast came with tea in petrol cans .,Breakfast came with tea in petrol bowls .,cans,bowls,Container
+Judgment,Yet his comments were curiously approving .,Yet his questions were curiously approving .,comments,questions,Expressor
+Hostile_encounter,Two teams battle to beat the drop,Two champs battle to beat the drop,teams,champs,Sides
+Apply_heat,Grill the coconut until golden ; cool .,Grill the cake until golden ; cool .,coconut,cake,Food
+Personal_relationship,She turned back to her companions with a sniff .,She turned back to her encounters with a sniff .,companions,encounters,Partner_1
+Arriving,Despite its beauty this whole area is little visited .,Despite its beauty this whole close is little visited .,area,close,Goal
+Seeking,She fumbles for defusing words .,She fumbles for defusing comments .,words,comments,Sought_entity
+Accoutrements,His glasses were dim and smeared .,His helmets were dim and smeared .,glasses,helmets,Accoutrement
+Taking,Seizure of UN troops by Khmers Rouges,Seizure of UN forces by Khmers Rouges,troops,forces,Theme
+Communication_manner,"Enraged farmers banged on windows , shouting anti-American slogans . ","Enraged homeowners banged on windows , shouting anti-American slogans . ",farmers,homeowners,Speaker
+Communication_manner,"Enraged farmers banged on windows , shouting anti-American slogans . ","Enraged farmers banged on windows , shouting anti-American flyers . ",slogans,flyers,Message
+Facial_expression,He flashed an angry look around the airport .,He flashed an angry make around the airport .,look,make,Expression
+Body_parts,The fragrant steam made his mouth water .,The fragrant steam made his kiss water .,mouth,kiss,Body_part
+Motion_noise,His knife clinked to the floor .,His chopper clinked to the floor .,knife,chopper,Theme
+Motion_noise,His knife clinked to the floor .,His knife clinked to the inside .,floor,inside,Goal
+Supply,Seventh : Provide labor force .,Seventh : Provide agriculture force .,labor,agriculture,Theme
+Supply,Seventh : Provide labor force .,Seventh : Provide labor military .,force,military,Theme
+Communication_noise,Liti screamed her outrage .,Liti screamed her outcry .,outrage,outcry,Message
+Location_of_light,Lightning flickered noiselessly in the western sky .,Flood flickered noiselessly in the western sky .,Lightning,Flood,Figure
+Dominate_competitor,Should considerations of efficiency dominate those of welfare ?,Should principles of efficiency dominate those of welfare ?,considerations,principles,Agent
+Dominate_competitor,Should considerations of efficiency dominate those of welfare ?,Should considerations of system dominate those of welfare ?,efficiency,system,Agent
+Dominate_competitor,Should considerations of efficiency dominate those of welfare ?,Should considerations of efficiency dominate those of assistance ?,welfare,assistance,Patient
+Self_motion,Claire sprints into work .,Claire sprints into writing .,work,writing,Goal
+Turning_out,But we all know how that story turned out .,But we all know how that drama turned out .,story,drama,State_of_affairs
+Indicating,Clare would n't name names there and then .,Clare would n't name addresses there and then .,names,addresses,Unresolved_referent
+Becoming_aware,We have encountered them throughout the book .,We have encountered them throughout the prose .,book,prose,Ground
+Cause_emotion,I insulted him at the time .,I insulted him at the back .,time,back,Time
+Residence,A nobler man never lived upon earth .,A nobler lady never lived upon earth .,man,lady,Resident
+Residence,A nobler man never lived upon earth .,A nobler man never lived upon sphere .,earth,sphere,Location
+Desirability,She smoked a horrible French cigarette .,She smoked a horrible French charcoal .,cigarette,charcoal,Evaluee
+Completeness,You will offer what amounts to a full pardon .,You will offer what amounts to a full justice .,pardon,justice,Whole
+Existence,Your support helps provide real solutions .,Your support helps provide real needs .,solutions,needs,Entity
+Text_creation,Doreen uttered a protest .,Doreen uttered a violence .,protest,violence,Text
+Origin,Technology transfer for new Iranian missiles and artillery rockets .,Technology transfer for new Iranian reactors and artillery rockets .,missiles,reactors,Entity
+Self_motion,"He paced about for some time , looking agitated . ","He paced about for some mind , looking agitated . ",time,mind,Duration
+Cause_motion,I felt like flinging aside the towel .,I felt like flinging aside the tray .,towel,tray,Theme
+Behind_the_scenes,Mr Rickman directed her show at the Empire Theatre .,Mr Rickman directed her know at the Empire Theatre .,show,know,Production
+Clothing,It was bundled in furs and wore high boots .,It was bundled in furs and wore high sneakers .,boots,sneakers,Garment
+Accoutrements,Have you got your stop watch on ?,Have you got your want watch on ?,stop,want,Style
+Accoutrements,Have you got your stop watch on ?,Have you got your stop video on ?,watch,video,Accoutrement
+Chemical-sense_description,The whole place stank .,The whole in stank .,place,in,Perceptual_source
+Discussion,Three themes were pinpointed and discussed in subsequent meetings .,Three aspects were pinpointed and discussed in subsequent meetings .,themes,aspects,Topic
+Discussion,Three themes were pinpointed and discussed in subsequent meetings .,Three themes were pinpointed and discussed in subsequent proceedings .,meetings,proceedings,Time
+Judgment_direct_address,People can be very shy about giving compliments .,Hundreds can be very shy about giving compliments .,People,Hundreds,Communicator
+Size,"Their powers are great . ""","Their circumstances are great . """,powers,circumstances,Entity
+Judgment,And he blames sheep dip for his condition .,And he blames pasture dip for his condition .,sheep,pasture,Evaluee
+Judgment,And he blames sheep dip for his condition .,And he blames sheep dip for his consequence .,condition,consequence,Reason
+Clothing,I admired his silk suit .,I admired his nylon suit .,silk,nylon,Material
+Clothing,I admired his silk suit .,I admired his silk choice .,suit,choice,Garment
+Make_noise,Zhukov snorted in annoyance .,Zhukov snorted in discontent .,annoyance,discontent,Internal_cause
+Impact,The door clanged shut .,The driveway clanged shut .,door,driveway,Impactor
+Activity_start,The Irish are actually beginning to come home .,The Irish are actually beginning to come apartment .,home,apartment,Activity
+Being_wet,My two chips were ready in my sweaty palm .,My two chips were ready in my sweaty leaf .,palm,leaf,Item
+Body_movement,He cocked a sardonic eyebrow at her .,He cocked a sardonic wink at her .,eyebrow,wink,Body_part
+People_by_origin,They are foreigners and they appear to be drinking .,They are tourists and they appear to be drinking .,foreigners,tourists,Origin
+Body_parts,Her own body was nearly ready again for clothes .,Her own flesh was nearly ready again for clothes .,body,flesh,Body_part
+Make_noise,A radio whined somewhere .,A network whined somewhere .,radio,network,Sound_source
+Communication_manner,Every Masai sings hymns to cattle .,Every Masai sings blessings to cattle .,hymns,blessings,Message
+Communication_manner,Every Masai sings hymns to cattle .,Every Masai sings hymns to geese .,cattle,geese,Addressee
+Activity_finish,The contract was concluded at that time .,The employee was concluded at that time .,contract,employee,Activity
+Activity_finish,The contract was concluded at that time .,The contract was concluded at that beginning .,time,beginning,Time
+Likelihood,Are women more prone than men to finding fault ?,Are minorities more prone than men to finding fault ?,women,minorities,Hypothetical_event
+Likelihood,Are women more prone than men to finding fault ?,Are women more prone than sexes to finding fault ?,men,sexes,Degree
+Likelihood,Are women more prone than men to finding fault ?,Are women more prone than men to find fault ?,finding,find,Hypothetical_event
+Likelihood,Are women more prone than men to finding fault ?,Are women more prone than men to finding failure ?,fault,failure,Hypothetical_event
+Desirability,• What an awful series of events .,• What an awful comic of events .,series,comic,Evaluee
+Desirability,• What an awful series of events .,• What an awful series of shows .,events,shows,Evaluee
+Self_motion,Lord John slowly climbed to his feet .,Lord John slowly climbed to his meters .,feet,meters,Result
+Cause_harm,"Stone 's son ` was beaten by gang "" ","Stone 's widow ` was beaten by gang "" ",son,widow,Victim
+Cause_harm,"Stone 's son ` was beaten by gang "" ","Stone 's son ` was beaten by pimp "" ",gang,pimp,Agent
+Quantified_mass,A stream of visitors turned up at the camp .,A channel of visitors turned up at the camp .,stream,channel,Quantity
+Quantified_mass,A stream of visitors turned up at the camp .,A stream of listeners turned up at the camp .,visitors,listeners,Individuals
+Body_movement,The barman craned his head across the counter .,The barman craned his chief across the counter .,head,chief,Body_part
+Body_movement,The barman craned his head across the counter .,The barman craned his head across the lobby .,counter,lobby,Path
+Addiction,We know he 's a heroin addict .,We know he 's a suicide addict .,heroin,suicide,Addictant
+Removing,She was making hard work of plucking the goose .,She was making hard work of plucking the hawk .,goose,hawk,Source
+Impact,His teeth chattered and he whimpered .,His joints chattered and he whimpered .,teeth,joints,Impactors
+Weapon,QN : Does Iran intend to produce nuclear weapons ?,QN : Does Iran intend to produce nuclear mercenaries ?,weapons,mercenaries,Weapon
+Natural_features,She climbed down the dune and walked towards him .,She climbed down the prairie and walked towards him .,dune,prairie,Locale
+Sounds,A sharp slap of wood on glass .,A sharp slap of decking on glass .,wood,decking,Theme
+Sounds,A sharp slap of wood on glass .,A sharp slap of wood on copper .,glass,copper,Ground
+Contingency,Money hinged on the fact .,Worth hinged on the fact .,Money,Worth,Outcome
+Contingency,Money hinged on the fact .,Money hinged on the reason .,fact,reason,Determinant
+Level_of_force_exertion,He thought he knew the force of the wind .,He thought he knew the force of the light .,wind,light,Exerter
+Cause_change_of_strength,Men 's intolerance is fortified by their power .,Ones 's intolerance is fortified by their power .,Men,Ones,Patient
+Cause_change_of_strength,Men 's intolerance is fortified by their power .,Men 's insecurity is fortified by their power .,intolerance,insecurity,Patient
+Cause_change_of_strength,Men 's intolerance is fortified by their power .,Men 's intolerance is fortified by their turbine .,power,turbine,Cause
