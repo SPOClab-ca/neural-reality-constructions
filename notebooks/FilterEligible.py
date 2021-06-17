@@ -6,7 +6,7 @@
 # Find sentences that are possibly useful for perturbation.
 # 
 # * Length of sentence must be <= 10 tokens. (16k sentences remaining)
-# * One of the frame elements must be <= 3 tokens and contain a noun. (10k sentences remaining)
+# * One of the frame elements must be <= 3 tokens and contain exactly one noun. (9.6k sentences remaining)
 
 # In[1]:
 
@@ -81,17 +81,20 @@ assert not pos_is_noun('NNPS')
 assert not pos_is_noun('NN1-NP0')
 
 
-# In[6]:
+# In[32]:
 
 
 def get_noun_targets(sent):
   noun_targets = []
   for fe_start, fe_end, fe_name in sent.FE[0]:
     fe_text = sent.text[fe_start:fe_end]
-    if approx_len(fe_text) <= 3:
-      for pos_start, pos_end, pos_tag in sent.POS:
-        if pos_is_noun(pos_tag) and is_overlapping(fe_start, fe_end, pos_start, pos_end):
-          noun_targets.append(sent.text[pos_start:pos_end])
+    nouns_in_fe = []
+    for pos_start, pos_end, pos_tag in sent.POS:
+      if pos_is_noun(pos_tag) and is_overlapping(fe_start, fe_end, pos_start, pos_end):
+        nouns_in_fe.append(sent.text[pos_start:pos_end])
+    
+    if approx_len(fe_text) <= 3 and len(nouns_in_fe) == 1:
+      noun_targets.append(nouns_in_fe[0])
   return noun_targets
 
 noun_target_sents = []
@@ -101,7 +104,7 @@ for sent in short_sentences:
     noun_target_sents.append((sent, noun_targets))
 
 
-# In[7]:
+# In[33]:
 
 
 len(noun_target_sents)
@@ -109,14 +112,15 @@ len(noun_target_sents)
 
 # ## Export random selection to CSV
 
-# In[8]:
+# In[24]:
 
 
 random.seed(12345)
 export_sents = random.sample(noun_target_sents, 100)
+#export_sents = noun_target_sents
 
 
-# In[9]:
+# In[28]:
 
 
 df = []
@@ -135,7 +139,7 @@ for sent, noun_targets in export_sents:
 df = pd.DataFrame(df)
 
 
-# In[10]:
+# In[35]:
 
 
 df.to_csv("short_fn_exemplars.csv", index=False, encoding='utf-8')

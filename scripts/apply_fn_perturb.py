@@ -12,7 +12,7 @@ random.seed(12345)
 
 
 perturb_model = src.wordvec_perturbation.WordVecPerturbation()
-df = pd.read_csv("./data/short_fn_exemplars.csv")
+df = pd.read_csv("./notebooks/short_fn_exemplars.csv")
 
 out_df = []
 for _, row in df.iterrows():
@@ -42,3 +42,5 @@ for _, row in df.iterrows():
 
 out_df = pd.DataFrame(out_df)
 out_df.to_csv("short_fn_perturbed.csv", index=False)
+
+print(f"Done, generated {len(out_df)} sentence pairs.")

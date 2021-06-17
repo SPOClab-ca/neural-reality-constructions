@@ -39,9 +39,7 @@ class WordVecPerturbation:
   def perturb_sentence(self, sent, target_word, randomness=1):
     """Perturb target word of sentence. Randomly pick replacement word from top r closest vectors."""
     toks = sent.split(' ')
-    assert target_word in toks
-
-    if target_word.lower() not in self.w2v.vocab:
+    if target_word not in toks or target_word.lower() not in self.w2v.vocab:
       return None, None
 
     ans = []
