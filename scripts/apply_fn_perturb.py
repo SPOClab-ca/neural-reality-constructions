@@ -1,18 +1,25 @@
 """
 Script to replace sentences (short_fn_exemplars.csv), given target words, by swapping
-target words with randomly selected nearest words in word2vec space.
+target words with randomly selected nearest words in word2vec space. Also generate annotator
+spreadsheet by randomizing the order of sentences.
 """
+import numpy as np
 import pandas as pd
 import json
 import random
 
 import src.wordvec_perturbation
 
+INPUT_EXEMPLARS_CSV = "./notebooks/short_fn_exemplars.csv"
+OUTPUT_PERTURBED_CSV = "short_fn_perturbed.csv"
+OUTPUT_ANNOTATOR_CSV = "paired_for_annotator.csv"
+
 random.seed(12345)
+np.random.seed(12345)
 
 
 perturb_model = src.wordvec_perturbation.WordVecPerturbation()
-df = pd.read_csv("./notebooks/short_fn_exemplars.csv")
+df = pd.read_csv(INPUT_EXEMPLARS_CSV)
 
 out_df = []
 for _, row in df.iterrows():
@@ -41,6 +48,17 @@ for _, row in df.iterrows():
     })
 
 out_df = pd.DataFrame(out_df)
-out_df.to_csv("short_fn_perturbed.csv", index=False)
+out_df.to_csv(OUTPUT_PERTURBED_CSV, index=False)
 
-print(f"Done, generated {len(out_df)} sentence pairs.")
+print(f"Generated {len(out_df)} perturbed sentence pairs to {OUTPUT_PERTURBED_CSV}.")
+
+
+# Randomize for annotation
+annotator_df = out_df.sample(frac=1)
+annotator_df['random'] = np.random.uniform()
+annotator_df['text1'] = np.where(annotator_df.random < 0.5, annotator_df.original_sent, annotator_df.replaced_sent)
+annotator_df['text2'] = np.where(annotator_df.random < 0.5, annotator_df.replaced_sent, annotator_df.original_sent)
+annotator_df = annotator_df[['text1', 'text2']]
+annotator_df.to_csv(OUTPUT_ANNOTATOR_CSV, index=False)
+
+print(f"Generated {len(annotator_df)} annotation sentence pairs to {OUTPUT_ANNOTATOR_CSV}.")
