@@ -187,3 +187,41 @@ for frame_name, count in sorted(frame_count.items(), key=lambda kv: kv[1], rever
 
 len(frame_count)
 
+
+# ## Look at frame-to-frame relations
+
+# In[59]:
+
+
+def frame_parents(frame_name):
+  frame = fn.frames(frame_name)[0]
+  ret = []
+  for rel in frame.frameRelations:
+    if rel.get("Parent") is not None and rel.Child.name == frame_name:
+      ret.append(rel.Parent.name)
+  return ret
+
+
+# Commerce_buy frame inherits from Getting, and has 7 direct frame-to-frame relations.
+# 
+# This can be explored interactively: https://framenet.icsi.berkeley.edu/fndrupal/FrameGrapher.
+# 
+# Also has FE relations, eg, Getting.Recipient = Commerce_buy.Buyer.
+
+# In[67]:
+
+
+frame_parents("Commerce_buy")
+
+
+# In[83]:
+
+
+list(fn.frames("Commerce_buy")[0].frameRelations)
+
+
+# In[81]:
+
+
+list(fn.frames("Commerce_buy")[0].frameRelations[1].feRelations)
+
