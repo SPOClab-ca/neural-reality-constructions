@@ -1,93 +1,93 @@
-text1,text2,correct,delta_bai,code_bai,delta_zining,code_zining,delta_upwork,code_upwork
-His knife clinked to the floor .,His knife clinked to the inside .,-2,-2,nonsense,-2,nonsense,-2,physical
-Claire sprints into writing .,Claire sprints into work .,2,0,,0,,2,nonsense
-A stream of visitors turned up at the camp .,A stream of listeners turned up at the camp .,-2,-2,atypical,0,,-2,expression
-Grill the coconut until golden ; cool .,Grill the cake until golden ; cool .,-2,2,atypical,-2,physical,2,atypical
-The contract was concluded at that beginning .,The contract was concluded at that time .,2,2,nonsense,2,atypical,-1,expression
-Zhukov snorted in discontent .,Zhukov snorted in annoyance .,2,0,,1,expression,0,
-Money hinged on the fact .,Worth hinged on the fact .,-2,-2,expression,-2,physical,0,
-"` Will you sew on my pocket ? "" ","` Will you sew on my button ? "" ",2,1,atypical,0,,-1,expression
-Liti screamed her outcry .,Liti screamed her outrage .,2,0,,0,,0,
-Seizure of UN troops by Khmers Rouges,Seizure of UN forces by Khmers Rouges,-2,0,,0,,0,
-The response was heart-warming .,The sending was heart-warming .,-2,-2,nonsense,-2,nonsense,-2,expression
-He rose from his chair and embraced her warmly .,He rose from his bookcase and embraced her warmly .,-2,-2,physical,-2,physical,-2,physical
-My two chips were ready in my sweaty leaf .,My two chips were ready in my sweaty palm .,2,2,physical,2,physical,2,physical
-He dismounted to lead his mare across .,He dismounted to lead his terrier across .,-2,-2,atypical,0,,0,
-Karlinsky stroked his beard and smiled .,Karlinsky stroked his pale and smiled .,-2,-2,syntactic,-2,syntactic,-2,expression
-That evening I walked the streets again .,That evening I walked the walkways again .,-2,-1,expression,0,,-2,physical
-The whole place stank .,The whole in stank .,-2,-2,syntactic,-2,syntactic,-2,syntactic
-Despite its beauty this whole area is little visited .,Despite its beauty this whole close is little visited .,-2,-2,syntactic,-2,nonsense,-2,expression
-The employee was concluded at that time .,The contract was concluded at that time .,2,2,expression,2,atypical,2,atypical
-We know he 's a suicide addict .,We know he 's a heroin addict .,2,2,atypical,2,physical,2,expression
-Three aspects were pinpointed and discussed in subsequent meetings .,Three themes were pinpointed and discussed in subsequent meetings .,2,0,,-1,atypical,-2,expression
-• What an awful series of shows .,• What an awful series of events .,2,0,,0,,0,
-He thought he knew the force of the wind .,He thought he knew the force of the light .,-2,-1,physical,0,,-2,atypical
-It was bundled in furs and wore high sneakers .,It was bundled in furs and wore high boots .,2,1,atypical,2,physical,-2,atypical
-"He paced about for some time , looking agitated . ","He paced about for some mind , looking agitated . ",-2,-2,nonsense,-2,nonsense,-2,expression
-He cuffed his mate 's ear with the watercolor .,He cuffed his mate 's ear with the paper .,2,1,physical,2,physical,2,nonsense
-"Enraged farmers banged on windows , shouting anti-American slogans . ","Enraged farmers banged on windows , shouting anti-American flyers . ",-2,-2,expression,-2,physical,-2,expression
-Money hinged on the reason .,Money hinged on the fact .,2,1,nonsense,-2,atypical,0,
-"Enraged farmers banged on windows , shouting anti-American slogans . ","Enraged homeowners banged on windows , shouting anti-American slogans . ",-2,0,,0,,-2,atypical
-The police filed into the office .,The victims filed into the office .,-2,0,,-1,atypical,-2,atypical
-Technology transfer for new Iranian reactors and artillery rockets .,Technology transfer for new Iranian missiles and artillery rockets .,2,0,,0,,2,expression
-The barman craned his chief across the counter .,The barman craned his head across the counter .,2,2,nonsense,2,physical,2,physical
-Ruth 's ear snaked out to moisten her lips .,Ruth 's tongue snaked out to moisten her lips .,2,2,physical,2,physical,2,expression
-All the reading had dribbled out of her .,All the poetry had dribbled out of her .,2,0,,1,physical,2,expression
-THIS Feasibility IS MANAGED BY FERMANAGH ENTERPRISE LTD .,THIS PROJECT IS MANAGED BY FERMANAGH ENTERPRISE LTD .,2,2,nonsense,2,atypical,2,atypical
-A nobler man never lived upon sphere .,A nobler man never lived upon earth .,2,2,expression,1,physical,2,expression
-The Irish are actually beginning to come home .,The Irish are actually beginning to come apartment .,-2,-2,expression,-2,syntactic,-1,physical
-At best her response could only frustrate him .,At best her rejection could only frustrate him .,2,0,,0,,0,
-Your support helps provide real solutions .,Your support helps provide real needs .,-2,-1,nonsense,-2,atypical,-2,expression
-A sharp slap of wood on copper .,A sharp slap of wood on glass .,2,0,,0,,-2,syntactic
-Should considerations of efficiency dominate those of welfare ?,Should considerations of efficiency dominate those of assistance ?,-2,-1,nonsense,-1,atypical,-2,expression
-Hundreds can be very shy about giving compliments .,People can be very shy about giving compliments .,2,2,expression,1,syntactic,2,expression
-"Stone 's son ` was beaten by gang "" ","Stone 's widow ` was beaten by gang "" ",-2,0,,0,,-2,atypical
-A nobler man never lived upon earth .,A nobler lady never lived upon earth .,-2,0,,0,,0,
-The barman craned his head across the lobby .,The barman craned his head across the counter .,2,1,physical,2,physical,-2,physical
-I felt like flinging aside the towel .,I felt like flinging aside the tray .,-2,0,,0,,-2,atypical
-Doreen uttered a violence .,Doreen uttered a protest .,2,2,nonsense,1,physical,2,expression
-She turned back to her encounters with a sniff .,She turned back to her companions with a sniff .,2,2,nonsense,2,physical,2,expression
-Every Masai sings hymns to geese .,Every Masai sings hymns to cattle .,2,2,atypical,0,atypical,0,
-• What an awful series of events .,• What an awful comic of events .,-2,-2,nonsense,-2,syntactic,-2,atypical
-The driveway clanged shut .,The door clanged shut .,2,1,physical,2,physical,2,atypical
-Should considerations of efficiency dominate those of welfare ?,Should principles of efficiency dominate those of welfare ?,-2,0,,0,,-2,expression
-But we all know how that drama turned out .,But we all know how that story turned out .,2,0,,1,atypical,0,expression
-She was making hard work of plucking the goose .,She was making hard work of plucking the hawk .,-2,-1,atypical,0,,0,
-Every Masai sings hymns to cattle .,Every Masai sings blessings to cattle .,-2,0,,0,,0,
-The fragrant steam made his kiss water .,The fragrant steam made his mouth water .,2,2,atypical,2,physical,2,expression
-Two expensively dressed cheerleaders approached their table .,Two expensively dressed girls approached their table .,2,0,,0,,2,atypical
-She pronounced the dog 's name with special contempt .,She pronounced the dog 's name with special injustice .,-2,0,,-2,atypical,-2,syntactic
-Mr Rickman directed her know at the Empire Theatre .,Mr Rickman directed her show at the Empire Theatre .,2,2,nonsense,2,syntactic,2,physical
-His knife clinked to the floor .,His chopper clinked to the floor .,-2,-2,physical,0,,-1,expression
-She climbed down the prairie and walked towards him .,She climbed down the dune and walked towards him .,2,1,physical,2,physical,2,atypical
-Two champs battle to beat the drop,Two teams battle to beat the drop,2,0,,0,,2,expression
-Clare would n't name names there and then .,Clare would n't name addresses there and then .,-2,-1,expression,1,atypical,2,atypical
-He flashed an angry make around the airport .,He flashed an angry look around the airport .,2,2,nonsense,2,syntactic,2,expression
-We have encountered them throughout the book .,We have encountered them throughout the prose .,-2,-1,expression,-2,atypical,2,atypical
-And he blames sheep dip for his consequence .,And he blames sheep dip for his condition .,2,1,nonsense,2,atypical,-2,syntactic
-A stream of visitors turned up at the camp .,A channel of visitors turned up at the camp .,-2,-2,expression,0,,-2,expression
-Her own body was nearly ready again for clothes .,Her own flesh was nearly ready again for clothes .,-2,-1,atypical,-1,expression,-2,syntactic
-You will offer what amounts to a full justice .,You will offer what amounts to a full pardon .,2,0,,2,atypical,2,expression
-A fork and two cubes .,A fork and two teaspoons .,2,1,atypical,1,atypical,2,atypical
-He cocked a sardonic wink at her .,He cocked a sardonic eyebrow at her .,2,-1,atypical,0,,2,atypical
-Yet his comments were curiously approving .,Yet his questions were curiously approving .,-2,0,,0,,-2,atypical
-She fumbles for defusing comments .,She fumbles for defusing words .,2,0,,0,,0,
-Glimpses quivered in his fallen cheeks .,Shadows quivered in his fallen cheeks .,2,0,,2,nonsense,2,atypical
-Manufacturers and brokers of the handheld games disagree .,Manufacturers and retailers of the handheld games disagree .,2,0,,0,,-2,atypical
-One in front of the location .,One in top of the location .,-2,-2,expression,-2,syntactic,-2,physical
-Lord John slowly climbed to his feet .,Lord John slowly climbed to his meters .,-2,-2,nonsense,-2,nonsense,-2,physical
-His glasses were dim and smeared .,His helmets were dim and smeared .,-2,-1,physical,-1,physical,-2,expression
-Flood flickered noiselessly in the western sky .,Lightning flickered noiselessly in the western sky .,2,-2,physical,2,physical,2,physical
-A sharp slap of wood on glass .,A sharp slap of decking on glass .,-2,-1,atypical,1,physical,-2,syntactic
-They are foreigners and they appear to be drinking .,They are tourists and they appear to be drinking .,-2,0,,0,,0,
-The police filed into the office .,The police filed into the mail .,-2,-2,physical,0,,-2,nonsense
-Three themes were pinpointed and discussed in subsequent meetings .,Three themes were pinpointed and discussed in subsequent proceedings .,-2,-1,expression,-2,physical,-2,expression
-QN : Does Iran intend to produce nuclear mercenaries ?,QN : Does Iran intend to produce nuclear weapons ?,2,1,atypical,1,atypical,2,atypical
-"Their circumstances are great . ""","Their powers are great . """,2,0,,-2,atypical,-2,expression
-I insulted him at the back .,I insulted him at the time .,2,0,,2,atypical,-2,expression
-His joints chattered and he whimpered .,His teeth chattered and he whimpered .,2,1,expression,0,,2,expression
-One in front of the access .,One in front of the location .,2,1,atypical,0,,2,physical
-Should considerations of system dominate those of welfare ?,Should considerations of efficiency dominate those of welfare ?,2,1,nonsense,0,,2,expression
-"Stone 's son ` was beaten by gang "" ","Stone 's son ` was beaten by pimp "" ",-2,0,,0,,0,
-And he blames sheep dip for his condition .,And he blames pasture dip for his condition .,-2,0,,0,,-2,atypical
-A network whined somewhere .,A radio whined somewhere .,2,1,physical,2,physical,2,expression
+text1,text2,correct,delta_bai,code_bai,delta_zining,code_zining,delta_upwork,code_upwork,roberta_base
+His knife clinked to the floor .,His knife clinked to the inside .,-2,-2,nonsense,-2,nonsense,-2,physical,-9.05201530456543
+Claire sprints into writing .,Claire sprints into work .,2,0,,0,,2,nonsense,6.251319408416748
+A stream of visitors turned up at the camp .,A stream of listeners turned up at the camp .,-2,-2,atypical,0,,-2,expression,-9.10595703125
+Grill the coconut until golden ; cool .,Grill the cake until golden ; cool .,-2,2,atypical,-2,physical,2,atypical,-1.6207876205444336
+The contract was concluded at that beginning .,The contract was concluded at that time .,2,2,nonsense,2,atypical,-1,expression,10.128045082092285
+Zhukov snorted in discontent .,Zhukov snorted in annoyance .,2,0,,1,expression,0,,5.491974830627441
+Money hinged on the fact .,Worth hinged on the fact .,-2,-2,expression,-2,physical,0,,
+"` Will you sew on my pocket ? "" ","` Will you sew on my button ? "" ",2,1,atypical,0,,-1,expression,2.0510787963867188
+Liti screamed her outcry .,Liti screamed her outrage .,2,0,,0,,0,,8.149286270141602
+Seizure of UN troops by Khmers Rouges,Seizure of UN forces by Khmers Rouges,-2,0,,0,,0,,0.3109922409057617
+The response was heart-warming .,The sending was heart-warming .,-2,-2,nonsense,-2,nonsense,-2,expression,-11.91926383972168
+He rose from his chair and embraced her warmly .,He rose from his bookcase and embraced her warmly .,-2,-2,physical,-2,physical,-2,physical,
+My two chips were ready in my sweaty leaf .,My two chips were ready in my sweaty palm .,2,2,physical,2,physical,2,physical,13.525338172912598
+He dismounted to lead his mare across .,He dismounted to lead his terrier across .,-2,-2,atypical,0,,0,,
+Karlinsky stroked his beard and smiled .,Karlinsky stroked his pale and smiled .,-2,-2,syntactic,-2,syntactic,-2,expression,-13.955612182617188
+That evening I walked the streets again .,That evening I walked the walkways again .,-2,-1,expression,0,,-2,physical,
+The whole place stank .,The whole in stank .,-2,-2,syntactic,-2,syntactic,-2,syntactic,-12.730962753295898
+Despite its beauty this whole area is little visited .,Despite its beauty this whole close is little visited .,-2,-2,syntactic,-2,nonsense,-2,expression,-12.154297828674316
+The employee was concluded at that time .,The contract was concluded at that time .,2,2,expression,2,atypical,2,atypical,8.151082992553711
+We know he 's a suicide addict .,We know he 's a heroin addict .,2,2,atypical,2,physical,2,expression,9.529623031616211
+Three aspects were pinpointed and discussed in subsequent meetings .,Three themes were pinpointed and discussed in subsequent meetings .,2,0,,-1,atypical,-2,expression,2.8589906692504883
+• What an awful series of shows .,• What an awful series of events .,2,0,,0,,0,,6.327543258666992
+He thought he knew the force of the wind .,He thought he knew the force of the light .,-2,-1,physical,0,,-2,atypical,-3.1832704544067383
+It was bundled in furs and wore high sneakers .,It was bundled in furs and wore high boots .,2,1,atypical,2,physical,-2,atypical,8.453535079956055
+"He paced about for some time , looking agitated . ","He paced about for some mind , looking agitated . ",-2,-2,nonsense,-2,nonsense,-2,expression,-16.26129722595215
+He cuffed his mate 's ear with the watercolor .,He cuffed his mate 's ear with the paper .,2,1,physical,2,physical,2,nonsense,
+"Enraged farmers banged on windows , shouting anti-American slogans . ","Enraged farmers banged on windows , shouting anti-American flyers . ",-2,-2,expression,-2,physical,-2,expression,-10.916929244995117
+Money hinged on the reason .,Money hinged on the fact .,2,1,nonsense,-2,atypical,0,,4.548369407653809
+"Enraged farmers banged on windows , shouting anti-American slogans . ","Enraged homeowners banged on windows , shouting anti-American slogans . ",-2,0,,0,,-2,atypical,2.237865447998047
+The police filed into the office .,The victims filed into the office .,-2,0,,-1,atypical,-2,atypical,-2.075039863586426
+Technology transfer for new Iranian reactors and artillery rockets .,Technology transfer for new Iranian missiles and artillery rockets .,2,0,,0,,2,expression,9.132904052734375
+The barman craned his chief across the counter .,The barman craned his head across the counter .,2,2,nonsense,2,physical,2,physical,13.764321327209473
+Ruth 's ear snaked out to moisten her lips .,Ruth 's tongue snaked out to moisten her lips .,2,2,physical,2,physical,2,expression,12.076592445373535
+All the reading had dribbled out of her .,All the poetry had dribbled out of her .,2,0,,1,physical,2,expression,5.009757041931152
+THIS Feasibility IS MANAGED BY FERMANAGH ENTERPRISE LTD .,THIS PROJECT IS MANAGED BY FERMANAGH ENTERPRISE LTD .,2,2,nonsense,2,atypical,2,atypical,
+A nobler man never lived upon sphere .,A nobler man never lived upon earth .,2,2,expression,1,physical,2,expression,17.627758026123047
+The Irish are actually beginning to come home .,The Irish are actually beginning to come apartment .,-2,-2,expression,-2,syntactic,-1,physical,-15.521553039550781
+At best her response could only frustrate him .,At best her rejection could only frustrate him .,2,0,,0,,0,,-0.9785642623901367
+Your support helps provide real solutions .,Your support helps provide real needs .,-2,-1,nonsense,-2,atypical,-2,expression,-1.0662336349487305
+A sharp slap of wood on copper .,A sharp slap of wood on glass .,2,0,,0,,-2,syntactic,5.863699436187744
+Should considerations of efficiency dominate those of welfare ?,Should considerations of efficiency dominate those of assistance ?,-2,-1,nonsense,-1,atypical,-2,expression,-5.803008079528809
+Hundreds can be very shy about giving compliments .,People can be very shy about giving compliments .,2,2,expression,1,syntactic,2,expression,13.974594116210938
+"Stone 's son ` was beaten by gang "" ","Stone 's widow ` was beaten by gang "" ",-2,0,,0,,-2,atypical,-3.8992748260498047
+A nobler man never lived upon earth .,A nobler lady never lived upon earth .,-2,0,,0,,0,,-5.458492279052734
+The barman craned his head across the lobby .,The barman craned his head across the counter .,2,1,physical,2,physical,-2,physical,4.158100128173828
+I felt like flinging aside the towel .,I felt like flinging aside the tray .,-2,0,,0,,-2,atypical,-4.6414923667907715
+Doreen uttered a violence .,Doreen uttered a protest .,2,2,nonsense,1,physical,2,expression,5.289017677307129
+She turned back to her encounters with a sniff .,She turned back to her companions with a sniff .,2,2,nonsense,2,physical,2,expression,9.13066291809082
+Every Masai sings hymns to geese .,Every Masai sings hymns to cattle .,2,2,atypical,0,atypical,0,,
+• What an awful series of events .,• What an awful comic of events .,-2,-2,nonsense,-2,syntactic,-2,atypical,-11.568822860717773
+The driveway clanged shut .,The door clanged shut .,2,1,physical,2,physical,2,atypical,10.867853164672852
+Should considerations of efficiency dominate those of welfare ?,Should principles of efficiency dominate those of welfare ?,-2,0,,0,,-2,expression,-1.0489616394042969
+But we all know how that drama turned out .,But we all know how that story turned out .,2,0,,1,atypical,0,expression,4.378536224365234
+She was making hard work of plucking the goose .,She was making hard work of plucking the hawk .,-2,-1,atypical,0,,0,,-4.950697898864746
+Every Masai sings hymns to cattle .,Every Masai sings blessings to cattle .,-2,0,,0,,0,,
+The fragrant steam made his kiss water .,The fragrant steam made his mouth water .,2,2,atypical,2,physical,2,expression,17.693584442138672
+Two expensively dressed cheerleaders approached their table .,Two expensively dressed girls approached their table .,2,0,,0,,2,atypical,
+She pronounced the dog 's name with special contempt .,She pronounced the dog 's name with special injustice .,-2,0,,-2,atypical,-2,syntactic,-4.727902889251709
+Mr Rickman directed her know at the Empire Theatre .,Mr Rickman directed her show at the Empire Theatre .,2,2,nonsense,2,syntactic,2,physical,13.44757080078125
+His knife clinked to the floor .,His chopper clinked to the floor .,-2,-2,physical,0,,-1,expression,
+She climbed down the prairie and walked towards him .,She climbed down the dune and walked towards him .,2,1,physical,2,physical,2,atypical,
+Two champs battle to beat the drop,Two teams battle to beat the drop,2,0,,0,,2,expression,
+Clare would n't name names there and then .,Clare would n't name addresses there and then .,-2,-1,expression,1,atypical,2,atypical,-5.052111625671387
+He flashed an angry make around the airport .,He flashed an angry look around the airport .,2,2,nonsense,2,syntactic,2,expression,11.223783493041992
+We have encountered them throughout the book .,We have encountered them throughout the prose .,-2,-1,expression,-2,atypical,2,atypical,-9.016000747680664
+And he blames sheep dip for his consequence .,And he blames sheep dip for his condition .,2,1,nonsense,2,atypical,-2,syntactic,9.687516212463379
+A stream of visitors turned up at the camp .,A channel of visitors turned up at the camp .,-2,-2,expression,0,,-2,expression,-9.564291954040527
+Her own body was nearly ready again for clothes .,Her own flesh was nearly ready again for clothes .,-2,-1,atypical,-1,expression,-2,syntactic,-6.699237823486328
+You will offer what amounts to a full justice .,You will offer what amounts to a full pardon .,2,0,,2,atypical,2,expression,4.990416526794434
+A fork and two cubes .,A fork and two teaspoons .,2,1,atypical,1,atypical,2,atypical,1.0249805450439453
+He cocked a sardonic wink at her .,He cocked a sardonic eyebrow at her .,2,-1,atypical,0,,2,atypical,4.978246688842773
+Yet his comments were curiously approving .,Yet his questions were curiously approving .,-2,0,,0,,-2,atypical,-2.234039306640625
+She fumbles for defusing comments .,She fumbles for defusing words .,2,0,,0,,0,,2.8727145195007324
+Glimpses quivered in his fallen cheeks .,Shadows quivered in his fallen cheeks .,2,0,,2,nonsense,2,atypical,
+Manufacturers and brokers of the handheld games disagree .,Manufacturers and retailers of the handheld games disagree .,2,0,,0,,-2,atypical,9.397640228271484
+One in front of the location .,One in top of the location .,-2,-2,expression,-2,syntactic,-2,physical,-9.389230728149414
+Lord John slowly climbed to his feet .,Lord John slowly climbed to his meters .,-2,-2,nonsense,-2,nonsense,-2,physical,-12.532711029052734
+His glasses were dim and smeared .,His helmets were dim and smeared .,-2,-1,physical,-1,physical,-2,expression,-9.111076354980469
+Flood flickered noiselessly in the western sky .,Lightning flickered noiselessly in the western sky .,2,-2,physical,2,physical,2,physical,
+A sharp slap of wood on glass .,A sharp slap of decking on glass .,-2,-1,atypical,1,physical,-2,syntactic,
+They are foreigners and they appear to be drinking .,They are tourists and they appear to be drinking .,-2,0,,0,,0,,0.8530054092407227
+The police filed into the office .,The police filed into the mail .,-2,-2,physical,0,,-2,nonsense,-5.787934303283691
+Three themes were pinpointed and discussed in subsequent meetings .,Three themes were pinpointed and discussed in subsequent proceedings .,-2,-1,expression,-2,physical,-2,expression,-4.378915786743164
+QN : Does Iran intend to produce nuclear mercenaries ?,QN : Does Iran intend to produce nuclear weapons ?,2,1,atypical,1,atypical,2,atypical,21.675533294677734
+"Their circumstances are great . ""","Their powers are great . """,2,0,,-2,atypical,-2,expression,4.611128807067871
+I insulted him at the back .,I insulted him at the time .,2,0,,2,atypical,-2,expression,3.9970760345458984
+His joints chattered and he whimpered .,His teeth chattered and he whimpered .,2,1,expression,0,,2,expression,9.519866943359375
+One in front of the access .,One in front of the location .,2,1,atypical,0,,2,physical,3.514451026916504
+Should considerations of system dominate those of welfare ?,Should considerations of efficiency dominate those of welfare ?,2,1,nonsense,0,,2,expression,3.3783559799194336
+"Stone 's son ` was beaten by gang "" ","Stone 's son ` was beaten by pimp "" ",-2,0,,0,,0,,
+And he blames sheep dip for his condition .,And he blames pasture dip for his condition .,-2,0,,0,,-2,atypical,1.8592338562011719
+A network whined somewhere .,A radio whined somewhere .,2,1,physical,2,physical,2,expression,7.665796279907227
