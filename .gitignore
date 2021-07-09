@@ -2,3 +2,4 @@
 *.pyc
 lib/
 data/glove.840B.300d.txt
+data/PTB3
