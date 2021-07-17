@@ -86,7 +86,7 @@ df['PC1'] = pca_vecs[:, 0]
 df['PC2'] = pca_vecs[:, 1]
 
 
-# In[13]:
+# In[10]:
 
 
 sns.set(rc={'figure.figsize':(8, 8)})
@@ -118,5 +118,46 @@ sns.set(rc={'figure.figsize':(3, 3)})
 sns.set_style('white')
 sns.scatterplot(x=df.PC1, y=df.PC2, hue=df.construction)
 plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
+plt.show()
+
+
+# ## Compute mean pairwise distances
+
+# In[13]:
+
+
+def verb_cxn_mean_distance(layer):
+  verb_distances = []
+  cxn_distances = []
+  for i in range(16):
+    for j in range(i+1, 16):
+      dist = np.linalg.norm(sent_vecs[i][layer] - sent_vecs[j][layer])
+      if df.iloc[i].verb == df.iloc[j].verb:
+        verb_distances.append(dist)
+      if df.iloc[i].construction == df.iloc[j].construction:
+        cxn_distances.append(dist)
+  return np.mean(verb_distances), np.mean(cxn_distances)
+
+
+# In[14]:
+
+
+layer_results = []
+for layer in range(13):
+  verb_distance, cxn_distance = verb_cxn_mean_distance(layer)
+  layer_results.append({
+    "layer": layer,
+    "verb_distance": verb_distance,
+    "cxn_distance": cxn_distance,
+  })
+layer_results = pd.DataFrame(layer_results)
+
+
+# In[15]:
+
+
+sns.set(rc={'figure.figsize':(4, 3)})
+sns.set_style("white")
+sns.lineplot(data=layer_results.melt(id_vars=["layer"]), x="layer", y="value", hue="variable")
 plt.show()
 
