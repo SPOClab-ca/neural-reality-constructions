@@ -126,7 +126,7 @@ plt.show()
 # In[13]:
 
 
-def verb_cxn_mean_distance(layer):
+def verb_cxn_mean_distance(df, sent_vecs, layer):
   verb_distances = []
   cxn_distances = []
   for i in range(16):
@@ -144,7 +144,7 @@ def verb_cxn_mean_distance(layer):
 
 layer_results = []
 for layer in range(13):
-  verb_distance, cxn_distance = verb_cxn_mean_distance(layer)
+  verb_distance, cxn_distance = verb_cxn_mean_distance(df, sent_vecs, layer)
   layer_results.append({
     "layer": layer,
     "verb_distance": verb_distance,
@@ -159,5 +159,43 @@ layer_results = pd.DataFrame(layer_results)
 sns.set(rc={'figure.figsize':(4, 3)})
 sns.set_style("white")
 sns.lineplot(data=layer_results.melt(id_vars=["layer"]), x="layer", y="value", hue="variable")
+plt.show()
+
+
+# ## Repeat with lots of generated stimuli sets
+
+# In[16]:
+
+
+templated_df = pd.read_csv("templated_stimuli.csv")
+
+
+# In[17]:
+
+
+results = []
+for group in range(len(templated_df) // 16):
+  df = templated_df[templated_df.group == group]
+  _, all_vecs = enc.contextual_token_vecs(df.sentence.tolist())
+  sent_vecs = [tok_vecs.sum(axis=0) for tok_vecs in all_vecs]
+  
+  for layer in range(13):
+    verb_distance, cxn_distance = verb_cxn_mean_distance(df, sent_vecs, layer)
+    results.append({
+      "group": group,
+      "layer": layer,
+      "verb_distance": verb_distance,
+      "cxn_distance": cxn_distance,
+    })
+
+results = pd.DataFrame(results)
+
+
+# In[19]:
+
+
+sns.set_style("white")
+sns.relplot(data=results.melt(id_vars=["group", "layer"]), x="layer", y="value", hue="variable",
+            kind="line", ci="sd", aspect=4/3, height=3)
 plt.show()
 

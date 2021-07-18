@@ -135,7 +135,7 @@ PREPOSITION_PHRASES = [
 VERBS = list(set([t[0] for t in VERB_OBJ_RESULT]))
 
 
-# In[6]:
+# In[10]:
 
 
 random.seed(12345)
@@ -241,5 +241,20 @@ def gen_stimuli():
   
   return pd.DataFrame(sentences)
 
-gen_stimuli()
+
+# In[11]:
+
+
+all_stimuli = []
+for i in range(100):
+  df = gen_stimuli()
+  df['group'] = i
+  all_stimuli.append(df)
+all_stimuli = pd.concat(all_stimuli)
+
+
+# In[13]:
+
+
+all_stimuli[['group', 'sentence', 'verb', 'construction']].to_csv("templated_stimuli.csv", index=False)
 
