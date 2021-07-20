@@ -21,6 +21,7 @@ import random
 import math
 import pickle
 import sklearn.decomposition
+from sentence_transformers import SentenceTransformer
 
 import src.sent_encoder
 
@@ -37,7 +38,7 @@ pd.options.display.max_rows = 100
 df = pd.read_csv("../data/bencini-goldberg.csv")
 
 
-# In[3]:
+# In[ ]:
 
 
 enc = src.sent_encoder.SentEncoder()
@@ -46,33 +47,47 @@ enc = src.sent_encoder.SentEncoder()
 # In[4]:
 
 
-sent_vecs = enc.sentence_vecs(df.sentence.tolist())
+# Alternatively, use S-BERT. Make the sentence vectors have the same shape as our
+# SentEncoder but as a 1-layer model.
+sbert = SentenceTransformer('paraphrase-mpnet-base-v2')
+def sbert_encode(sentences):
+  sbert_vecs = sbert.encode(sentences)
+  return [vecs[np.newaxis, :] for vecs in list(sbert_vecs)]
 
-
-# ## PCA plot (dim=2)
 
 # In[5]:
 
 
+sent_vecs = enc.sentence_vecs(df.sentence.tolist())
+#sent_vecs = sbert_encode(df.sentence.tolist())
+
+num_layers = sent_vecs[0].shape[0]
+
+
+# ## PCA plot (dim=2)
+
+# In[6]:
+
+
 layer = 11
-pca_model = sklearn.decomposition.PCA(n_components=2)
+pca_model = sklearn.decomposition.PCA(n_components=2, whiten=True)
 pca_vecs = pca_model.fit_transform(np.array(sent_vecs)[:, layer])
 
 
-# In[6]:
+# In[7]:
 
 
 pca_vecs.shape
 
 
-# In[7]:
+# In[8]:
 
 
 df['PC1'] = pca_vecs[:, 0]
 df['PC2'] = pca_vecs[:, 1]
 
 
-# In[8]:
+# In[9]:
 
 
 sns.set(rc={'figure.figsize':(8, 8)})
@@ -81,11 +96,11 @@ sns.set_style('white')
 g = sns.scatterplot(x=df.PC1, y=df.PC2)
 for _, row in df.iterrows():
   label_text = f"{row.sentence}\n{row.verb}, {row.construction}"
-  g.text(row['PC1'] + 2, row['PC2'] - 1, label_text)
+  g.text(row['PC1'] + 0.06, row['PC2'] - 0.05, label_text)
 plt.show()
 
 
-# In[9]:
+# In[10]:
 
 
 matplotlib.rc_file_defaults()
@@ -96,7 +111,7 @@ plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
 plt.show()
 
 
-# In[10]:
+# In[11]:
 
 
 matplotlib.rc_file_defaults()
@@ -109,7 +124,7 @@ plt.show()
 
 # ## Compute mean pairwise distances
 
-# In[11]:
+# In[12]:
 
 
 def verb_cxn_mean_distance(df, sent_vecs, layer):
@@ -125,11 +140,11 @@ def verb_cxn_mean_distance(df, sent_vecs, layer):
   return np.mean(verb_distances), np.mean(cxn_distances)
 
 
-# In[12]:
+# In[13]:
 
 
 layer_results = []
-for layer in range(13):
+for layer in range(num_layers):
   verb_distance, cxn_distance = verb_cxn_mean_distance(df, sent_vecs, layer)
   layer_results.append({
     "layer": layer,
@@ -139,7 +154,7 @@ for layer in range(13):
 layer_results = pd.DataFrame(layer_results)
 
 
-# In[13]:
+# In[14]:
 
 
 sns.set(rc={'figure.figsize':(4, 3)})
@@ -150,21 +165,22 @@ plt.show()
 
 # ## Repeat with lots of generated stimuli sets
 
-# In[17]:
+# In[15]:
 
 
 templated_df = pd.read_csv("../data/bencini-goldberg-templated.csv")
 
 
-# In[15]:
+# In[16]:
 
 
 results = []
 for group in range(len(templated_df) // 16):
   df = templated_df[templated_df.group == group]
   sent_vecs = enc.sentence_vecs(df.sentence.tolist())
+  #sent_vecs = sbert_encode(df.sentence.tolist())
   
-  for layer in range(13):
+  for layer in range(num_layers):
     verb_distance, cxn_distance = verb_cxn_mean_distance(df, sent_vecs, layer)
     results.append({
       "group": group,
@@ -176,7 +192,7 @@ for group in range(len(templated_df) // 16):
 results = pd.DataFrame(results)
 
 
-# In[16]:
+# In[17]:
 
 
 sns.set_style("white")
