@@ -6,11 +6,22 @@ EPS = 1e-9
 
 class TestSentEncoder(unittest.TestCase):
 
-  def test_roberta(self):
-    encoder = src.sent_encoder.SentEncoder(model_name='roberta-base')
-    sents = ['Good morning', 'You are drunk']
-    all_tokens, all_vecs = encoder.contextual_token_vecs(sents)
+  @classmethod
+  def setUpClass(cls):
+    cls.sents = ["Good morning", "You are drunk"]
+    cls.encoder = src.sent_encoder.SentEncoder(model_name='roberta-base')
+
+  def test_contextual_token_vecs(self):
+    all_tokens, all_vecs = self.encoder.contextual_token_vecs(self.sents)
 
     assert len(all_vecs) == 2
     assert all_vecs[0].shape == (2, 13, 768)
     assert all_vecs[1].shape == (3, 13, 768)
+
+
+  def test_sentence_vecs(self):
+    sent_vecs = self.encoder.sentence_vecs(self.sents)
+
+    assert len(sent_vecs) == 2
+    assert sent_vecs[0].shape == (13, 768)
+    assert sent_vecs[1].shape == (13, 768)

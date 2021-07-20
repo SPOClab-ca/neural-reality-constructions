@@ -1,0 +1,1601 @@
+group,sentence,verb,construction
+0,Bill threw the box.,threw,transitive
+0,Frank pulled the ball.,pulled,transitive
+0,Jack tore the wall.,tore,transitive
+0,Steve hit the fridge.,hit,transitive
+0,Adam threw George the laptop.,threw,ditransitive
+0,Eric pulled Paul the door.,pulled,ditransitive
+0,Harry tore Thomas the tree.,tore,ditransitive
+0,John hit Henry the door.,hit,ditransitive
+0,Tom threw the window off the bridge.,threw,caused-motion
+0,Sam pulled the tree onto the elevator.,pulled,caused-motion
+0,David tore the bread into the plane.,tore,caused-motion
+0,Andrew hit the wall into the net.,hit,caused-motion
+0,Mike threw the book open.,threw,resultative
+0,James pulled the window open.,pulled,resultative
+0,Michael tore the laptop apart.,tore,resultative
+0,Bob hit the window open.,hit,resultative
+1,Eric hit the fridge.,hit,transitive
+1,John pushed the fridge.,pushed,transitive
+1,Jack threw the book.,threw,transitive
+1,Adam punched the door.,punched,transitive
+1,Andrew hit Sam the wall.,hit,ditransitive
+1,James pushed George the door.,pushed,ditransitive
+1,Paul threw Frank the box.,threw,ditransitive
+1,Bill punched Mike the book.,punched,ditransitive
+1,Tom hit the door through the air.,hit,caused-motion
+1,Michael pushed the laptop to the airport.,pushed,caused-motion
+1,Thomas threw the laptop through the hole.,threw,caused-motion
+1,David punched the wall onto the elevator.,punched,caused-motion
+1,Harry hit the window open.,hit,resultative
+1,Steve pushed the window open.,pushed,resultative
+1,Bob threw the window open.,threw,resultative
+1,Henry punched the table apart.,punched,resultative
+2,Eric sliced the book.,sliced,transitive
+2,Bob cut the ball.,cut,transitive
+2,Harry threw the window.,threw,transitive
+2,Sam tore the wall.,tore,transitive
+2,John sliced Andrew the box.,sliced,ditransitive
+2,Paul cut Michael the bread.,cut,ditransitive
+2,George threw Frank the laptop.,threw,ditransitive
+2,Bill tore Thomas the bread.,tore,ditransitive
+2,Henry sliced the ball onto the roof.,sliced,caused-motion
+2,Adam cut the box into the house.,cut,caused-motion
+2,James threw the box to the hospital.,threw,caused-motion
+2,Tom tore the tree through the air.,tore,caused-motion
+2,Mike sliced the bread apart.,sliced,resultative
+2,Steve cut the tree down.,cut,resultative
+2,Jack threw the book open.,threw,resultative
+2,David tore the laptop apart.,tore,resultative
+3,Sam hit the door.,hit,transitive
+3,Steve got the door.,got,transitive
+3,Bob kicked the door.,kicked,transitive
+3,Bill sliced the bread.,sliced,transitive
+3,David hit Eric the window.,hit,ditransitive
+3,James got Jack the ball.,got,ditransitive
+3,Adam kicked Paul the box.,kicked,ditransitive
+3,George sliced Mike the ball.,sliced,ditransitive
+3,Frank hit the wall over the fence.,hit,caused-motion
+3,Tom got the fridge into the water.,got,caused-motion
+3,Thomas kicked the ball onto the elevator.,kicked,caused-motion
+3,John sliced the box to the beach.,sliced,caused-motion
+3,Henry hit the fridge open.,hit,resultative
+3,Andrew got the book closed.,got,resultative
+3,Harry kicked the wall down.,kicked,resultative
+3,Michael sliced the book apart.,sliced,resultative
+4,James pulled the ball.,pulled,transitive
+4,Andrew tore the bread.,tore,transitive
+4,Michael sliced the box.,sliced,transitive
+4,Frank hit the fridge.,hit,transitive
+4,Eric pulled Thomas the door.,pulled,ditransitive
+4,Bill tore David the tree.,tore,ditransitive
+4,Bob sliced Paul the book.,sliced,ditransitive
+4,Sam hit Tom the wall.,hit,ditransitive
+4,Adam pulled the tree to the beach.,pulled,caused-motion
+4,Mike tore the wall into the plane.,tore,caused-motion
+4,George sliced the ball through the forest.,sliced,caused-motion
+4,John hit the window onto the roof.,hit,caused-motion
+4,Jack pulled the window open.,pulled,resultative
+4,Henry tore the laptop apart.,tore,resultative
+4,Steve sliced the bread apart.,sliced,resultative
+4,Harry hit the door open.,hit,resultative
+5,Adam pulled the ball.,pulled,transitive
+5,James kicked the box.,kicked,transitive
+5,Tom punched the wall.,punched,transitive
+5,John got the fridge.,got,transitive
+5,Thomas pulled Jack the window.,pulled,ditransitive
+5,Michael kicked Harry the ball.,kicked,ditransitive
+5,Mike punched Henry the book.,punched,ditransitive
+5,Steve got Eric the ball.,got,ditransitive
+5,George pulled the tree onto the elevator.,pulled,caused-motion
+5,Bob kicked the door over the balcony.,kicked,caused-motion
+5,Paul punched the table onto the bed.,punched,caused-motion
+5,Bill got the door through the air.,got,caused-motion
+5,David pulled the door open.,pulled,resultative
+5,Andrew kicked the wall down.,kicked,resultative
+5,Frank punched the door shut.,punched,resultative
+5,Sam got the book closed.,got,resultative
+6,George threw the laptop.,threw,transitive
+6,Paul pulled the tree.,pulled,transitive
+6,Eric punched the book.,punched,transitive
+6,Frank kicked the wall.,kicked,transitive
+6,Sam threw Bill the book.,threw,ditransitive
+6,Jack pulled James the ball.,pulled,ditransitive
+6,Tom punched Adam the door.,punched,ditransitive
+6,Bob kicked Andrew the ball.,kicked,ditransitive
+6,Harry threw the box onto the elevator.,threw,caused-motion
+6,David pulled the door to the beach.,pulled,caused-motion
+6,Michael punched the table through the forest.,punched,caused-motion
+6,Steve kicked the box through the hole.,kicked,caused-motion
+6,Mike threw the window open.,threw,resultative
+6,Henry pulled the window open.,pulled,resultative
+6,Thomas punched the wall down.,punched,resultative
+6,John kicked the door open.,kicked,resultative
+7,Michael tore the tree.,tore,transitive
+7,Thomas kicked the wall.,kicked,transitive
+7,Bob sliced the bread.,sliced,transitive
+7,Eric pushed the door.,pushed,transitive
+7,Frank tore James the wall.,tore,ditransitive
+7,Henry kicked Paul the box.,kicked,ditransitive
+7,David sliced Tom the ball.,sliced,ditransitive
+7,Bill pushed Adam the window.,pushed,ditransitive
+7,Mike tore the laptop to the hospital.,tore,caused-motion
+7,Harry kicked the ball through the air.,kicked,caused-motion
+7,Steve sliced the book off the bus.,sliced,caused-motion
+7,Jack pushed the laptop onto the roof.,pushed,caused-motion
+7,Andrew tore the bread apart.,tore,resultative
+7,George kicked the door open.,kicked,resultative
+7,Sam sliced the box apart.,sliced,resultative
+7,John pushed the fridge open.,pushed,resultative
+8,Thomas threw the box.,threw,transitive
+8,John cut the tree.,cut,transitive
+8,Mike kicked the door.,kicked,transitive
+8,Harry tore the laptop.,tore,transitive
+8,Henry threw Sam the laptop.,threw,ditransitive
+8,Andrew cut Jack the box.,cut,ditransitive
+8,George kicked James the box.,kicked,ditransitive
+8,Bill tore Frank the bread.,tore,ditransitive
+8,Adam threw the book into the house.,threw,caused-motion
+8,Eric cut the ball onto the bed.,cut,caused-motion
+8,Tom kicked the ball off the bus.,kicked,caused-motion
+8,Steve tore the tree over the balcony.,tore,caused-motion
+8,Paul threw the window open.,threw,resultative
+8,Bob cut the bread apart.,cut,resultative
+8,Michael kicked the wall down.,kicked,resultative
+8,David tore the wall down.,tore,resultative
+9,George threw the laptop.,threw,transitive
+9,Mike sliced the ball.,sliced,transitive
+9,Adam punched the table.,punched,transitive
+9,James kicked the wall.,kicked,transitive
+9,John threw Tom the box.,threw,ditransitive
+9,Bill sliced Henry the book.,sliced,ditransitive
+9,Eric punched Paul the wall.,punched,ditransitive
+9,David kicked Harry the ball.,kicked,ditransitive
+9,Michael threw the window to the hospital.,threw,caused-motion
+9,Bob sliced the box over the fence.,sliced,caused-motion
+9,Frank punched the door into the house.,punched,caused-motion
+9,Steve kicked the door onto the elevator.,kicked,caused-motion
+9,Sam threw the book open.,threw,resultative
+9,Andrew sliced the bread apart.,sliced,resultative
+9,Jack punched the book apart.,punched,resultative
+9,Thomas kicked the box apart.,kicked,resultative
+10,Harry sliced the bread.,sliced,transitive
+10,Thomas kicked the box.,kicked,transitive
+10,George cut the ball.,cut,transitive
+10,Tom got the book.,got,transitive
+10,Henry sliced Eric the box.,sliced,ditransitive
+10,Mike kicked Frank the ball.,kicked,ditransitive
+10,Adam cut Paul the tree.,cut,ditransitive
+10,Andrew got Steve the door.,got,ditransitive
+10,Sam sliced the ball onto the bed.,sliced,caused-motion
+10,Michael kicked the wall into the house.,kicked,caused-motion
+10,Bill cut the box into the water.,cut,caused-motion
+10,Jack got the fridge onto the elevator.,got,caused-motion
+10,John sliced the book apart.,sliced,resultative
+10,James kicked the door open.,kicked,resultative
+10,Bob cut the bread apart.,cut,resultative
+10,David got the ball stuck.,got,resultative
+11,Adam pulled the ball.,pulled,transitive
+11,Eric got the ball.,got,transitive
+11,David pushed the window.,pushed,transitive
+11,Sam punched the door.,punched,transitive
+11,Steve pulled George the window.,pulled,ditransitive
+11,Michael got Andrew the book.,got,ditransitive
+11,Thomas pushed John the laptop.,pushed,ditransitive
+11,Bill punched Tom the wall.,punched,ditransitive
+11,Jack pulled the door to the beach.,pulled,caused-motion
+11,Frank got the fridge over the fence.,got,caused-motion
+11,Henry pushed the door through the forest.,pushed,caused-motion
+11,Mike punched the table onto the bed.,punched,caused-motion
+11,James pulled the tree down.,pulled,resultative
+11,Paul got the door open.,got,resultative
+11,Harry pushed the fridge open.,pushed,resultative
+11,Bob punched the book apart.,punched,resultative
+12,Sam kicked the ball.,kicked,transitive
+12,Thomas got the door.,got,transitive
+12,James cut the box.,cut,transitive
+12,John hit the fridge.,hit,transitive
+12,Frank kicked Paul the door.,kicked,ditransitive
+12,Andrew got Michael the ball.,got,ditransitive
+12,Jack cut Harry the ball.,cut,ditransitive
+12,Bill hit George the wall.,hit,ditransitive
+12,Henry kicked the wall through the hole.,kicked,caused-motion
+12,Adam got the fridge through the forest.,got,caused-motion
+12,Eric cut the bread to the airport.,cut,caused-motion
+12,David hit the door into the house.,hit,caused-motion
+12,Mike kicked the box apart.,kicked,resultative
+12,Bob got the book closed.,got,resultative
+12,Tom cut the tree down.,cut,resultative
+12,Steve hit the window open.,hit,resultative
+13,Adam pulled the window.,pulled,transitive
+13,Henry sliced the book.,sliced,transitive
+13,Michael punched the door.,punched,transitive
+13,Mike kicked the box.,kicked,transitive
+13,Steve pulled George the ball.,pulled,ditransitive
+13,Andrew sliced Sam the bread.,sliced,ditransitive
+13,John punched Bob the book.,punched,ditransitive
+13,Thomas kicked Tom the wall.,kicked,ditransitive
+13,Eric pulled the tree onto the bed.,pulled,caused-motion
+13,Paul sliced the ball to the airport.,sliced,caused-motion
+13,David punched the wall off the bridge.,punched,caused-motion
+13,Frank kicked the door onto the roof.,kicked,caused-motion
+13,James pulled the door open.,pulled,resultative
+13,Harry sliced the box apart.,sliced,resultative
+13,Bill punched the table apart.,punched,resultative
+13,Jack kicked the ball free.,kicked,resultative
+14,Bill pushed the door.,pushed,transitive
+14,John hit the fridge.,hit,transitive
+14,David pulled the door.,pulled,transitive
+14,Mike threw the laptop.,threw,transitive
+14,Jack pushed George the fridge.,pushed,ditransitive
+14,James hit Paul the wall.,hit,ditransitive
+14,Tom pulled Thomas the window.,pulled,ditransitive
+14,Harry threw Frank the book.,threw,ditransitive
+14,Bob pushed the laptop into the net.,pushed,caused-motion
+14,Sam hit the window through the forest.,hit,caused-motion
+14,Andrew pulled the tree through the air.,pulled,caused-motion
+14,Henry threw the box into the water.,threw,caused-motion
+14,Michael pushed the window open.,pushed,resultative
+14,Steve hit the door open.,hit,resultative
+14,Adam pulled the ball free.,pulled,resultative
+14,Eric threw the window open.,threw,resultative
+15,John pulled the door.,pulled,transitive
+15,George sliced the ball.,sliced,transitive
+15,Bob cut the ball.,cut,transitive
+15,Frank hit the window.,hit,transitive
+15,Michael pulled Jack the ball.,pulled,ditransitive
+15,Adam sliced Steve the bread.,sliced,ditransitive
+15,Henry cut Thomas the bread.,cut,ditransitive
+15,Sam hit Harry the wall.,hit,ditransitive
+15,Eric pulled the tree into the house.,pulled,caused-motion
+15,David sliced the box onto the roof.,sliced,caused-motion
+15,Tom cut the tree into the water.,cut,caused-motion
+15,Mike hit the door into the plane.,hit,caused-motion
+15,Bill pulled the window open.,pulled,resultative
+15,Andrew sliced the book apart.,sliced,resultative
+15,Paul cut the box open.,cut,resultative
+15,James hit the fridge open.,hit,resultative
+16,Steve punched the table.,punched,transitive
+16,Paul cut the box.,cut,transitive
+16,Harry sliced the ball.,sliced,transitive
+16,Jack pulled the door.,pulled,transitive
+16,Michael punched Andrew the wall.,punched,ditransitive
+16,Bill cut John the bread.,cut,ditransitive
+16,Bob sliced George the box.,sliced,ditransitive
+16,Sam pulled Tom the tree.,pulled,ditransitive
+16,Mike punched the door to the hospital.,punched,caused-motion
+16,Thomas cut the ball off the bridge.,cut,caused-motion
+16,Frank sliced the bread onto the bed.,sliced,caused-motion
+16,David pulled the ball through the hole.,pulled,caused-motion
+16,Eric punched the book apart.,punched,resultative
+16,Henry cut the tree down.,cut,resultative
+16,James sliced the book apart.,sliced,resultative
+16,Adam pulled the window open.,pulled,resultative
+17,James got the fridge.,got,transitive
+17,Mike cut the box.,cut,transitive
+17,Adam pushed the window.,pushed,transitive
+17,George sliced the box.,sliced,transitive
+17,Andrew got Bill the door.,got,ditransitive
+17,Eric cut Henry the bread.,cut,ditransitive
+17,Jack pushed Steve the laptop.,pushed,ditransitive
+17,Bob sliced Tom the book.,sliced,ditransitive
+17,David got the book off the bridge.,got,caused-motion
+17,Michael cut the ball into the net.,cut,caused-motion
+17,John pushed the door to the beach.,pushed,caused-motion
+17,Sam sliced the bread into the house.,sliced,caused-motion
+17,Paul got the ball stuck.,got,resultative
+17,Harry cut the tree down.,cut,resultative
+17,Frank pushed the fridge open.,pushed,resultative
+17,Thomas sliced the ball apart.,sliced,resultative
+18,David cut the bread.,cut,transitive
+18,Bob threw the window.,threw,transitive
+18,Thomas kicked the door.,kicked,transitive
+18,Jack got the book.,got,transitive
+18,Michael cut Henry the box.,cut,ditransitive
+18,Eric threw John the box.,threw,ditransitive
+18,Sam kicked Harry the ball.,kicked,ditransitive
+18,Paul got Steve the door.,got,ditransitive
+18,Frank cut the ball to the hospital.,cut,caused-motion
+18,Adam threw the laptop into the house.,threw,caused-motion
+18,James kicked the wall into the water.,kicked,caused-motion
+18,Andrew got the ball into the plane.,got,caused-motion
+18,Mike cut the tree down.,cut,resultative
+18,George threw the book open.,threw,resultative
+18,Bill kicked the box apart.,kicked,resultative
+18,Tom got the fridge open.,got,resultative
+19,Tom pushed the door.,pushed,transitive
+19,Eric got the ball.,got,transitive
+19,George cut the tree.,cut,transitive
+19,James pulled the tree.,pulled,transitive
+19,Henry pushed Steve the laptop.,pushed,ditransitive
+19,Mike got Adam the fridge.,got,ditransitive
+19,John cut Jack the bread.,cut,ditransitive
+19,Harry pulled Andrew the ball.,pulled,ditransitive
+19,Paul pushed the window through the air.,pushed,caused-motion
+19,Frank got the book into the house.,got,caused-motion
+19,Bill cut the box into the water.,cut,caused-motion
+19,Michael pulled the door to the airport.,pulled,caused-motion
+19,Bob pushed the fridge open.,pushed,resultative
+19,David got the door open.,got,resultative
+19,Sam cut the ball open.,cut,resultative
+19,Thomas pulled the window open.,pulled,resultative
+20,Michael got the book.,got,transitive
+20,Eric kicked the box.,kicked,transitive
+20,Steve tore the laptop.,tore,transitive
+20,Sam punched the book.,punched,transitive
+20,Adam got Henry the door.,got,ditransitive
+20,Thomas kicked James the ball.,kicked,ditransitive
+20,David tore George the tree.,tore,ditransitive
+20,Paul punched Tom the table.,punched,ditransitive
+20,Frank got the fridge through the air.,got,caused-motion
+20,Bill kicked the door over the fence.,kicked,caused-motion
+20,Bob tore the bread into the water.,tore,caused-motion
+20,Mike punched the door into the net.,punched,caused-motion
+20,Jack got the ball stuck.,got,resultative
+20,Andrew kicked the wall down.,kicked,resultative
+20,John tore the wall down.,tore,resultative
+20,Harry punched the wall down.,punched,resultative
+21,Frank pulled the ball.,pulled,transitive
+21,George cut the ball.,cut,transitive
+21,Sam pushed the fridge.,pushed,transitive
+21,Tom punched the wall.,punched,transitive
+21,Bob pulled Jack the window.,pulled,ditransitive
+21,James cut Steve the bread.,cut,ditransitive
+21,Bill pushed Mike the laptop.,pushed,ditransitive
+21,Eric punched John the table.,punched,ditransitive
+21,David pulled the door into the water.,pulled,caused-motion
+21,Henry cut the box onto the elevator.,cut,caused-motion
+21,Adam pushed the door off the bus.,pushed,caused-motion
+21,Harry punched the book into the house.,punched,caused-motion
+21,Michael pulled the tree down.,pulled,resultative
+21,Andrew cut the tree down.,cut,resultative
+21,Paul pushed the window open.,pushed,resultative
+21,Thomas punched the door shut.,punched,resultative
+22,Michael tore the wall.,tore,transitive
+22,Bill pulled the window.,pulled,transitive
+22,James kicked the wall.,kicked,transitive
+22,Tom pushed the door.,pushed,transitive
+22,Thomas tore Mike the tree.,tore,ditransitive
+22,Eric pulled Harry the door.,pulled,ditransitive
+22,Steve kicked Adam the box.,kicked,ditransitive
+22,Henry pushed John the fridge.,pushed,ditransitive
+22,Sam tore the bread through the forest.,tore,caused-motion
+22,Jack pulled the tree into the net.,pulled,caused-motion
+22,Andrew kicked the door to the hospital.,kicked,caused-motion
+22,Bob pushed the laptop onto the elevator.,pushed,caused-motion
+22,Frank tore the laptop apart.,tore,resultative
+22,George pulled the ball free.,pulled,resultative
+22,Paul kicked the ball free.,kicked,resultative
+22,David pushed the window open.,pushed,resultative
+23,Bob tore the laptop.,tore,transitive
+23,Bill pulled the ball.,pulled,transitive
+23,George sliced the book.,sliced,transitive
+23,David threw the laptop.,threw,transitive
+23,Adam tore Jack the bread.,tore,ditransitive
+23,John pulled Tom the window.,pulled,ditransitive
+23,Michael sliced Mike the bread.,sliced,ditransitive
+23,Thomas threw Eric the window.,threw,ditransitive
+23,Harry tore the tree into the plane.,tore,caused-motion
+23,Paul pulled the tree into the water.,pulled,caused-motion
+23,Andrew sliced the box over the balcony.,sliced,caused-motion
+23,Frank threw the box off the bus.,threw,caused-motion
+23,James tore the wall down.,tore,resultative
+23,Steve pulled the door open.,pulled,resultative
+23,Sam sliced the ball apart.,sliced,resultative
+23,Henry threw the book open.,threw,resultative
+24,Harry kicked the door.,kicked,transitive
+24,Sam tore the tree.,tore,transitive
+24,Tom sliced the book.,sliced,transitive
+24,David cut the box.,cut,transitive
+24,Michael kicked John the wall.,kicked,ditransitive
+24,George tore Jack the laptop.,tore,ditransitive
+24,Thomas sliced Andrew the box.,sliced,ditransitive
+24,Frank cut James the bread.,cut,ditransitive
+24,Steve kicked the ball to the hospital.,kicked,caused-motion
+24,Henry tore the wall into the net.,tore,caused-motion
+24,Bob sliced the bread onto the roof.,sliced,caused-motion
+24,Adam cut the ball to the beach.,cut,caused-motion
+24,Bill kicked the box apart.,kicked,resultative
+24,Mike tore the bread apart.,tore,resultative
+24,Eric sliced the ball apart.,sliced,resultative
+24,Paul cut the tree down.,cut,resultative
+25,Steve cut the tree.,cut,transitive
+25,Henry pushed the window.,pushed,transitive
+25,George kicked the ball.,kicked,transitive
+25,Thomas punched the wall.,punched,transitive
+25,David cut Harry the ball.,cut,ditransitive
+25,Tom pushed Bill the fridge.,pushed,ditransitive
+25,Andrew kicked Eric the door.,kicked,ditransitive
+25,James punched Adam the door.,punched,ditransitive
+25,John cut the bread onto the elevator.,cut,caused-motion
+25,Frank pushed the door through the forest.,pushed,caused-motion
+25,Paul kicked the box off the bus.,kicked,caused-motion
+25,Sam punched the table into the net.,punched,caused-motion
+25,Mike cut the box open.,cut,resultative
+25,Bob pushed the laptop shut.,pushed,resultative
+25,Michael kicked the wall down.,kicked,resultative
+25,Jack punched the book apart.,punched,resultative
+26,Andrew hit the wall.,hit,transitive
+26,Adam cut the bread.,cut,transitive
+26,Harry punched the book.,punched,transitive
+26,Steve pulled the ball.,pulled,transitive
+26,Sam hit Thomas the fridge.,hit,ditransitive
+26,Bill cut Frank the box.,cut,ditransitive
+26,John punched James the door.,punched,ditransitive
+26,Michael pulled Mike the tree.,pulled,ditransitive
+26,Paul hit the window to the hospital.,hit,caused-motion
+26,Jack cut the tree to the beach.,cut,caused-motion
+26,Eric punched the table to the airport.,punched,caused-motion
+26,Henry pulled the door onto the bed.,pulled,caused-motion
+26,Bob hit the door open.,hit,resultative
+26,Tom cut the ball open.,cut,resultative
+26,David punched the wall down.,punched,resultative
+26,George pulled the window open.,pulled,resultative
+27,Henry kicked the wall.,kicked,transitive
+27,Harry got the door.,got,transitive
+27,Frank tore the bread.,tore,transitive
+27,Michael sliced the ball.,sliced,transitive
+27,Andrew kicked Mike the box.,kicked,ditransitive
+27,Sam got David the ball.,got,ditransitive
+27,Eric tore Tom the wall.,tore,ditransitive
+27,Bill sliced Bob the book.,sliced,ditransitive
+27,John kicked the door onto the roof.,kicked,caused-motion
+27,George got the fridge into the water.,got,caused-motion
+27,Thomas tore the tree through the hole.,tore,caused-motion
+27,Paul sliced the box off the bus.,sliced,caused-motion
+27,Jack kicked the ball free.,kicked,resultative
+27,James got the book closed.,got,resultative
+27,Steve tore the laptop apart.,tore,resultative
+27,Adam sliced the bread apart.,sliced,resultative
+28,Michael got the fridge.,got,transitive
+28,Steve hit the fridge.,hit,transitive
+28,Andrew pulled the window.,pulled,transitive
+28,Thomas kicked the door.,kicked,transitive
+28,Frank got Sam the door.,got,ditransitive
+28,Henry hit John the window.,hit,ditransitive
+28,Tom pulled Harry the tree.,pulled,ditransitive
+28,James kicked David the ball.,kicked,ditransitive
+28,George got the ball into the water.,got,caused-motion
+28,Jack hit the door onto the roof.,hit,caused-motion
+28,Adam pulled the ball onto the elevator.,pulled,caused-motion
+28,Mike kicked the box through the air.,kicked,caused-motion
+28,Bob got the book closed.,got,resultative
+28,Eric hit the wall down.,hit,resultative
+28,Bill pulled the door open.,pulled,resultative
+28,Paul kicked the wall down.,kicked,resultative
+29,Tom kicked the box.,kicked,transitive
+29,Jack pulled the tree.,pulled,transitive
+29,Eric threw the book.,threw,transitive
+29,Andrew got the fridge.,got,transitive
+29,Paul kicked Michael the door.,kicked,ditransitive
+29,James pulled David the door.,pulled,ditransitive
+29,Frank threw Adam the box.,threw,ditransitive
+29,George got Sam the ball.,got,ditransitive
+29,John kicked the ball into the house.,kicked,caused-motion
+29,Harry pulled the window over the balcony.,pulled,caused-motion
+29,Steve threw the window onto the elevator.,threw,caused-motion
+29,Bill got the door over the fence.,got,caused-motion
+29,Thomas kicked the wall down.,kicked,resultative
+29,Bob pulled the ball free.,pulled,resultative
+29,Mike threw the laptop apart.,threw,resultative
+29,Henry got the book closed.,got,resultative
+30,Bill punched the table.,punched,transitive
+30,Steve sliced the bread.,sliced,transitive
+30,Thomas cut the bread.,cut,transitive
+30,Adam threw the laptop.,threw,transitive
+30,Sam punched Andrew the door.,punched,ditransitive
+30,James sliced Frank the ball.,sliced,ditransitive
+30,David cut Jack the tree.,cut,ditransitive
+30,Paul threw John the book.,threw,ditransitive
+30,Michael punched the book over the fence.,punched,caused-motion
+30,Henry sliced the box onto the roof.,sliced,caused-motion
+30,George cut the box through the air.,cut,caused-motion
+30,Mike threw the box onto the elevator.,threw,caused-motion
+30,Harry punched the wall down.,punched,resultative
+30,Tom sliced the book apart.,sliced,resultative
+30,Eric cut the ball open.,cut,resultative
+30,Bob threw the window open.,threw,resultative
+31,Tom punched the door.,punched,transitive
+31,Andrew pulled the door.,pulled,transitive
+31,Michael tore the laptop.,tore,transitive
+31,George got the door.,got,transitive
+31,John punched Mike the wall.,punched,ditransitive
+31,Bill pulled Bob the tree.,pulled,ditransitive
+31,Thomas tore James the tree.,tore,ditransitive
+31,Frank got David the ball.,got,ditransitive
+31,Eric punched the book through the air.,punched,caused-motion
+31,Jack pulled the ball off the bridge.,pulled,caused-motion
+31,Henry tore the bread to the beach.,tore,caused-motion
+31,Harry got the fridge through the hole.,got,caused-motion
+31,Sam punched the table apart.,punched,resultative
+31,Steve pulled the window open.,pulled,resultative
+31,Paul tore the wall down.,tore,resultative
+31,Adam got the book closed.,got,resultative
+32,Andrew tore the bread.,tore,transitive
+32,David sliced the book.,sliced,transitive
+32,James cut the box.,cut,transitive
+32,Eric kicked the door.,kicked,transitive
+32,John tore Thomas the wall.,tore,ditransitive
+32,George sliced Tom the box.,sliced,ditransitive
+32,Mike cut Jack the ball.,cut,ditransitive
+32,Frank kicked Harry the wall.,kicked,ditransitive
+32,Henry tore the laptop onto the bed.,tore,caused-motion
+32,Paul sliced the ball over the fence.,sliced,caused-motion
+32,Bob cut the bread into the house.,cut,caused-motion
+32,Steve kicked the ball onto the roof.,kicked,caused-motion
+32,Bill tore the tree down.,tore,resultative
+32,Michael sliced the bread apart.,sliced,resultative
+32,Adam cut the tree down.,cut,resultative
+32,Sam kicked the box apart.,kicked,resultative
+33,George pulled the tree.,pulled,transitive
+33,Michael punched the door.,punched,transitive
+33,Henry cut the bread.,cut,transitive
+33,John got the ball.,got,transitive
+33,Eric pulled Harry the ball.,pulled,ditransitive
+33,James punched Bob the wall.,punched,ditransitive
+33,Steve cut Adam the box.,cut,ditransitive
+33,Tom got Paul the book.,got,ditransitive
+33,Bill pulled the door into the house.,pulled,caused-motion
+33,Sam punched the table to the airport.,punched,caused-motion
+33,Frank cut the ball through the hole.,cut,caused-motion
+33,Thomas got the fridge over the fence.,got,caused-motion
+33,Andrew pulled the window open.,pulled,resultative
+33,Jack punched the book apart.,punched,resultative
+33,Mike cut the tree down.,cut,resultative
+33,David got the door open.,got,resultative
+34,Harry sliced the book.,sliced,transitive
+34,Frank tore the bread.,tore,transitive
+34,Mike punched the wall.,punched,transitive
+34,Paul pushed the fridge.,pushed,transitive
+34,David sliced Eric the box.,sliced,ditransitive
+34,Sam tore Tom the laptop.,tore,ditransitive
+34,Henry punched Thomas the book.,punched,ditransitive
+34,Adam pushed Michael the laptop.,pushed,ditransitive
+34,Andrew sliced the ball to the airport.,sliced,caused-motion
+34,Steve tore the wall into the plane.,tore,caused-motion
+34,Bill punched the table over the balcony.,punched,caused-motion
+34,James pushed the window into the net.,pushed,caused-motion
+34,Bob sliced the bread apart.,sliced,resultative
+34,George tore the tree down.,tore,resultative
+34,John punched the door shut.,punched,resultative
+34,Jack pushed the door shut.,pushed,resultative
+35,Steve tore the wall.,tore,transitive
+35,Andrew punched the table.,punched,transitive
+35,Bob hit the fridge.,hit,transitive
+35,Mike pulled the tree.,pulled,transitive
+35,Michael tore Eric the bread.,tore,ditransitive
+35,James punched Tom the book.,punched,ditransitive
+35,Frank hit John the door.,hit,ditransitive
+35,Paul pulled David the window.,pulled,ditransitive
+35,Jack tore the laptop into the house.,tore,caused-motion
+35,Henry punched the wall through the hole.,punched,caused-motion
+35,Sam hit the window through the air.,hit,caused-motion
+35,George pulled the ball off the bridge.,pulled,caused-motion
+35,Bill tore the tree down.,tore,resultative
+35,Adam punched the door shut.,punched,resultative
+35,Thomas hit the wall down.,hit,resultative
+35,Harry pulled the door open.,pulled,resultative
+36,Henry pulled the tree.,pulled,transitive
+36,Frank cut the bread.,cut,transitive
+36,Sam threw the book.,threw,transitive
+36,Bob punched the book.,punched,transitive
+36,George pulled Eric the window.,pulled,ditransitive
+36,Thomas cut Paul the tree.,cut,ditransitive
+36,James threw Andrew the laptop.,threw,ditransitive
+36,John punched Tom the door.,punched,ditransitive
+36,Jack pulled the door onto the roof.,pulled,caused-motion
+36,David cut the ball into the net.,cut,caused-motion
+36,Steve threw the window to the beach.,threw,caused-motion
+36,Adam punched the wall through the forest.,punched,caused-motion
+36,Mike pulled the ball free.,pulled,resultative
+36,Michael cut the box open.,cut,resultative
+36,Bill threw the box open.,threw,resultative
+36,Harry punched the table apart.,punched,resultative
+37,Harry kicked the ball.,kicked,transitive
+37,Michael hit the wall.,hit,transitive
+37,Paul sliced the bread.,sliced,transitive
+37,Bill threw the window.,threw,transitive
+37,Jack kicked Sam the door.,kicked,ditransitive
+37,Eric hit Tom the fridge.,hit,ditransitive
+37,George sliced Bob the book.,sliced,ditransitive
+37,David threw Mike the book.,threw,ditransitive
+37,Andrew kicked the box onto the roof.,kicked,caused-motion
+37,Henry hit the door off the bridge.,hit,caused-motion
+37,John sliced the ball into the house.,sliced,caused-motion
+37,Adam threw the box through the forest.,threw,caused-motion
+37,Steve kicked the wall down.,kicked,resultative
+37,Frank hit the window open.,hit,resultative
+37,James sliced the box apart.,sliced,resultative
+37,Thomas threw the laptop apart.,threw,resultative
+38,Jack pulled the tree.,pulled,transitive
+38,Frank tore the tree.,tore,transitive
+38,Paul hit the door.,hit,transitive
+38,Tom cut the ball.,cut,transitive
+38,Thomas pulled David the window.,pulled,ditransitive
+38,George tore Bob the bread.,tore,ditransitive
+38,Eric hit Henry the window.,hit,ditransitive
+38,John cut James the bread.,cut,ditransitive
+38,Adam pulled the door into the house.,pulled,caused-motion
+38,Andrew tore the wall into the plane.,tore,caused-motion
+38,Bill hit the fridge onto the roof.,hit,caused-motion
+38,Mike cut the box onto the bed.,cut,caused-motion
+38,Harry pulled the ball free.,pulled,resultative
+38,Steve tore the laptop apart.,tore,resultative
+38,Sam hit the wall down.,hit,resultative
+38,Michael cut the tree down.,cut,resultative
+39,Eric got the door.,got,transitive
+39,Steve sliced the ball.,sliced,transitive
+39,Mike tore the tree.,tore,transitive
+39,Tom cut the tree.,cut,transitive
+39,Michael got David the ball.,got,ditransitive
+39,Harry sliced Adam the bread.,sliced,ditransitive
+39,Jack tore Bob the laptop.,tore,ditransitive
+39,Andrew cut John the bread.,cut,ditransitive
+39,George got the book to the beach.,got,caused-motion
+39,Bill sliced the book over the fence.,sliced,caused-motion
+39,Sam tore the bread to the airport.,tore,caused-motion
+39,Frank cut the ball into the net.,cut,caused-motion
+39,James got the fridge open.,got,resultative
+39,Paul sliced the box apart.,sliced,resultative
+39,Henry tore the wall down.,tore,resultative
+39,Thomas cut the box open.,cut,resultative
+40,Andrew threw the laptop.,threw,transitive
+40,Mike pushed the laptop.,pushed,transitive
+40,Bob cut the box.,cut,transitive
+40,John hit the wall.,hit,transitive
+40,Bill threw Henry the book.,threw,ditransitive
+40,Adam pushed Eric the door.,pushed,ditransitive
+40,Thomas cut Frank the bread.,cut,ditransitive
+40,George hit Jack the window.,hit,ditransitive
+40,Steve threw the window into the net.,threw,caused-motion
+40,David pushed the fridge through the forest.,pushed,caused-motion
+40,Tom cut the ball into the water.,cut,caused-motion
+40,Sam hit the door to the beach.,hit,caused-motion
+40,Paul threw the box open.,threw,resultative
+40,Harry pushed the window open.,pushed,resultative
+40,James cut the tree down.,cut,resultative
+40,Michael hit the fridge open.,hit,resultative
+41,Andrew hit the window.,hit,transitive
+41,Adam pulled the ball.,pulled,transitive
+41,Bob punched the wall.,punched,transitive
+41,Henry cut the ball.,cut,transitive
+41,John hit Jack the door.,hit,ditransitive
+41,Frank pulled Thomas the door.,pulled,ditransitive
+41,Tom punched Paul the book.,punched,ditransitive
+41,Mike cut George the bread.,cut,ditransitive
+41,David hit the wall into the net.,hit,caused-motion
+41,Bill pulled the window through the hole.,pulled,caused-motion
+41,Michael punched the table to the hospital.,punched,caused-motion
+41,James cut the box to the airport.,cut,caused-motion
+41,Harry hit the fridge open.,hit,resultative
+41,Steve pulled the tree down.,pulled,resultative
+41,Eric punched the door shut.,punched,resultative
+41,Sam cut the tree down.,cut,resultative
+42,Mike kicked the box.,kicked,transitive
+42,David pulled the tree.,pulled,transitive
+42,Sam cut the ball.,cut,transitive
+42,Bob threw the box.,threw,transitive
+42,Tom kicked Bill the ball.,kicked,ditransitive
+42,Thomas pulled Paul the window.,pulled,ditransitive
+42,Jack cut Frank the bread.,cut,ditransitive
+42,Andrew threw James the laptop.,threw,ditransitive
+42,Henry kicked the wall to the hospital.,kicked,caused-motion
+42,Eric pulled the ball into the house.,pulled,caused-motion
+42,Michael cut the tree off the bridge.,cut,caused-motion
+42,George threw the window into the plane.,threw,caused-motion
+42,Steve kicked the door open.,kicked,resultative
+42,Harry pulled the door open.,pulled,resultative
+42,John cut the box open.,cut,resultative
+42,Adam threw the book open.,threw,resultative
+43,Tom tore the tree.,tore,transitive
+43,Bob sliced the box.,sliced,transitive
+43,Adam kicked the door.,kicked,transitive
+43,George pulled the door.,pulled,transitive
+43,Bill tore David the bread.,tore,ditransitive
+43,Thomas sliced Steve the book.,sliced,ditransitive
+43,Michael kicked Andrew the wall.,kicked,ditransitive
+43,James pulled Henry the ball.,pulled,ditransitive
+43,Paul tore the wall onto the elevator.,tore,caused-motion
+43,Mike sliced the bread to the hospital.,sliced,caused-motion
+43,Frank kicked the box into the plane.,kicked,caused-motion
+43,Harry pulled the window into the house.,pulled,caused-motion
+43,John tore the laptop apart.,tore,resultative
+43,Sam sliced the ball apart.,sliced,resultative
+43,Eric kicked the ball free.,kicked,resultative
+43,Jack pulled the tree down.,pulled,resultative
+44,Henry sliced the ball.,sliced,transitive
+44,Adam tore the tree.,tore,transitive
+44,Tom threw the window.,threw,transitive
+44,Harry cut the tree.,cut,transitive
+44,Bill sliced John the bread.,sliced,ditransitive
+44,Jack tore James the bread.,tore,ditransitive
+44,Michael threw David the laptop.,threw,ditransitive
+44,Steve cut Eric the ball.,cut,ditransitive
+44,Paul sliced the box into the water.,sliced,caused-motion
+44,Thomas tore the laptop to the hospital.,tore,caused-motion
+44,Bob threw the box over the balcony.,threw,caused-motion
+44,George cut the bread through the air.,cut,caused-motion
+44,Andrew sliced the book apart.,sliced,resultative
+44,Mike tore the wall down.,tore,resultative
+44,Sam threw the book open.,threw,resultative
+44,Frank cut the box open.,cut,resultative
+45,Bill threw the box.,threw,transitive
+45,Tom sliced the bread.,sliced,transitive
+45,Andrew pulled the window.,pulled,transitive
+45,Mike got the ball.,got,transitive
+45,Bob threw Steve the window.,threw,ditransitive
+45,David sliced Jack the box.,sliced,ditransitive
+45,Adam pulled James the ball.,pulled,ditransitive
+45,John got George the door.,got,ditransitive
+45,Paul threw the laptop onto the roof.,threw,caused-motion
+45,Harry sliced the ball onto the elevator.,sliced,caused-motion
+45,Henry pulled the tree into the plane.,pulled,caused-motion
+45,Sam got the fridge over the balcony.,got,caused-motion
+45,Michael threw the book open.,threw,resultative
+45,Thomas sliced the book apart.,sliced,resultative
+45,Frank pulled the door open.,pulled,resultative
+45,Eric got the book closed.,got,resultative
+46,Adam sliced the bread.,sliced,transitive
+46,Bob hit the window.,hit,transitive
+46,Sam tore the bread.,tore,transitive
+46,Mike threw the window.,threw,transitive
+46,Andrew sliced Bill the box.,sliced,ditransitive
+46,Michael hit Eric the door.,hit,ditransitive
+46,James tore George the tree.,tore,ditransitive
+46,Tom threw Frank the book.,threw,ditransitive
+46,Henry sliced the book to the hospital.,sliced,caused-motion
+46,David hit the fridge to the beach.,hit,caused-motion
+46,Paul tore the laptop through the hole.,tore,caused-motion
+46,John threw the box to the airport.,threw,caused-motion
+46,Harry sliced the ball apart.,sliced,resultative
+46,Steve hit the wall down.,hit,resultative
+46,Jack tore the wall down.,tore,resultative
+46,Thomas threw the laptop apart.,threw,resultative
+47,Bob threw the book.,threw,transitive
+47,Andrew tore the laptop.,tore,transitive
+47,Thomas pushed the window.,pushed,transitive
+47,Jack pulled the door.,pulled,transitive
+47,Paul threw Mike the window.,threw,ditransitive
+47,Harry tore James the wall.,tore,ditransitive
+47,Eric pushed Bill the laptop.,pushed,ditransitive
+47,Sam pulled Henry the window.,pulled,ditransitive
+47,George threw the box into the plane.,threw,caused-motion
+47,Steve tore the tree into the net.,tore,caused-motion
+47,Adam pushed the door off the bus.,pushed,caused-motion
+47,David pulled the ball to the beach.,pulled,caused-motion
+47,John threw the laptop apart.,threw,resultative
+47,Tom tore the bread apart.,tore,resultative
+47,Frank pushed the fridge open.,pushed,resultative
+47,Michael pulled the tree down.,pulled,resultative
+48,George punched the door.,punched,transitive
+48,Paul got the ball.,got,transitive
+48,Sam threw the book.,threw,transitive
+48,James pulled the window.,pulled,transitive
+48,Adam punched Thomas the table.,punched,ditransitive
+48,Steve got John the fridge.,got,ditransitive
+48,Andrew threw Jack the box.,threw,ditransitive
+48,Mike pulled Henry the door.,pulled,ditransitive
+48,Tom punched the wall over the balcony.,punched,caused-motion
+48,Harry got the door through the forest.,got,caused-motion
+48,Eric threw the window into the water.,threw,caused-motion
+48,Michael pulled the ball through the air.,pulled,caused-motion
+48,Bob punched the book apart.,punched,resultative
+48,David got the book closed.,got,resultative
+48,Bill threw the laptop apart.,threw,resultative
+48,Frank pulled the tree down.,pulled,resultative
+49,Sam got the fridge.,got,transitive
+49,Michael pushed the fridge.,pushed,transitive
+49,Andrew threw the book.,threw,transitive
+49,Steve punched the door.,punched,transitive
+49,Mike got Eric the book.,got,ditransitive
+49,Frank pushed David the laptop.,pushed,ditransitive
+49,Bob threw John the window.,threw,ditransitive
+49,Tom punched George the table.,punched,ditransitive
+49,Jack got the door over the balcony.,got,caused-motion
+49,Bill pushed the window to the hospital.,pushed,caused-motion
+49,Harry threw the box off the bridge.,threw,caused-motion
+49,Thomas punched the book into the water.,punched,caused-motion
+49,Adam got the ball stuck.,got,resultative
+49,Paul pushed the door shut.,pushed,resultative
+49,James threw the laptop apart.,threw,resultative
+49,Henry punched the wall down.,punched,resultative
+50,James cut the tree.,cut,transitive
+50,Bob pushed the door.,pushed,transitive
+50,David sliced the book.,sliced,transitive
+50,Mike threw the box.,threw,transitive
+50,Michael cut Tom the box.,cut,ditransitive
+50,Harry pushed Bill the window.,pushed,ditransitive
+50,Jack sliced Adam the ball.,sliced,ditransitive
+50,Steve threw Henry the book.,threw,ditransitive
+50,Eric cut the ball through the air.,cut,caused-motion
+50,Sam pushed the fridge through the forest.,pushed,caused-motion
+50,John sliced the box into the plane.,sliced,caused-motion
+50,Andrew threw the laptop through the hole.,threw,caused-motion
+50,Paul cut the bread apart.,cut,resultative
+50,Thomas pushed the laptop shut.,pushed,resultative
+50,George sliced the bread apart.,sliced,resultative
+50,Frank threw the window open.,threw,resultative
+51,James tore the wall.,tore,transitive
+51,Thomas punched the table.,punched,transitive
+51,Henry pulled the window.,pulled,transitive
+51,David threw the window.,threw,transitive
+51,Michael tore Sam the laptop.,tore,ditransitive
+51,Tom punched Bill the wall.,punched,ditransitive
+51,Adam pulled Mike the door.,pulled,ditransitive
+51,Jack threw Frank the laptop.,threw,ditransitive
+51,Harry tore the tree into the net.,tore,caused-motion
+51,George punched the door over the balcony.,punched,caused-motion
+51,Paul pulled the ball into the water.,pulled,caused-motion
+51,Eric threw the book into the plane.,threw,caused-motion
+51,John tore the bread apart.,tore,resultative
+51,Bob punched the book apart.,punched,resultative
+51,Steve pulled the tree down.,pulled,resultative
+51,Andrew threw the box open.,threw,resultative
+52,Eric tore the laptop.,tore,transitive
+52,Henry sliced the ball.,sliced,transitive
+52,Paul threw the box.,threw,transitive
+52,John cut the bread.,cut,transitive
+52,Bob tore Bill the bread.,tore,ditransitive
+52,David sliced Steve the bread.,sliced,ditransitive
+52,Andrew threw Tom the window.,threw,ditransitive
+52,Mike cut Sam the ball.,cut,ditransitive
+52,James tore the tree onto the elevator.,tore,caused-motion
+52,Thomas sliced the box over the balcony.,sliced,caused-motion
+52,Adam threw the laptop onto the bed.,threw,caused-motion
+52,Harry cut the tree to the hospital.,cut,caused-motion
+52,Frank tore the wall down.,tore,resultative
+52,Jack sliced the book apart.,sliced,resultative
+52,George threw the book open.,threw,resultative
+52,Michael cut the box open.,cut,resultative
+53,Mike threw the book.,threw,transitive
+53,James pulled the window.,pulled,transitive
+53,Eric punched the door.,punched,transitive
+53,Jack hit the door.,hit,transitive
+53,Andrew threw Paul the window.,threw,ditransitive
+53,John pulled David the door.,pulled,ditransitive
+53,Tom punched Adam the wall.,punched,ditransitive
+53,Sam hit Thomas the fridge.,hit,ditransitive
+53,Henry threw the laptop into the house.,threw,caused-motion
+53,Bob pulled the ball to the airport.,pulled,caused-motion
+53,Harry punched the book into the net.,punched,caused-motion
+53,Steve hit the window into the plane.,hit,caused-motion
+53,Frank threw the box open.,threw,resultative
+53,George pulled the tree down.,pulled,resultative
+53,Michael punched the table apart.,punched,resultative
+53,Bill hit the wall down.,hit,resultative
+54,Harry threw the laptop.,threw,transitive
+54,Jack sliced the box.,sliced,transitive
+54,Michael pulled the tree.,pulled,transitive
+54,Bob kicked the door.,kicked,transitive
+54,George threw James the box.,threw,ditransitive
+54,John sliced Paul the bread.,sliced,ditransitive
+54,Adam pulled Bill the ball.,pulled,ditransitive
+54,Frank kicked Thomas the wall.,kicked,ditransitive
+54,Andrew threw the window onto the bed.,threw,caused-motion
+54,Eric sliced the ball into the plane.,sliced,caused-motion
+54,David pulled the window into the net.,pulled,caused-motion
+54,Sam kicked the ball to the beach.,kicked,caused-motion
+54,Steve threw the book open.,threw,resultative
+54,Henry sliced the book apart.,sliced,resultative
+54,Tom pulled the door open.,pulled,resultative
+54,Mike kicked the box apart.,kicked,resultative
+55,Henry pushed the fridge.,pushed,transitive
+55,Steve kicked the ball.,kicked,transitive
+55,Thomas pulled the window.,pulled,transitive
+55,Frank cut the ball.,cut,transitive
+55,Harry pushed Jack the door.,pushed,ditransitive
+55,Bill kicked Mike the door.,kicked,ditransitive
+55,Sam pulled Paul the door.,pulled,ditransitive
+55,John cut Eric the bread.,cut,ditransitive
+55,Bob pushed the laptop through the hole.,pushed,caused-motion
+55,James kicked the wall into the net.,kicked,caused-motion
+55,Adam pulled the ball onto the elevator.,pulled,caused-motion
+55,George cut the tree over the fence.,cut,caused-motion
+55,Andrew pushed the window open.,pushed,resultative
+55,Tom kicked the box apart.,kicked,resultative
+55,Michael pulled the tree down.,pulled,resultative
+55,David cut the box open.,cut,resultative
+56,Jack cut the ball.,cut,transitive
+56,Mike pushed the fridge.,pushed,transitive
+56,Tom hit the window.,hit,transitive
+56,Harry punched the wall.,punched,transitive
+56,Bill cut Henry the box.,cut,ditransitive
+56,James pushed George the laptop.,pushed,ditransitive
+56,David hit Paul the wall.,hit,ditransitive
+56,Michael punched John the book.,punched,ditransitive
+56,Frank cut the tree onto the roof.,cut,caused-motion
+56,Sam pushed the window to the beach.,pushed,caused-motion
+56,Adam hit the fridge to the airport.,hit,caused-motion
+56,Steve punched the door off the bridge.,punched,caused-motion
+56,Bob cut the bread apart.,cut,resultative
+56,Eric pushed the door shut.,pushed,resultative
+56,Thomas hit the door open.,hit,resultative
+56,Andrew punched the table apart.,punched,resultative
+57,Tom threw the window.,threw,transitive
+57,Bill hit the wall.,hit,transitive
+57,Andrew pushed the laptop.,pushed,transitive
+57,Adam pulled the ball.,pulled,transitive
+57,David threw Michael the book.,threw,ditransitive
+57,John hit Paul the fridge.,hit,ditransitive
+57,Jack pushed Henry the fridge.,pushed,ditransitive
+57,Eric pulled Mike the window.,pulled,ditransitive
+57,Frank threw the box to the hospital.,threw,caused-motion
+57,Steve hit the window into the water.,hit,caused-motion
+57,Harry pushed the window onto the elevator.,pushed,caused-motion
+57,James pulled the tree over the balcony.,pulled,caused-motion
+57,Thomas threw the laptop apart.,threw,resultative
+57,Bob hit the door open.,hit,resultative
+57,Sam pushed the door shut.,pushed,resultative
+57,George pulled the door open.,pulled,resultative
+58,Mike hit the fridge.,hit,transitive
+58,Eric tore the laptop.,tore,transitive
+58,Thomas pulled the tree.,pulled,transitive
+58,James sliced the book.,sliced,transitive
+58,John hit David the wall.,hit,ditransitive
+58,Sam tore Frank the wall.,tore,ditransitive
+58,Adam pulled Jack the door.,pulled,ditransitive
+58,Tom sliced Steve the box.,sliced,ditransitive
+58,Bill hit the window into the water.,hit,caused-motion
+58,Bob tore the tree onto the roof.,tore,caused-motion
+58,Henry pulled the window to the airport.,pulled,caused-motion
+58,Andrew sliced the bread through the air.,sliced,caused-motion
+58,Paul hit the door open.,hit,resultative
+58,Michael tore the bread apart.,tore,resultative
+58,George pulled the ball free.,pulled,resultative
+58,Harry sliced the ball apart.,sliced,resultative
+59,Harry pushed the door.,pushed,transitive
+59,Michael threw the box.,threw,transitive
+59,Jack punched the wall.,punched,transitive
+59,George hit the wall.,hit,transitive
+59,David pushed Eric the fridge.,pushed,ditransitive
+59,Frank threw Paul the book.,threw,ditransitive
+59,Tom punched Steve the table.,punched,ditransitive
+59,John hit Adam the fridge.,hit,ditransitive
+59,Sam pushed the laptop into the net.,pushed,caused-motion
+59,Andrew threw the laptop through the hole.,threw,caused-motion
+59,James punched the book off the bus.,punched,caused-motion
+59,Thomas hit the window onto the bed.,hit,caused-motion
+59,Henry pushed the window open.,pushed,resultative
+59,Bill threw the window open.,threw,resultative
+59,Bob punched the door shut.,punched,resultative
+59,Mike hit the door open.,hit,resultative
+60,Jack pushed the window.,pushed,transitive
+60,Thomas threw the laptop.,threw,transitive
+60,James hit the fridge.,hit,transitive
+60,Bob cut the ball.,cut,transitive
+60,Harry pushed Tom the door.,pushed,ditransitive
+60,Mike threw Henry the window.,threw,ditransitive
+60,Andrew hit Michael the wall.,hit,ditransitive
+60,Sam cut Paul the tree.,cut,ditransitive
+60,Bill pushed the laptop to the beach.,pushed,caused-motion
+60,Adam threw the box into the water.,threw,caused-motion
+60,Eric hit the door to the airport.,hit,caused-motion
+60,Steve cut the bread off the bridge.,cut,caused-motion
+60,David pushed the fridge open.,pushed,resultative
+60,George threw the book open.,threw,resultative
+60,Frank hit the window open.,hit,resultative
+60,John cut the box open.,cut,resultative
+61,Andrew pulled the ball.,pulled,transitive
+61,Harry hit the door.,hit,transitive
+61,Steve cut the box.,cut,transitive
+61,Bill punched the door.,punched,transitive
+61,George pulled Henry the tree.,pulled,ditransitive
+61,Jack hit David the window.,hit,ditransitive
+61,James cut Thomas the bread.,cut,ditransitive
+61,Eric punched Mike the wall.,punched,ditransitive
+61,Tom pulled the door over the balcony.,pulled,caused-motion
+61,John hit the wall to the hospital.,hit,caused-motion
+61,Michael cut the tree off the bridge.,cut,caused-motion
+61,Bob punched the table to the airport.,punched,caused-motion
+61,Paul pulled the window open.,pulled,resultative
+61,Sam hit the fridge open.,hit,resultative
+61,Adam cut the ball open.,cut,resultative
+61,Frank punched the book apart.,punched,resultative
+62,Steve cut the ball.,cut,transitive
+62,George kicked the wall.,kicked,transitive
+62,James pulled the window.,pulled,transitive
+62,Thomas got the ball.,got,transitive
+62,Michael cut David the box.,cut,ditransitive
+62,Bob kicked Tom the door.,kicked,ditransitive
+62,Adam pulled Paul the tree.,pulled,ditransitive
+62,Mike got Frank the door.,got,ditransitive
+62,Henry cut the bread into the water.,cut,caused-motion
+62,Jack kicked the ball through the forest.,kicked,caused-motion
+62,Harry pulled the door to the beach.,pulled,caused-motion
+62,Eric got the book onto the bed.,got,caused-motion
+62,Andrew cut the tree down.,cut,resultative
+62,Sam kicked the box apart.,kicked,resultative
+62,Bill pulled the ball free.,pulled,resultative
+62,John got the fridge open.,got,resultative
+63,Michael pushed the door.,pushed,transitive
+63,Tom tore the laptop.,tore,transitive
+63,Jack kicked the box.,kicked,transitive
+63,David threw the book.,threw,transitive
+63,Bob pushed James the laptop.,pushed,ditransitive
+63,Adam tore Thomas the tree.,tore,ditransitive
+63,Bill kicked Steve the ball.,kicked,ditransitive
+63,Sam threw Mike the box.,threw,ditransitive
+63,George pushed the window into the plane.,pushed,caused-motion
+63,Harry tore the bread into the house.,tore,caused-motion
+63,Frank kicked the door into the net.,kicked,caused-motion
+63,Andrew threw the window off the bus.,threw,caused-motion
+63,Eric pushed the fridge open.,pushed,resultative
+63,Paul tore the wall down.,tore,resultative
+63,Henry kicked the wall down.,kicked,resultative
+63,John threw the laptop apart.,threw,resultative
+64,Eric hit the wall.,hit,transitive
+64,Mike pulled the door.,pulled,transitive
+64,Andrew tore the laptop.,tore,transitive
+64,Steve got the ball.,got,transitive
+64,George hit Paul the door.,hit,ditransitive
+64,Harry pulled Frank the window.,pulled,ditransitive
+64,John tore Thomas the tree.,tore,ditransitive
+64,Bill got James the book.,got,ditransitive
+64,Jack hit the fridge to the hospital.,hit,caused-motion
+64,Michael pulled the tree off the bridge.,pulled,caused-motion
+64,David tore the bread through the air.,tore,caused-motion
+64,Tom got the door into the net.,got,caused-motion
+64,Sam hit the window open.,hit,resultative
+64,Henry pulled the ball free.,pulled,resultative
+64,Bob tore the wall down.,tore,resultative
+64,Adam got the fridge open.,got,resultative
+65,Eric got the book.,got,transitive
+65,Harry hit the fridge.,hit,transitive
+65,Bob pulled the ball.,pulled,transitive
+65,Steve threw the box.,threw,transitive
+65,Thomas got Henry the door.,got,ditransitive
+65,Michael hit Paul the wall.,hit,ditransitive
+65,George pulled David the window.,pulled,ditransitive
+65,Frank threw Bill the laptop.,threw,ditransitive
+65,Jack got the ball off the bridge.,got,caused-motion
+65,Sam hit the window through the forest.,hit,caused-motion
+65,Andrew pulled the tree into the house.,pulled,caused-motion
+65,James threw the book off the bus.,threw,caused-motion
+65,Tom got the fridge open.,got,resultative
+65,Mike hit the door open.,hit,resultative
+65,John pulled the door open.,pulled,resultative
+65,Adam threw the window open.,threw,resultative
+66,Andrew pulled the tree.,pulled,transitive
+66,John got the ball.,got,transitive
+66,Frank punched the book.,punched,transitive
+66,Bill tore the tree.,tore,transitive
+66,Jack pulled Steve the ball.,pulled,ditransitive
+66,George got Bob the door.,got,ditransitive
+66,Paul punched Tom the wall.,punched,ditransitive
+66,Adam tore Sam the bread.,tore,ditransitive
+66,Michael pulled the window through the hole.,pulled,caused-motion
+66,David got the book into the plane.,got,caused-motion
+66,Eric punched the table through the air.,punched,caused-motion
+66,Henry tore the wall onto the elevator.,tore,caused-motion
+66,James pulled the door open.,pulled,resultative
+66,Harry got the fridge open.,got,resultative
+66,Mike punched the door shut.,punched,resultative
+66,Thomas tore the laptop apart.,tore,resultative
+67,James pulled the door.,pulled,transitive
+67,John got the ball.,got,transitive
+67,Michael pushed the door.,pushed,transitive
+67,David hit the door.,hit,transitive
+67,Jack pulled Harry the ball.,pulled,ditransitive
+67,Mike got Andrew the fridge.,got,ditransitive
+67,Tom pushed Eric the laptop.,pushed,ditransitive
+67,Paul hit Henry the window.,hit,ditransitive
+67,Bill pulled the window onto the elevator.,pulled,caused-motion
+67,Sam got the door onto the roof.,got,caused-motion
+67,Steve pushed the fridge over the fence.,pushed,caused-motion
+67,Thomas hit the wall over the balcony.,hit,caused-motion
+67,Bob pulled the tree down.,pulled,resultative
+67,George got the book closed.,got,resultative
+67,Adam pushed the window open.,pushed,resultative
+67,Frank hit the fridge open.,hit,resultative
+68,Michael hit the fridge.,hit,transitive
+68,Harry tore the bread.,tore,transitive
+68,Steve sliced the ball.,sliced,transitive
+68,Tom cut the tree.,cut,transitive
+68,Mike hit David the door.,hit,ditransitive
+68,Eric tore Sam the tree.,tore,ditransitive
+68,Henry sliced Jack the box.,sliced,ditransitive
+68,Andrew cut Bill the ball.,cut,ditransitive
+68,Bob hit the wall into the net.,hit,caused-motion
+68,Frank tore the wall into the water.,tore,caused-motion
+68,James sliced the bread into the plane.,sliced,caused-motion
+68,George cut the box to the hospital.,cut,caused-motion
+68,Adam hit the window open.,hit,resultative
+68,John tore the laptop apart.,tore,resultative
+68,Thomas sliced the book apart.,sliced,resultative
+68,Paul cut the bread apart.,cut,resultative
+69,Frank kicked the door.,kicked,transitive
+69,Michael got the fridge.,got,transitive
+69,Harry threw the window.,threw,transitive
+69,Henry pushed the fridge.,pushed,transitive
+69,George kicked Eric the box.,kicked,ditransitive
+69,Adam got Tom the ball.,got,ditransitive
+69,Paul threw Mike the laptop.,threw,ditransitive
+69,Bill pushed Jack the window.,pushed,ditransitive
+69,John kicked the ball to the hospital.,kicked,caused-motion
+69,Thomas got the book into the plane.,got,caused-motion
+69,Steve threw the box over the fence.,threw,caused-motion
+69,David pushed the door over the balcony.,pushed,caused-motion
+69,Sam kicked the wall down.,kicked,resultative
+69,Bob got the door open.,got,resultative
+69,James threw the book open.,threw,resultative
+69,Andrew pushed the laptop shut.,pushed,resultative
+70,Bill pushed the window.,pushed,transitive
+70,Michael cut the ball.,cut,transitive
+70,Paul tore the laptop.,tore,transitive
+70,George kicked the ball.,kicked,transitive
+70,Harry pushed Thomas the door.,pushed,ditransitive
+70,Jack cut James the bread.,cut,ditransitive
+70,John tore Adam the bread.,tore,ditransitive
+70,Tom kicked Eric the wall.,kicked,ditransitive
+70,Bob pushed the fridge over the balcony.,pushed,caused-motion
+70,Henry cut the box to the beach.,cut,caused-motion
+70,Steve tore the wall onto the bed.,tore,caused-motion
+70,Sam kicked the door off the bridge.,kicked,caused-motion
+70,Andrew pushed the laptop shut.,pushed,resultative
+70,Mike cut the tree down.,cut,resultative
+70,Frank tore the tree down.,tore,resultative
+70,David kicked the box apart.,kicked,resultative
+71,Eric pushed the fridge.,pushed,transitive
+71,Steve sliced the book.,sliced,transitive
+71,Jack cut the tree.,cut,transitive
+71,David tore the tree.,tore,transitive
+71,Frank pushed Andrew the window.,pushed,ditransitive
+71,Sam sliced Tom the ball.,sliced,ditransitive
+71,Paul cut George the bread.,cut,ditransitive
+71,Henry tore Michael the bread.,tore,ditransitive
+71,John pushed the door into the water.,pushed,caused-motion
+71,Bill sliced the box into the house.,sliced,caused-motion
+71,Thomas cut the box over the fence.,cut,caused-motion
+71,Harry tore the wall to the beach.,tore,caused-motion
+71,Bob pushed the laptop shut.,pushed,resultative
+71,Mike sliced the bread apart.,sliced,resultative
+71,Adam cut the ball open.,cut,resultative
+71,James tore the laptop apart.,tore,resultative
+72,Sam kicked the wall.,kicked,transitive
+72,Bill hit the wall.,hit,transitive
+72,David got the door.,got,transitive
+72,John cut the tree.,cut,transitive
+72,Mike kicked Frank the box.,kicked,ditransitive
+72,Henry hit Steve the window.,hit,ditransitive
+72,Adam got Andrew the ball.,got,ditransitive
+72,Eric cut Jack the bread.,cut,ditransitive
+72,James kicked the ball over the balcony.,kicked,caused-motion
+72,Michael hit the fridge to the beach.,hit,caused-motion
+72,Paul got the book into the house.,got,caused-motion
+72,Bob cut the ball into the plane.,cut,caused-motion
+72,George kicked the door open.,kicked,resultative
+72,Thomas hit the door open.,hit,resultative
+72,Harry got the fridge open.,got,resultative
+72,Tom cut the box open.,cut,resultative
+73,Tom kicked the wall.,kicked,transitive
+73,Harry sliced the box.,sliced,transitive
+73,Paul cut the tree.,cut,transitive
+73,Bill threw the book.,threw,transitive
+73,Frank kicked Andrew the door.,kicked,ditransitive
+73,Thomas sliced James the ball.,sliced,ditransitive
+73,Jack cut Bob the bread.,cut,ditransitive
+73,Mike threw David the window.,threw,ditransitive
+73,Eric kicked the box over the balcony.,kicked,caused-motion
+73,John sliced the bread into the plane.,sliced,caused-motion
+73,Adam cut the box into the water.,cut,caused-motion
+73,Henry threw the laptop off the bridge.,threw,caused-motion
+73,Sam kicked the ball free.,kicked,resultative
+73,Steve sliced the book apart.,sliced,resultative
+73,George cut the ball open.,cut,resultative
+73,Michael threw the box open.,threw,resultative
+74,Adam kicked the box.,kicked,transitive
+74,Thomas tore the wall.,tore,transitive
+74,Sam got the fridge.,got,transitive
+74,Frank cut the box.,cut,transitive
+74,James kicked Bill the door.,kicked,ditransitive
+74,Henry tore Steve the bread.,tore,ditransitive
+74,John got David the book.,got,ditransitive
+74,Eric cut Mike the bread.,cut,ditransitive
+74,Paul kicked the wall off the bridge.,kicked,caused-motion
+74,Harry tore the laptop through the hole.,tore,caused-motion
+74,Bob got the ball onto the roof.,got,caused-motion
+74,George cut the tree into the plane.,cut,caused-motion
+74,Michael kicked the ball free.,kicked,resultative
+74,Andrew tore the tree down.,tore,resultative
+74,Jack got the door open.,got,resultative
+74,Tom cut the ball open.,cut,resultative
+75,Thomas punched the book.,punched,transitive
+75,Bob got the ball.,got,transitive
+75,John pushed the window.,pushed,transitive
+75,James hit the wall.,hit,transitive
+75,George punched Frank the wall.,punched,ditransitive
+75,Tom got Sam the book.,got,ditransitive
+75,David pushed Harry the door.,pushed,ditransitive
+75,Eric hit Jack the window.,hit,ditransitive
+75,Michael punched the table over the fence.,punched,caused-motion
+75,Mike got the fridge into the plane.,got,caused-motion
+75,Bill pushed the laptop to the beach.,pushed,caused-motion
+75,Henry hit the fridge off the bridge.,hit,caused-motion
+75,Andrew punched the door shut.,punched,resultative
+75,Paul got the door open.,got,resultative
+75,Steve pushed the fridge open.,pushed,resultative
+75,Adam hit the door open.,hit,resultative
+76,Bill pushed the window.,pushed,transitive
+76,Adam hit the wall.,hit,transitive
+76,Michael kicked the wall.,kicked,transitive
+76,George pulled the window.,pulled,transitive
+76,John pushed Thomas the laptop.,pushed,ditransitive
+76,Jack hit Sam the window.,hit,ditransitive
+76,James kicked Paul the door.,kicked,ditransitive
+76,Harry pulled Eric the ball.,pulled,ditransitive
+76,Frank pushed the fridge over the balcony.,pushed,caused-motion
+76,Henry hit the door off the bus.,hit,caused-motion
+76,Bob kicked the box into the house.,kicked,caused-motion
+76,Andrew pulled the door through the forest.,pulled,caused-motion
+76,Steve pushed the door shut.,pushed,resultative
+76,David hit the fridge open.,hit,resultative
+76,Mike kicked the ball free.,kicked,resultative
+76,Tom pulled the tree down.,pulled,resultative
+77,Paul tore the bread.,tore,transitive
+77,Tom punched the book.,punched,transitive
+77,Frank cut the bread.,cut,transitive
+77,Thomas pushed the laptop.,pushed,transitive
+77,James tore Michael the wall.,tore,ditransitive
+77,Andrew punched Henry the door.,punched,ditransitive
+77,George cut Jack the tree.,cut,ditransitive
+77,Steve pushed Mike the window.,pushed,ditransitive
+77,Harry tore the tree into the water.,tore,caused-motion
+77,David punched the table to the airport.,punched,caused-motion
+77,John cut the box through the forest.,cut,caused-motion
+77,Adam pushed the door into the plane.,pushed,caused-motion
+77,Bill tore the laptop apart.,tore,resultative
+77,Eric punched the wall down.,punched,resultative
+77,Bob cut the ball open.,cut,resultative
+77,Sam pushed the fridge open.,pushed,resultative
+78,James pulled the ball.,pulled,transitive
+78,Mike got the book.,got,transitive
+78,Sam hit the fridge.,hit,transitive
+78,George threw the window.,threw,transitive
+78,Thomas pulled Eric the door.,pulled,ditransitive
+78,Bill got Adam the ball.,got,ditransitive
+78,Andrew hit Michael the wall.,hit,ditransitive
+78,Harry threw Steve the book.,threw,ditransitive
+78,Jack pulled the tree over the fence.,pulled,caused-motion
+78,John got the fridge to the airport.,got,caused-motion
+78,Frank hit the window off the bus.,hit,caused-motion
+78,Henry threw the box through the air.,threw,caused-motion
+78,Paul pulled the window open.,pulled,resultative
+78,Tom got the door open.,got,resultative
+78,David hit the door open.,hit,resultative
+78,Bob threw the laptop apart.,threw,resultative
+79,John hit the wall.,hit,transitive
+79,Thomas pushed the door.,pushed,transitive
+79,Bill kicked the box.,kicked,transitive
+79,Bob threw the box.,threw,transitive
+79,Paul hit Mike the window.,hit,ditransitive
+79,Jack pushed Henry the fridge.,pushed,ditransitive
+79,Sam kicked James the wall.,kicked,ditransitive
+79,Harry threw Adam the window.,threw,ditransitive
+79,George hit the door through the hole.,hit,caused-motion
+79,Eric pushed the window through the forest.,pushed,caused-motion
+79,Frank kicked the door into the net.,kicked,caused-motion
+79,David threw the book into the house.,threw,caused-motion
+79,Michael hit the fridge open.,hit,resultative
+79,Steve pushed the laptop shut.,pushed,resultative
+79,Tom kicked the ball free.,kicked,resultative
+79,Andrew threw the laptop apart.,threw,resultative
+80,Jack got the book.,got,transitive
+80,Henry hit the fridge.,hit,transitive
+80,David cut the tree.,cut,transitive
+80,Adam threw the book.,threw,transitive
+80,Michael got Thomas the door.,got,ditransitive
+80,Paul hit Tom the wall.,hit,ditransitive
+80,John cut James the ball.,cut,ditransitive
+80,Harry threw Mike the window.,threw,ditransitive
+80,Steve got the ball to the hospital.,got,caused-motion
+80,Bill hit the window onto the elevator.,hit,caused-motion
+80,Frank cut the box onto the roof.,cut,caused-motion
+80,Andrew threw the laptop over the balcony.,threw,caused-motion
+80,Eric got the fridge open.,got,resultative
+80,Sam hit the door open.,hit,resultative
+80,Bob cut the bread apart.,cut,resultative
+80,George threw the box open.,threw,resultative
+81,Andrew kicked the wall.,kicked,transitive
+81,Paul tore the wall.,tore,transitive
+81,Henry pulled the tree.,pulled,transitive
+81,Michael hit the window.,hit,transitive
+81,Frank kicked Steve the box.,kicked,ditransitive
+81,David tore Bill the tree.,tore,ditransitive
+81,Mike pulled Jack the ball.,pulled,ditransitive
+81,Eric hit Adam the fridge.,hit,ditransitive
+81,Thomas kicked the ball onto the elevator.,kicked,caused-motion
+81,Bob tore the bread to the airport.,tore,caused-motion
+81,Tom pulled the door off the bus.,pulled,caused-motion
+81,George hit the wall through the air.,hit,caused-motion
+81,James kicked the door open.,kicked,resultative
+81,Harry tore the laptop apart.,tore,resultative
+81,Sam pulled the window open.,pulled,resultative
+81,John hit the door open.,hit,resultative
+82,Frank threw the box.,threw,transitive
+82,Mike pushed the fridge.,pushed,transitive
+82,Michael got the fridge.,got,transitive
+82,Harry tore the laptop.,tore,transitive
+82,Paul threw Jack the book.,threw,ditransitive
+82,Steve pushed Sam the laptop.,pushed,ditransitive
+82,Henry got Tom the book.,got,ditransitive
+82,Adam tore David the wall.,tore,ditransitive
+82,Bill threw the window onto the roof.,threw,caused-motion
+82,James pushed the window onto the elevator.,pushed,caused-motion
+82,John got the ball off the bridge.,got,caused-motion
+82,George tore the bread onto the bed.,tore,caused-motion
+82,Andrew threw the laptop apart.,threw,resultative
+82,Thomas pushed the door shut.,pushed,resultative
+82,Bob got the door open.,got,resultative
+82,Eric tore the tree down.,tore,resultative
+83,Michael cut the ball.,cut,transitive
+83,Harry pushed the window.,pushed,transitive
+83,Henry tore the laptop.,tore,transitive
+83,Tom hit the door.,hit,transitive
+83,Thomas cut Steve the bread.,cut,ditransitive
+83,Paul pushed Bob the door.,pushed,ditransitive
+83,Adam tore George the wall.,tore,ditransitive
+83,Bill hit Mike the wall.,hit,ditransitive
+83,Eric cut the tree through the forest.,cut,caused-motion
+83,Jack pushed the laptop onto the bed.,pushed,caused-motion
+83,James tore the bread through the hole.,tore,caused-motion
+83,Andrew hit the fridge off the bridge.,hit,caused-motion
+83,Frank cut the box open.,cut,resultative
+83,John pushed the fridge open.,pushed,resultative
+83,David tore the tree down.,tore,resultative
+83,Sam hit the window open.,hit,resultative
+84,Paul pulled the door.,pulled,transitive
+84,Jack threw the book.,threw,transitive
+84,Adam cut the ball.,cut,transitive
+84,Sam tore the bread.,tore,transitive
+84,David pulled Frank the ball.,pulled,ditransitive
+84,Henry threw Bill the box.,threw,ditransitive
+84,John cut Mike the tree.,cut,ditransitive
+84,Tom tore Andrew the tree.,tore,ditransitive
+84,Harry pulled the tree off the bus.,pulled,caused-motion
+84,Michael threw the laptop into the net.,threw,caused-motion
+84,George cut the bread to the airport.,cut,caused-motion
+84,Eric tore the wall over the balcony.,tore,caused-motion
+84,Thomas pulled the window open.,pulled,resultative
+84,Steve threw the window open.,threw,resultative
+84,James cut the box open.,cut,resultative
+84,Bob tore the laptop apart.,tore,resultative
+85,Tom tore the laptop.,tore,transitive
+85,Michael punched the door.,punched,transitive
+85,John cut the ball.,cut,transitive
+85,Andrew kicked the ball.,kicked,transitive
+85,George tore Eric the bread.,tore,ditransitive
+85,Bob punched Paul the table.,punched,ditransitive
+85,Mike cut James the tree.,cut,ditransitive
+85,Harry kicked Jack the door.,kicked,ditransitive
+85,Henry tore the tree over the fence.,tore,caused-motion
+85,Adam punched the book off the bus.,punched,caused-motion
+85,Thomas cut the box onto the roof.,cut,caused-motion
+85,Sam kicked the wall over the balcony.,kicked,caused-motion
+85,Frank tore the wall down.,tore,resultative
+85,David punched the wall down.,punched,resultative
+85,Bill cut the bread apart.,cut,resultative
+85,Steve kicked the box apart.,kicked,resultative
+86,Paul hit the door.,hit,transitive
+86,Steve cut the box.,cut,transitive
+86,Eric tore the laptop.,tore,transitive
+86,Thomas got the book.,got,transitive
+86,Henry hit Tom the window.,hit,ditransitive
+86,Jack cut David the tree.,cut,ditransitive
+86,Bob tore George the bread.,tore,ditransitive
+86,Harry got James the fridge.,got,ditransitive
+86,Adam hit the fridge onto the elevator.,hit,caused-motion
+86,John cut the ball to the hospital.,cut,caused-motion
+86,Bill tore the wall through the hole.,tore,caused-motion
+86,Andrew got the door off the bridge.,got,caused-motion
+86,Michael hit the wall down.,hit,resultative
+86,Frank cut the bread apart.,cut,resultative
+86,Sam tore the tree down.,tore,resultative
+86,Mike got the ball stuck.,got,resultative
+87,Michael sliced the book.,sliced,transitive
+87,Henry punched the wall.,punched,transitive
+87,Paul pulled the door.,pulled,transitive
+87,Jack cut the box.,cut,transitive
+87,Bill sliced Tom the box.,sliced,ditransitive
+87,Adam punched John the door.,punched,ditransitive
+87,Andrew pulled Harry the tree.,pulled,ditransitive
+87,Eric cut Sam the ball.,cut,ditransitive
+87,Steve sliced the bread off the bridge.,sliced,caused-motion
+87,Thomas punched the table onto the bed.,punched,caused-motion
+87,Mike pulled the window over the fence.,pulled,caused-motion
+87,Bob cut the tree into the water.,cut,caused-motion
+87,David sliced the ball apart.,sliced,resultative
+87,James punched the book apart.,punched,resultative
+87,Frank pulled the ball free.,pulled,resultative
+87,George cut the bread apart.,cut,resultative
+88,Michael got the fridge.,got,transitive
+88,David sliced the box.,sliced,transitive
+88,Bob tore the laptop.,tore,transitive
+88,Jack punched the book.,punched,transitive
+88,Henry got James the door.,got,ditransitive
+88,Adam sliced Mike the bread.,sliced,ditransitive
+88,George tore Tom the wall.,tore,ditransitive
+88,Bill punched Frank the door.,punched,ditransitive
+88,Eric got the book to the beach.,got,caused-motion
+88,Harry sliced the ball into the house.,sliced,caused-motion
+88,Paul tore the tree through the forest.,tore,caused-motion
+88,Thomas punched the wall through the air.,punched,caused-motion
+88,John got the ball stuck.,got,resultative
+88,Andrew sliced the book apart.,sliced,resultative
+88,Sam tore the bread apart.,tore,resultative
+88,Steve punched the table apart.,punched,resultative
+89,Bill sliced the bread.,sliced,transitive
+89,Paul pulled the window.,pulled,transitive
+89,Harry hit the window.,hit,transitive
+89,Frank kicked the box.,kicked,transitive
+89,Henry sliced Tom the ball.,sliced,ditransitive
+89,George pulled Thomas the ball.,pulled,ditransitive
+89,John hit Sam the wall.,hit,ditransitive
+89,Eric kicked James the ball.,kicked,ditransitive
+89,Bob sliced the box off the bus.,sliced,caused-motion
+89,Jack pulled the door to the airport.,pulled,caused-motion
+89,Mike hit the door over the fence.,hit,caused-motion
+89,Adam kicked the door to the beach.,kicked,caused-motion
+89,Michael sliced the book apart.,sliced,resultative
+89,David pulled the tree down.,pulled,resultative
+89,Steve hit the fridge open.,hit,resultative
+89,Andrew kicked the wall down.,kicked,resultative
+90,Paul cut the tree.,cut,transitive
+90,Steve threw the window.,threw,transitive
+90,Michael tore the wall.,tore,transitive
+90,Bob sliced the box.,sliced,transitive
+90,Thomas cut Eric the box.,cut,ditransitive
+90,Adam threw John the box.,threw,ditransitive
+90,Mike tore David the bread.,tore,ditransitive
+90,Andrew sliced James the ball.,sliced,ditransitive
+90,Harry cut the bread into the plane.,cut,caused-motion
+90,Henry threw the book into the house.,threw,caused-motion
+90,Sam tore the laptop into the water.,tore,caused-motion
+90,Jack sliced the bread through the forest.,sliced,caused-motion
+90,Bill cut the ball open.,cut,resultative
+90,George threw the laptop apart.,threw,resultative
+90,Frank tore the tree down.,tore,resultative
+90,Tom sliced the book apart.,sliced,resultative
+91,Paul tore the wall.,tore,transitive
+91,George punched the wall.,punched,transitive
+91,James cut the tree.,cut,transitive
+91,Eric pushed the laptop.,pushed,transitive
+91,Henry tore Tom the tree.,tore,ditransitive
+91,Thomas punched John the door.,punched,ditransitive
+91,Andrew cut Sam the box.,cut,ditransitive
+91,Jack pushed Harry the fridge.,pushed,ditransitive
+91,Steve tore the bread onto the roof.,tore,caused-motion
+91,Mike punched the table onto the elevator.,punched,caused-motion
+91,Bill cut the ball through the forest.,cut,caused-motion
+91,Adam pushed the window over the fence.,pushed,caused-motion
+91,Bob tore the laptop apart.,tore,resultative
+91,Frank punched the book apart.,punched,resultative
+91,Michael cut the bread apart.,cut,resultative
+91,David pushed the door shut.,pushed,resultative
+92,George cut the tree.,cut,transitive
+92,Tom hit the door.,hit,transitive
+92,Jack sliced the bread.,sliced,transitive
+92,Frank tore the laptop.,tore,transitive
+92,John cut Bill the bread.,cut,ditransitive
+92,Adam hit Eric the window.,hit,ditransitive
+92,James sliced Michael the ball.,sliced,ditransitive
+92,Henry tore David the wall.,tore,ditransitive
+92,Thomas cut the box through the forest.,cut,caused-motion
+92,Paul hit the fridge into the water.,hit,caused-motion
+92,Bob sliced the box onto the roof.,sliced,caused-motion
+92,Andrew tore the bread into the house.,tore,caused-motion
+92,Mike cut the ball open.,cut,resultative
+92,Harry hit the wall down.,hit,resultative
+92,Steve sliced the book apart.,sliced,resultative
+92,Sam tore the tree down.,tore,resultative
+93,George got the fridge.,got,transitive
+93,Henry sliced the book.,sliced,transitive
+93,Steve pushed the laptop.,pushed,transitive
+93,Sam cut the box.,cut,transitive
+93,Bill got Paul the door.,got,ditransitive
+93,Thomas sliced John the bread.,sliced,ditransitive
+93,David pushed Michael the door.,pushed,ditransitive
+93,Adam cut Jack the tree.,cut,ditransitive
+93,Eric got the book through the hole.,got,caused-motion
+93,Bob sliced the ball over the balcony.,sliced,caused-motion
+93,Frank pushed the window into the water.,pushed,caused-motion
+93,Harry cut the bread to the hospital.,cut,caused-motion
+93,Andrew got the ball stuck.,got,resultative
+93,James sliced the box apart.,sliced,resultative
+93,Mike pushed the fridge open.,pushed,resultative
+93,Tom cut the ball open.,cut,resultative
+94,Eric pulled the window.,pulled,transitive
+94,John got the door.,got,transitive
+94,Adam pushed the door.,pushed,transitive
+94,Henry kicked the ball.,kicked,transitive
+94,Harry pulled George the door.,pulled,ditransitive
+94,Paul got Bob the ball.,got,ditransitive
+94,James pushed Andrew the laptop.,pushed,ditransitive
+94,Jack kicked Michael the box.,kicked,ditransitive
+94,Steve pulled the tree to the hospital.,pulled,caused-motion
+94,Thomas got the book over the balcony.,got,caused-motion
+94,Mike pushed the window through the air.,pushed,caused-motion
+94,Tom kicked the wall onto the roof.,kicked,caused-motion
+94,Frank pulled the ball free.,pulled,resultative
+94,David got the fridge open.,got,resultative
+94,Sam pushed the fridge open.,pushed,resultative
+94,Bill kicked the door open.,kicked,resultative
+95,Thomas pushed the fridge.,pushed,transitive
+95,James tore the tree.,tore,transitive
+95,Michael kicked the wall.,kicked,transitive
+95,Bill got the book.,got,transitive
+95,Adam pushed Frank the laptop.,pushed,ditransitive
+95,Sam tore Tom the wall.,tore,ditransitive
+95,Steve kicked Harry the box.,kicked,ditransitive
+95,Andrew got Eric the fridge.,got,ditransitive
+95,George pushed the door into the net.,pushed,caused-motion
+95,David tore the laptop to the hospital.,tore,caused-motion
+95,Jack kicked the ball to the beach.,kicked,caused-motion
+95,Bob got the ball through the air.,got,caused-motion
+95,Mike pushed the window open.,pushed,resultative
+95,John tore the bread apart.,tore,resultative
+95,Paul kicked the door open.,kicked,resultative
+95,Henry got the door open.,got,resultative
+96,Thomas tore the wall.,tore,transitive
+96,Eric punched the table.,punched,transitive
+96,Jack pulled the ball.,pulled,transitive
+96,Bob kicked the door.,kicked,transitive
+96,Paul tore Sam the laptop.,tore,ditransitive
+96,Bill punched Steve the book.,punched,ditransitive
+96,Tom pulled Frank the door.,pulled,ditransitive
+96,Andrew kicked David the ball.,kicked,ditransitive
+96,James tore the bread onto the elevator.,tore,caused-motion
+96,Henry punched the door through the forest.,punched,caused-motion
+96,John pulled the tree to the airport.,pulled,caused-motion
+96,Harry kicked the wall into the net.,kicked,caused-motion
+96,Adam tore the tree down.,tore,resultative
+96,Mike punched the wall down.,punched,resultative
+96,George pulled the window open.,pulled,resultative
+96,Michael kicked the box apart.,kicked,resultative
+97,Mike punched the door.,punched,transitive
+97,David tore the wall.,tore,transitive
+97,Steve got the door.,got,transitive
+97,Paul cut the ball.,cut,transitive
+97,Sam punched Jack the book.,punched,ditransitive
+97,George tore Harry the bread.,tore,ditransitive
+97,Henry got Frank the fridge.,got,ditransitive
+97,Eric cut James the tree.,cut,ditransitive
+97,Tom punched the wall onto the elevator.,punched,caused-motion
+97,Adam tore the tree onto the roof.,tore,caused-motion
+97,Andrew got the book over the balcony.,got,caused-motion
+97,Thomas cut the bread through the hole.,cut,caused-motion
+97,Michael punched the table apart.,punched,resultative
+97,Bill tore the laptop apart.,tore,resultative
+97,Bob got the ball stuck.,got,resultative
+97,John cut the box open.,cut,resultative
+98,Eric sliced the ball.,sliced,transitive
+98,Jack punched the wall.,punched,transitive
+98,Bill cut the ball.,cut,transitive
+98,Frank pushed the laptop.,pushed,transitive
+98,Sam sliced Paul the bread.,sliced,ditransitive
+98,Tom punched Bob the book.,punched,ditransitive
+98,George cut Henry the box.,cut,ditransitive
+98,Michael pushed Mike the door.,pushed,ditransitive
+98,John sliced the box onto the roof.,sliced,caused-motion
+98,Thomas punched the door over the fence.,punched,caused-motion
+98,David cut the bread into the net.,cut,caused-motion
+98,James pushed the window through the air.,pushed,caused-motion
+98,Steve sliced the book apart.,sliced,resultative
+98,Andrew punched the table apart.,punched,resultative
+98,Harry cut the tree down.,cut,resultative
+98,Adam pushed the fridge open.,pushed,resultative
+99,David got the door.,got,transitive
+99,Eric pulled the tree.,pulled,transitive
+99,Henry sliced the book.,sliced,transitive
+99,Bob kicked the wall.,kicked,transitive
+99,Harry got Jack the fridge.,got,ditransitive
+99,Mike pulled Tom the ball.,pulled,ditransitive
+99,George sliced Adam the ball.,sliced,ditransitive
+99,James kicked John the door.,kicked,ditransitive
+99,Steve got the ball over the fence.,got,caused-motion
+99,Thomas pulled the window to the airport.,pulled,caused-motion
+99,Michael sliced the bread over the balcony.,sliced,caused-motion
+99,Bill kicked the box into the net.,kicked,caused-motion
+99,Frank got the book closed.,got,resultative
+99,Andrew pulled the door open.,pulled,resultative
+99,Sam sliced the box apart.,sliced,resultative
+99,Paul kicked the ball free.,kicked,resultative

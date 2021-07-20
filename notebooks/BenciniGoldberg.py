@@ -46,26 +46,12 @@ enc = src.sent_encoder.SentEncoder()
 # In[4]:
 
 
-all_tokens, all_vecs = enc.contextual_token_vecs(df.sentence.tolist())
-
-
-# In[5]:
-
-
-sent_vecs = [tok_vecs.sum(axis=0) for tok_vecs in all_vecs]
-
-
-# In[6]:
-
-
-# Should be 16 (sentences) x 13 (layers) x 768
-print(len(sent_vecs))
-print(sent_vecs[0].shape)
+sent_vecs = enc.sentence_vecs(df.sentence.tolist())
 
 
 # ## PCA plot (dim=2)
 
-# In[7]:
+# In[5]:
 
 
 layer = 11
@@ -73,20 +59,20 @@ pca_model = sklearn.decomposition.PCA(n_components=2)
 pca_vecs = pca_model.fit_transform(np.array(sent_vecs)[:, layer])
 
 
-# In[8]:
+# In[6]:
 
 
 pca_vecs.shape
 
 
-# In[9]:
+# In[7]:
 
 
 df['PC1'] = pca_vecs[:, 0]
 df['PC2'] = pca_vecs[:, 1]
 
 
-# In[10]:
+# In[8]:
 
 
 sns.set(rc={'figure.figsize':(8, 8)})
@@ -99,7 +85,7 @@ for _, row in df.iterrows():
 plt.show()
 
 
-# In[11]:
+# In[9]:
 
 
 matplotlib.rc_file_defaults()
@@ -110,7 +96,7 @@ plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
 plt.show()
 
 
-# In[12]:
+# In[10]:
 
 
 matplotlib.rc_file_defaults()
@@ -123,7 +109,7 @@ plt.show()
 
 # ## Compute mean pairwise distances
 
-# In[13]:
+# In[11]:
 
 
 def verb_cxn_mean_distance(df, sent_vecs, layer):
@@ -139,7 +125,7 @@ def verb_cxn_mean_distance(df, sent_vecs, layer):
   return np.mean(verb_distances), np.mean(cxn_distances)
 
 
-# In[14]:
+# In[12]:
 
 
 layer_results = []
@@ -153,7 +139,7 @@ for layer in range(13):
 layer_results = pd.DataFrame(layer_results)
 
 
-# In[15]:
+# In[13]:
 
 
 sns.set(rc={'figure.figsize':(4, 3)})
@@ -164,20 +150,19 @@ plt.show()
 
 # ## Repeat with lots of generated stimuli sets
 
-# In[16]:
-
-
-templated_df = pd.read_csv("templated_stimuli.csv")
-
-
 # In[17]:
+
+
+templated_df = pd.read_csv("../data/bencini-goldberg-templated.csv")
+
+
+# In[15]:
 
 
 results = []
 for group in range(len(templated_df) // 16):
   df = templated_df[templated_df.group == group]
-  _, all_vecs = enc.contextual_token_vecs(df.sentence.tolist())
-  sent_vecs = [tok_vecs.sum(axis=0) for tok_vecs in all_vecs]
+  sent_vecs = enc.sentence_vecs(df.sentence.tolist())
   
   for layer in range(13):
     verb_distance, cxn_distance = verb_cxn_mean_distance(df, sent_vecs, layer)
@@ -191,7 +176,7 @@ for group in range(len(templated_df) // 16):
 results = pd.DataFrame(results)
 
 
-# In[19]:
+# In[16]:
 
 
 sns.set_style("white")

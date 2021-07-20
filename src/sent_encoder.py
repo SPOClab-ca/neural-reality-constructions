@@ -52,3 +52,9 @@ class SentEncoder:
         sentence_token_vecs.append(np.array(token_vecs))
 
     return all_tokens, sentence_token_vecs
+
+
+  def sentence_vecs(self, sents):
+    """Returns List[np.array(13, 768)], one array for each sentence."""
+    _, all_vecs = self.contextual_token_vecs(sents)
+    return [tok_vecs.sum(axis=0) for tok_vecs in all_vecs]
