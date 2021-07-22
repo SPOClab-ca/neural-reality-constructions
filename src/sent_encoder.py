@@ -54,7 +54,17 @@ class SentEncoder:
     return all_tokens, sentence_token_vecs
 
 
-  def sentence_vecs(self, sents):
-    """Returns List[np.array(13, 768)], one array for each sentence."""
-    _, all_vecs = self.contextual_token_vecs(sents)
-    return [tok_vecs.sum(axis=0) for tok_vecs in all_vecs]
+  def sentence_vecs(self, sents, verbs=None):
+    """Returns List[np.array(13, 768)], one array for each sentence.
+    If verbs are specified, return embedding at each verb. Otherwise, take the sum
+    of all contextual vectors.
+    """
+    all_toks, all_vecs = self.contextual_token_vecs(sents)
+    if verbs is None:
+      return [tok_vecs.sum(axis=0) for tok_vecs in all_vecs]
+    else:
+      rvecs = []
+      for sent_toks, sent_vecs, main_verb in zip(all_toks, all_vecs, verbs):
+        verb_ix = [ix for ix in range(len(sent_toks)) if main_verb in sent_toks[ix]][0]
+        rvecs.append(sent_vecs[verb_ix])
+      return rvecs

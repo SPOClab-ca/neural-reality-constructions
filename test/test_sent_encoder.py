@@ -10,13 +10,12 @@ class TestSentEncoder(unittest.TestCase):
   def setUpClass(cls):
     cls.sents = ["Good morning", "You are drunk"]
     cls.encoder = src.sent_encoder.SentEncoder(model_name='roberta-base')
+    cls.all_toks, cls.all_vecs = cls.encoder.contextual_token_vecs(cls.sents)
 
   def test_contextual_token_vecs(self):
-    all_tokens, all_vecs = self.encoder.contextual_token_vecs(self.sents)
-
-    assert len(all_vecs) == 2
-    assert all_vecs[0].shape == (2, 13, 768)
-    assert all_vecs[1].shape == (3, 13, 768)
+    assert len(self.all_vecs) == 2
+    assert self.all_vecs[0].shape == (2, 13, 768)
+    assert self.all_vecs[1].shape == (3, 13, 768)
 
 
   def test_sentence_vecs(self):
@@ -25,3 +24,13 @@ class TestSentEncoder(unittest.TestCase):
     assert len(sent_vecs) == 2
     assert sent_vecs[0].shape == (13, 768)
     assert sent_vecs[1].shape == (13, 768)
+
+
+  def test_sentence_vecs_with_verb(self):
+    sent_vecs = self.encoder.sentence_vecs(self.sents, ['morning', 'are'])
+
+    assert len(sent_vecs) == 2
+    assert sent_vecs[0].shape == (13, 768)
+    assert sent_vecs[1].shape == (13, 768)
+    assert np.array_equal(sent_vecs[0], self.all_vecs[0][1])
+    assert np.array_equal(sent_vecs[1], self.all_vecs[1][1])
