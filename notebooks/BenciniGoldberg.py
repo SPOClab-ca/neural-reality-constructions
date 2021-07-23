@@ -143,18 +143,59 @@ def verb_cxn_mean_distance(df, sent_vecs, layer):
 # In[13]:
 
 
+# Fisher = (avg between-class distance) / (avg within-class distance)
+# https://sthalles.github.io/fisher-linear-discriminant/
+# Higher = classes are more separable
+def fisher_discriminant(clusters, sent_vecs, layer):
+  centroid = np.array(sent_vecs)[:, layer].mean(axis=0)
+  
+  between_class_distances = []
+  within_class_distances = []
+  for cur_cluster in set(clusters):
+    cluster_sent_vecs = []
+    for i in range(len(clusters)):
+      if clusters[i] == cur_cluster:
+        cluster_sent_vecs.append(sent_vecs[i])
+    cluster_centroid = np.array(cluster_sent_vecs)[:, layer].mean(axis=0)
+    for cluster_sent_vec in cluster_sent_vecs:
+      between_class_distances.append(np.linalg.norm(cluster_centroid - centroid))
+      within_class_distances.append(np.linalg.norm(cluster_sent_vec[layer] - cluster_centroid))
+    
+  return np.mean(between_class_distances) / np.mean(within_class_distances)
+
+
+def verb_cxn_fisher_discriminant(df, sent_vecs, layer):
+  return fisher_discriminant(df.verb.tolist(), sent_vecs, layer), fisher_discriminant(df.construction.tolist(), sent_vecs, layer)
+
+
+# Test case with 6 points. (Refactor into unit test later).
+# Centroid total = (1, 0); Centroid a = (0, 0); Centroid b = (3, 0)
+# Between-class distances = [1, 1, 1, 1, 2, 2]
+# Within-class distances = [sqrt(2), sqrt(2), sqrt(2), sqrt(2), 1, 1]
+# Answer should be 8 / (2 + 4 sqrt(2)) = 1.0448
+fisher_discriminant(
+  ['a', 'a', 'a', 'a', 'b', 'b'],
+  np.array([
+    [-1, 1], [1, 1], [1, -1], [-1, -1],
+    [3, 1], [3, -1]]
+  )[:, np.newaxis, :], 0)
+
+
+# In[14]:
+
+
 layer_results = []
 for layer in range(num_layers):
-  verb_distance, cxn_distance = verb_cxn_mean_distance(df, sent_vecs, layer)
+  verb_fisher_discriminant, cxn_fisher_discriminant = verb_cxn_fisher_discriminant(df, sent_vecs, layer)
   layer_results.append({
     "layer": layer,
-    "verb_distance": verb_distance,
-    "cxn_distance": cxn_distance,
+    "verb_fisher_discriminant": verb_fisher_discriminant,
+    "cxn_fisher_discriminant": cxn_fisher_discriminant,
   })
 layer_results = pd.DataFrame(layer_results)
 
 
-# In[14]:
+# In[15]:
 
 
 sns.set(rc={'figure.figsize':(4, 3)})
@@ -165,13 +206,13 @@ plt.show()
 
 # ## Repeat with lots of generated stimuli sets
 
-# In[15]:
+# In[16]:
 
 
 templated_df = pd.read_csv("../data/bencini-goldberg-templated.csv")
 
 
-# In[16]:
+# In[17]:
 
 
 results = []
@@ -181,18 +222,18 @@ for group in range(len(templated_df) // 16):
   #sent_vecs = sbert_encode(df.sentence.tolist())
   
   for layer in range(num_layers):
-    verb_distance, cxn_distance = verb_cxn_mean_distance(df, sent_vecs, layer)
+    verb_fisher_discriminant, cxn_fisher_discriminant = verb_cxn_fisher_discriminant(df, sent_vecs, layer)
     results.append({
       "group": group,
       "layer": layer,
-      "verb_distance": verb_distance,
-      "cxn_distance": cxn_distance,
+      "verb_fisher_discriminant": verb_fisher_discriminant,
+      "cxn_fisher_discriminant": cxn_fisher_discriminant,
     })
 
 results = pd.DataFrame(results)
 
 
-# In[17]:
+# In[18]:
 
 
 sns.set_style("white")
