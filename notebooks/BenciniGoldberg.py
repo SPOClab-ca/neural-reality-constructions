@@ -24,6 +24,7 @@ import sklearn.decomposition
 from sentence_transformers import SentenceTransformer
 
 import src.sent_encoder
+from src.fisher_metric import fisher_discriminant
 
 get_ipython().run_line_magic('matplotlib', 'inline')
 get_ipython().run_line_magic('load_ext', 'autoreload')
@@ -61,7 +62,7 @@ def sbert_encode(sentences):
 sent_vecs = enc.sentence_vecs(df.sentence.tolist())
 #sent_vecs = sbert_encode(df.sentence.tolist())
 
-num_layers = sent_vecs[0].shape[0]
+num_layers = sent_vecs.shape[1]
 
 
 # ## PCA plot (dim=2)
@@ -71,7 +72,7 @@ num_layers = sent_vecs[0].shape[0]
 
 layer = 11
 pca_model = sklearn.decomposition.PCA(n_components=2, whiten=True)
-pca_vecs = pca_model.fit_transform(np.array(sent_vecs)[:, layer])
+pca_vecs = pca_model.fit_transform(sent_vecs[:, layer])
 
 
 # In[7]:
@@ -127,66 +128,10 @@ plt.show()
 # In[12]:
 
 
-def verb_cxn_mean_distance(df, sent_vecs, layer):
-  verb_distances = []
-  cxn_distances = []
-  for i in range(16):
-    for j in range(i+1, 16):
-      dist = np.linalg.norm(sent_vecs[i][layer] - sent_vecs[j][layer])
-      if df.iloc[i].verb == df.iloc[j].verb:
-        verb_distances.append(dist)
-      if df.iloc[i].construction == df.iloc[j].construction:
-        cxn_distances.append(dist)
-  return np.mean(verb_distances), np.mean(cxn_distances)
-
-
-# In[13]:
-
-
-# Fisher = (avg between-class distance) / (avg within-class distance)
-# https://sthalles.github.io/fisher-linear-discriminant/
-# Higher = classes are more separable
-def fisher_discriminant(clusters, sent_vecs, layer):
-  centroid = np.array(sent_vecs)[:, layer].mean(axis=0)
-  
-  between_class_distances = []
-  within_class_distances = []
-  for cur_cluster in set(clusters):
-    cluster_sent_vecs = []
-    for i in range(len(clusters)):
-      if clusters[i] == cur_cluster:
-        cluster_sent_vecs.append(sent_vecs[i])
-    cluster_centroid = np.array(cluster_sent_vecs)[:, layer].mean(axis=0)
-    for cluster_sent_vec in cluster_sent_vecs:
-      between_class_distances.append(np.linalg.norm(cluster_centroid - centroid))
-      within_class_distances.append(np.linalg.norm(cluster_sent_vec[layer] - cluster_centroid))
-    
-  return np.mean(between_class_distances) / np.mean(within_class_distances)
-
-
-def verb_cxn_fisher_discriminant(df, sent_vecs, layer):
-  return fisher_discriminant(df.verb.tolist(), sent_vecs, layer), fisher_discriminant(df.construction.tolist(), sent_vecs, layer)
-
-
-# Test case with 6 points. (Refactor into unit test later).
-# Centroid total = (1, 0); Centroid a = (0, 0); Centroid b = (3, 0)
-# Between-class distances = [1, 1, 1, 1, 2, 2]
-# Within-class distances = [sqrt(2), sqrt(2), sqrt(2), sqrt(2), 1, 1]
-# Answer should be 8 / (2 + 4 sqrt(2)) = 1.0448
-fisher_discriminant(
-  ['a', 'a', 'a', 'a', 'b', 'b'],
-  np.array([
-    [-1, 1], [1, 1], [1, -1], [-1, -1],
-    [3, 1], [3, -1]]
-  )[:, np.newaxis, :], 0)
-
-
-# In[14]:
-
-
 layer_results = []
 for layer in range(num_layers):
-  verb_fisher_discriminant, cxn_fisher_discriminant = verb_cxn_fisher_discriminant(df, sent_vecs, layer)
+  verb_fisher_discriminant = fisher_discriminant(df.verb.tolist(), sent_vecs[:, layer])
+  cxn_fisher_discriminant = fisher_discriminant(df.construction.tolist(), sent_vecs[:, layer])
   layer_results.append({
     "layer": layer,
     "verb_fisher_discriminant": verb_fisher_discriminant,
@@ -195,7 +140,7 @@ for layer in range(num_layers):
 layer_results = pd.DataFrame(layer_results)
 
 
-# In[15]:
+# In[13]:
 
 
 sns.set(rc={'figure.figsize':(4, 3)})
@@ -206,13 +151,13 @@ plt.show()
 
 # ## Repeat with lots of generated stimuli sets
 
-# In[16]:
+# In[14]:
 
 
 templated_df = pd.read_csv("../data/bencini-goldberg-templated.csv")
 
 
-# In[17]:
+# In[15]:
 
 
 results = []
@@ -222,7 +167,8 @@ for group in range(len(templated_df) // 16):
   #sent_vecs = sbert_encode(df.sentence.tolist())
   
   for layer in range(num_layers):
-    verb_fisher_discriminant, cxn_fisher_discriminant = verb_cxn_fisher_discriminant(df, sent_vecs, layer)
+    verb_fisher_discriminant = fisher_discriminant(df.verb.tolist(), sent_vecs[:, layer])
+    cxn_fisher_discriminant = fisher_discriminant(df.construction.tolist(), sent_vecs[:, layer])
     results.append({
       "group": group,
       "layer": layer,
@@ -233,7 +179,7 @@ for group in range(len(templated_df) // 16):
 results = pd.DataFrame(results)
 
 
-# In[18]:
+# In[16]:
 
 
 sns.set_style("white")

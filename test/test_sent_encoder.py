@@ -21,16 +21,12 @@ class TestSentEncoder(unittest.TestCase):
   def test_sentence_vecs(self):
     sent_vecs = self.encoder.sentence_vecs(self.sents)
 
-    assert len(sent_vecs) == 2
-    assert sent_vecs[0].shape == (13, 768)
-    assert sent_vecs[1].shape == (13, 768)
+    assert sent_vecs.shape == (2, 13, 768)
 
 
   def test_sentence_vecs_with_verb(self):
     sent_vecs = self.encoder.sentence_vecs(self.sents, ['morning', 'are'])
 
-    assert len(sent_vecs) == 2
-    assert sent_vecs[0].shape == (13, 768)
-    assert sent_vecs[1].shape == (13, 768)
+    assert sent_vecs.shape == (2, 13, 768)
     assert np.array_equal(sent_vecs[0], self.all_vecs[0][1])
     assert np.array_equal(sent_vecs[1], self.all_vecs[1][1])
