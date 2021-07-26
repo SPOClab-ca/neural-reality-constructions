@@ -4,6 +4,7 @@ Run Bencini and Goldberg verb vs cxn grouping experiment on different sentence e
 import argparse
 import numpy as np
 import pandas as pd
+from sentence_transformers import SentenceTransformer
 
 import src.sent_encoder
 from src.fisher_metric import fisher_discriminant
@@ -18,7 +19,7 @@ parser.add_argument('--model_name', type=str, default='roberta-base')
 parser.add_argument('--stimuli', type=str, default='original')
 
 # average or verb (only for LMs)
-# parser.add_argument('--aggregate', type=str, default='average')
+parser.add_argument('--aggregate', type=str, default='average')
 
 
 def print_log(*s):
@@ -39,17 +40,33 @@ else:
   assert(False)
 
 
+# If using SBERT: make the sentence vectors have the same shape as our
+# SentEncoder but as a 1-layer model.
+is_using_sbert = args.model_name.startswith('sbert-')
+if is_using_sbert:
+  sbert = SentenceTransformer(args.model_name[6:])
+  def sbert_encode(sentences):
+    sbert_vecs = sbert.encode(sentences)
+    return np.array([vecs[np.newaxis, :] for vecs in list(sbert_vecs)])
+else:
+  enc = src.sent_encoder.SentEncoder(model_name=args.model_name)
+
+
 # Compute sentence vectors
-enc = src.sent_encoder.SentEncoder(model_name=args.model_name)
-sent_vecs = enc.sentence_vecs(stimuli.sentence.tolist())
-num_layers = sent_vecs.shape[1]
-
-
 results = []
 for group in range(len(stimuli) // 16):
   df = stimuli[stimuli.group == group]
-  sent_vecs = enc.sentence_vecs(df.sentence.tolist())
-  
+
+  if is_using_sbert:
+    sent_vecs = sbert_encode(df.sentence.tolist())
+  elif args.aggregate == 'average':
+    sent_vecs = enc.sentence_vecs(df.sentence.tolist())
+  elif args.aggregate == 'verb':
+    sent_vecs = enc.sentence_vecs(df.sentence.tolist(), verbs=df.verb.tolist())
+  else:
+    assert(False)
+
+  num_layers = sent_vecs.shape[1]
   for layer in range(num_layers):
     verb_fisher_discriminant = fisher_discriminant(df.verb.tolist(), sent_vecs[:, layer])
     cxn_fisher_discriminant = fisher_discriminant(df.construction.tolist(), sent_vecs[:, layer])
@@ -59,6 +76,7 @@ for group in range(len(stimuli) // 16):
       "verb_fisher_discriminant": verb_fisher_discriminant,
       "cxn_fisher_discriminant": cxn_fisher_discriminant,
     })
+
 results = pd.DataFrame(results)
 
 
