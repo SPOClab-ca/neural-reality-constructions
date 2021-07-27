@@ -12,7 +12,7 @@ from src.fisher_metric import fisher_discriminant
 
 parser = argparse.ArgumentParser()
 
-# roberta-base, bert-base-uncased
+# roberta-base, bert-base-uncased, glove, fasttext, etc
 parser.add_argument('--model_name', type=str, default='roberta-base')
 
 # original or templates
@@ -57,7 +57,9 @@ results = []
 for group in range(len(stimuli) // 16):
   df = stimuli[stimuli.group == group]
 
-  if is_using_sbert:
+  if args.model_name in ['glove', 'fasttext']:
+    sent_vecs = enc.avg_word_vecs(df.sentence.tolist(), method=args.model_name)
+  elif is_using_sbert:
     sent_vecs = sbert_encode(df.sentence.tolist())
   elif args.aggregate == 'average':
     sent_vecs = enc.sentence_vecs(df.sentence.tolist())

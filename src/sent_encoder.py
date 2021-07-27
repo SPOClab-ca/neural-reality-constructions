@@ -3,15 +3,19 @@ from transformers import AutoTokenizer, AutoModel
 import numpy as np
 import torch
 import string
+from gensim.models import KeyedVectors
+from nltk import word_tokenize
+
 
 BATCH_SIZE = 32
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 class SentEncoder:
   def __init__(self, model_name='roberta-base'):
     self.model_name = model_name
-    self.auto_tokenizer = AutoTokenizer.from_pretrained(model_name)
-    self.auto_model = AutoModel.from_pretrained(model_name).to(device)
-    self.pad_id = self.auto_tokenizer.pad_token_id
+    self.auto_model = None
+    self.glove = None
+    self.fasttext = None
+
 
 
   def contextual_token_vecs(self, sents):
@@ -20,6 +24,11 @@ class SentEncoder:
     sentence_token_vecs is List[np.array(sentence length, 13, 768)], one array for each sentence.
     Ignore special tokens like [CLS] and [PAD].
     """
+    if self.auto_model is None:
+      self.auto_tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+      self.auto_model = AutoModel.from_pretrained(self.model_name).to(device)
+      self.pad_id = self.auto_tokenizer.pad_token_id
+
     all_tokens = []
     sentence_token_vecs = []
 
@@ -68,3 +77,28 @@ class SentEncoder:
         verb_ix = [ix for ix in range(len(sent_toks)) if main_verb in sent_toks[ix]][0]
         rvecs.append(sent_vecs[verb_ix])
       return np.array(rvecs)
+
+
+  def avg_word_vecs(self, sents, method):
+    """Compute sentence vectors using traditional method of averaging word embeddings"""
+    assert method == 'glove' or method == 'fasttext'
+
+    if method == 'glove' and self.glove is None:
+      self.glove = KeyedVectors.load_word2vec_format("./data/glove.840B.300d.txt", limit=50000)
+    if method == 'fasttext' and self.fasttext is None:
+      # No need to use the subword version (.bin) of fasttext because we can assume all of our words are
+      # in-vocab, and this is faster.
+      self.fasttext = KeyedVectors.load_word2vec_format("./data/crawl-300d-2M-subword.vec", limit=50000)
+
+    results = []
+    for sent in sents:
+      wvecs = []
+      for tok in word_tokenize(sent):
+        if method == 'glove':
+          wvecs.append(self.glove[tok])
+        elif method == 'fasttext':
+          wvecs.append(self.fasttext[tok])
+        else:
+          assert(False)
+      results.append(np.array(wvecs).mean(axis=0))
+    return np.array(results)[:, np.newaxis, :]
