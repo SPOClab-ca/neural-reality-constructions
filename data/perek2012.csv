@@ -1,0 +1,17 @@
+﻿group,sentence,construction
+0,Kim lent Rose something.,ditransitive
+0,Barbara served Claire something.,ditransitive
+0,Paula passed Liz something.,ditransitive
+0,Anita offered Kate something.,ditransitive
+0,Audrey kicked something to Sue.,to_dative
+0,Nancy threw something to Juliet.,to_dative
+0,Rachel tossed something to Anna.,to_dative
+0,Jennifer chucked something to Tara.,to_dative
+0,Lyn splashed something on Maggie.,caused_motion
+0,Michelle sprinkled something over Sarah.,caused_motion
+0,Linda sprayed something on Jessica.,caused_motion
+0,Beth injected something into Lisa.,caused_motion
+0,Dana plastered Marge with something.,with_applicative
+0,Pat rubbed Helen with something.,with_applicative
+0,Meg brushed Shannon with something.,with_applicative
+0,Laura dabbed Jane with something.,with_applicative
