@@ -4,6 +4,7 @@ Run Bencini and Goldberg verb vs cxn grouping experiment on different sentence e
 import argparse
 import numpy as np
 import pandas as pd
+import random; random.seed(12345)
 from sentence_transformers import SentenceTransformer
 
 import src.sent_encoder
@@ -69,14 +70,18 @@ for group in range(len(stimuli) // 16):
     assert(False)
 
   num_layers = sent_vecs.shape[1]
+  random_grouping = random.sample(['a', 'b', 'c', 'd'] * 4, 16)
   for layer in range(num_layers):
     verb_fisher_discriminant = fisher_discriminant(df.verb.tolist(), sent_vecs[:, layer])
     cxn_fisher_discriminant = fisher_discriminant(df.construction.tolist(), sent_vecs[:, layer])
+    null_fisher_discriminant = fisher_discriminant(random_grouping, sent_vecs[:, layer])
+
     results.append({
       "group": group,
       "layer": layer,
       "verb_fisher_discriminant": verb_fisher_discriminant,
       "cxn_fisher_discriminant": cxn_fisher_discriminant,
+      "null_fisher_discriminant": null_fisher_discriminant,
     })
 
 results = pd.DataFrame(results)
@@ -88,6 +93,8 @@ for layer in range(num_layers):
     layer,
     results[results.layer == layer].verb_fisher_discriminant.mean(),
     results[results.layer == layer].cxn_fisher_discriminant.mean(),
+    results[results.layer == layer].null_fisher_discriminant.mean(),
     results[results.layer == layer].verb_fisher_discriminant.std(),
-    results[results.layer == layer].cxn_fisher_discriminant.std()
+    results[results.layer == layer].cxn_fisher_discriminant.std(),
+    results[results.layer == layer].null_fisher_discriminant.std()
   )

@@ -39,7 +39,7 @@ pd.options.display.max_rows = 100
 df = pd.read_csv("../data/bencini-goldberg.csv")
 
 
-# In[ ]:
+# In[3]:
 
 
 enc = src.sent_encoder.SentEncoder()
@@ -56,7 +56,7 @@ def sbert_encode(sentences):
   return [vecs[np.newaxis, :] for vecs in list(sbert_vecs)]
 
 
-# In[5]:
+# In[ ]:
 
 
 sent_vecs = enc.sentence_vecs(df.sentence.tolist())
@@ -166,14 +166,18 @@ for group in range(len(templated_df) // 16):
   sent_vecs = enc.sentence_vecs(df.sentence.tolist())
   #sent_vecs = sbert_encode(df.sentence.tolist())
   
+  random_grouping = random.sample(['a', 'b', 'c', 'd'] * 4, 16)
   for layer in range(num_layers):
     verb_fisher_discriminant = fisher_discriminant(df.verb.tolist(), sent_vecs[:, layer])
     cxn_fisher_discriminant = fisher_discriminant(df.construction.tolist(), sent_vecs[:, layer])
+    null_fisher_discriminant = fisher_discriminant(random_grouping, sent_vecs[:, layer])
+    
     results.append({
       "group": group,
       "layer": layer,
       "verb_fisher_discriminant": verb_fisher_discriminant,
       "cxn_fisher_discriminant": cxn_fisher_discriminant,
+      "null_fisher_discriminant": null_fisher_discriminant,
     })
 
 results = pd.DataFrame(results)
