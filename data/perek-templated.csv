@@ -1,0 +1,1601 @@
+group,sentence,construction
+0,William passed Dylan some vodka.,ditransitive
+0,Jason bought Bruce some soup.,ditransitive
+0,Joseph lent Harry some cream.,ditransitive
+0,Fred threw Steve some oil.,ditransitive
+0,Bob offered some gin to Charlie.,transitive
+0,Jerry brought some slime to Andrew.,transitive
+0,Sam chucked some syrup to Doug.,transitive
+0,Thomas gave some juice to Aaron.,transitive
+0,Eric spilled some beer on James.,caused-motion
+0,Jack dumped some yogurt on Mike.,caused-motion
+0,Edward poured some blood on George.,caused-motion
+0,Henry dropped some paint on Paul.,caused-motion
+0,Joe sprayed Don with some tea.,with-applicative
+0,Tom plastered Mark with some shampoo.,with-applicative
+0,Adam brushed Michael with some milk.,with-applicative
+0,Bill dabbed Frank with some honey.,with-applicative
+1,Joe handed Jack some shampoo.,ditransitive
+1,Aaron lent Bill some cream.,ditransitive
+1,Steve passed Jason some juice.,ditransitive
+1,Eric sent Andrew some gin.,ditransitive
+1,Eddie chucked some gasoline to John.,transitive
+1,Bruce brought some wine to Thomas.,transitive
+1,Paul kicked some tea to Dylan.,transitive
+1,Charlie threw some ink to Fred.,transitive
+1,Sam sprinkled some coffee on Frank.,caused-motion
+1,Adam dropped some bleach on William.,caused-motion
+1,Harry dumped some acid on Joseph.,caused-motion
+1,Mark splashed some slime on Don.,caused-motion
+1,James coated David with some yogurt.,with-applicative
+1,Henry brushed Mike with some whisky.,with-applicative
+1,George plastered Bob with some water.,with-applicative
+1,Chris dabbed Tom with some sand.,with-applicative
+2,Dylan threw William some milk.,ditransitive
+2,Thomas brought Frank some slime.,ditransitive
+2,Joseph lent Fred some soda.,ditransitive
+2,Jason served Edward some soup.,ditransitive
+2,Doug kicked some blood to Bill.,transitive
+2,Andrew handed some tea to Jack.,transitive
+2,Eric gave some bleach to Charlie.,transitive
+2,Joe offered some coffee to Henry.,transitive
+2,Harry dumped some yogurt on Mike.,caused-motion
+2,Bob sprinkled some beer on Paul.,caused-motion
+2,Chris sprayed some honey on Bruce.,caused-motion
+2,Don dropped some whisky on George.,caused-motion
+2,John plastered David with some gin.,with-applicative
+2,Mark rubbed Aaron with some juice.,with-applicative
+2,Eddie dabbed James with some cream.,with-applicative
+2,Sam stained Michael with some gasoline.,with-applicative
+3,Adam lent Chris some beer.,ditransitive
+3,Eddie served John some juice.,ditransitive
+3,Sam threw Bruce some oil.,ditransitive
+3,David handed Dylan some wine.,ditransitive
+3,Charlie sent some yogurt to Don.,transitive
+3,Jerry gave some gin to Doug.,transitive
+3,Thomas brought some blood to Andrew.,transitive
+3,Henry tossed some shampoo to Joseph.,transitive
+3,Michael spilled some coffee on William.,caused-motion
+3,Edward dropped some gasoline on Mark.,caused-motion
+3,Paul dumped some honey on Harry.,caused-motion
+3,Jason poured some ink on Bob.,caused-motion
+3,Bill plastered Frank with some soup.,with-applicative
+3,Fred covered James with some cream.,with-applicative
+3,Aaron coated Eric with some bleach.,with-applicative
+3,Tom sprayed Steve with some soda.,with-applicative
+4,Joseph bought Michael some syrup.,ditransitive
+4,Adam brought Jerry some cream.,ditransitive
+4,Thomas sent Mark some beer.,ditransitive
+4,Eddie lent Dylan some whisky.,ditransitive
+4,James tossed some ink to William.,transitive
+4,George gave some gasoline to Paul.,transitive
+4,Henry offered some slime to Aaron.,transitive
+4,Doug kicked some blood to Frank.,transitive
+4,Eric splashed some sand on Sam.,caused-motion
+4,Joe dropped some shampoo on John.,caused-motion
+4,Mike sprinkled some yogurt on Jack.,caused-motion
+4,Bob dumped some acid on Andrew.,caused-motion
+4,Charlie coated Don with some tea.,with-applicative
+4,Fred brushed Jason with some soup.,with-applicative
+4,Harry dabbed Bill with some oil.,with-applicative
+4,David stained Bruce with some wine.,with-applicative
+5,Eddie handed Bob some paint.,ditransitive
+5,Tom passed Chris some sand.,ditransitive
+5,Charlie gave David some blood.,ditransitive
+5,Harry offered Steve some juice.,ditransitive
+5,Sam tossed some gin to Paul.,transitive
+5,Michael chucked some wine to Frank.,transitive
+5,Dylan kicked some ink to Jason.,transitive
+5,Eric threw some yogurt to William.,transitive
+5,George splashed some whisky on John.,caused-motion
+5,James sprinkled some cream on Fred.,caused-motion
+5,Bill dumped some gasoline on Joseph.,caused-motion
+5,Aaron sprayed some milk on Henry.,caused-motion
+5,Jack coated Doug with some syrup.,with-applicative
+5,Bruce rubbed Joe with some shampoo.,with-applicative
+5,Mark stained Jerry with some coffee.,with-applicative
+5,Don covered Edward with some soup.,with-applicative
+6,William handed Fred some bleach.,ditransitive
+6,Eric bought Bruce some vodka.,ditransitive
+6,Edward lent David some shampoo.,ditransitive
+6,Mike sent George some water.,ditransitive
+6,Aaron kicked some whisky to Mark.,transitive
+6,Bob threw some tea to Harry.,transitive
+6,Joe passed some cream to John.,transitive
+6,Doug chucked some paint to Charlie.,transitive
+6,Jason sprinkled some beer on Don.,caused-motion
+6,Tom sprayed some blood on Jerry.,caused-motion
+6,Joseph poured some slime on Bill.,caused-motion
+6,Jack dropped some coffee on Sam.,caused-motion
+6,James coated Michael with some juice.,with-applicative
+6,Eddie stained Chris with some syrup.,with-applicative
+6,Henry plastered Paul with some gasoline.,with-applicative
+6,Andrew dabbed Dylan with some milk.,with-applicative
+7,Don served Joe some wine.,ditransitive
+7,Doug brought Henry some milk.,ditransitive
+7,Jack passed Sam some gin.,ditransitive
+7,Steve offered Thomas some paint.,ditransitive
+7,Edward kicked some shampoo to Adam.,transitive
+7,Dylan handed some whisky to Chris.,transitive
+7,Jason tossed some syrup to Mike.,transitive
+7,Eric chucked some slime to Aaron.,transitive
+7,John splashed some juice on Eddie.,caused-motion
+7,Frank dropped some vodka on Bob.,caused-motion
+7,Jerry spilled some ink on Mark.,caused-motion
+7,George dumped some water on William.,caused-motion
+7,Fred covered David with some soup.,with-applicative
+7,Andrew plastered Tom with some blood.,with-applicative
+7,Michael dabbed Bruce with some gasoline.,with-applicative
+7,Paul sprayed Bill with some cream.,with-applicative
+8,Fred brought Frank some water.,ditransitive
+8,George handed Henry some coffee.,ditransitive
+8,Jason sent Doug some whisky.,ditransitive
+8,Eddie lent Aaron some gin.,ditransitive
+8,Harry chucked some beer to Bill.,transitive
+8,Mark offered some wine to Eric.,transitive
+8,Joe kicked some acid to Jack.,transitive
+8,Paul gave some vodka to Chris.,transitive
+8,David dumped some tea on Joseph.,caused-motion
+8,Bruce poured some oil on Don.,caused-motion
+8,Adam dropped some paint on Steve.,caused-motion
+8,Andrew sprinkled some ink on Edward.,caused-motion
+8,Jerry stained John with some gasoline.,with-applicative
+8,Bob covered James with some syrup.,with-applicative
+8,William sprayed Mike with some bleach.,with-applicative
+8,Michael plastered Thomas with some milk.,with-applicative
+9,Harry sent Eddie some gasoline.,ditransitive
+9,James threw John some oil.,ditransitive
+9,Bob handed Doug some blood.,ditransitive
+9,Bruce gave David some whisky.,ditransitive
+9,Frank brought some tea to George.,transitive
+9,Mike tossed some soda to Joseph.,transitive
+9,Jason kicked some cream to Sam.,transitive
+9,Tom offered some sand to Aaron.,transitive
+9,Eric dumped some slime on Jerry.,caused-motion
+9,Michael dropped some syrup on William.,caused-motion
+9,Fred sprayed some bleach on Joe.,caused-motion
+9,Dylan poured some juice on Don.,caused-motion
+9,Mark dabbed Edward with some paint.,with-applicative
+9,Paul plastered Jack with some ink.,with-applicative
+9,Steve coated Chris with some beer.,with-applicative
+9,Bill rubbed Thomas with some milk.,with-applicative
+10,Mark passed Don some gasoline.,ditransitive
+10,George handed Frank some gin.,ditransitive
+10,Chris bought James some bleach.,ditransitive
+10,Doug gave Paul some soup.,ditransitive
+10,Eddie kicked some soda to Thomas.,transitive
+10,John brought some yogurt to Jerry.,transitive
+10,Harry tossed some cream to David.,transitive
+10,Charlie threw some coffee to Dylan.,transitive
+10,William poured some syrup on Tom.,caused-motion
+10,Aaron dumped some acid on Joe.,caused-motion
+10,Edward splashed some blood on Sam.,caused-motion
+10,Michael sprayed some whisky on Eric.,caused-motion
+10,Adam rubbed Henry with some slime.,with-applicative
+10,Mike coated Bill with some oil.,with-applicative
+10,Joseph dabbed Andrew with some paint.,with-applicative
+10,Jack covered Bob with some water.,with-applicative
+11,Henry brought Michael some syrup.,ditransitive
+11,Bob sent Thomas some honey.,ditransitive
+11,Joe lent Paul some bleach.,ditransitive
+11,Steve passed Eric some slime.,ditransitive
+11,Doug kicked some gasoline to Frank.,transitive
+11,Jerry handed some acid to James.,transitive
+11,Mike tossed some blood to Jack.,transitive
+11,Fred chucked some oil to Eddie.,transitive
+11,Chris poured some juice on Edward.,caused-motion
+11,John sprayed some shampoo on Harry.,caused-motion
+11,Dylan dropped some cream on Joseph.,caused-motion
+11,Bill splashed some yogurt on Charlie.,caused-motion
+11,Aaron covered William with some milk.,with-applicative
+11,Bruce coated Adam with some coffee.,with-applicative
+11,Mark stained Jason with some vodka.,with-applicative
+11,Andrew rubbed Tom with some tea.,with-applicative
+12,Joe handed Joseph some juice.,ditransitive
+12,George brought Tom some yogurt.,ditransitive
+12,Bill threw Bruce some paint.,ditransitive
+12,Jack gave Jason some soda.,ditransitive
+12,Michael tossed some water to Sam.,transitive
+12,Dylan chucked some shampoo to Eric.,transitive
+12,Aaron sent some honey to Don.,transitive
+12,Adam passed some wine to William.,transitive
+12,Thomas spilled some whisky on Steve.,caused-motion
+12,Fred sprayed some bleach on Mike.,caused-motion
+12,Edward dropped some cream on Eddie.,caused-motion
+12,Andrew dumped some oil on Jerry.,caused-motion
+12,James brushed Frank with some blood.,with-applicative
+12,Doug stained Chris with some gin.,with-applicative
+12,David coated Henry with some sand.,with-applicative
+12,Mark plastered Harry with some ink.,with-applicative
+13,Charlie sent Mike some tea.,ditransitive
+13,Mark brought Tom some acid.,ditransitive
+13,Michael offered Jerry some gasoline.,ditransitive
+13,Jason handed Harry some wine.,ditransitive
+13,William passed some ink to Edward.,transitive
+13,Chris tossed some oil to James.,transitive
+13,John gave some slime to Dylan.,transitive
+13,Eric threw some cream to Doug.,transitive
+13,Joseph splashed some whisky on Henry.,caused-motion
+13,Fred poured some juice on Bill.,caused-motion
+13,Aaron sprinkled some syrup on Steve.,caused-motion
+13,Bruce sprayed some paint on Joe.,caused-motion
+13,Jack coated Paul with some soup.,with-applicative
+13,Frank dabbed George with some soda.,with-applicative
+13,Don plastered Adam with some blood.,with-applicative
+13,Andrew covered Bob with some milk.,with-applicative
+14,Eric served Jack some coffee.,ditransitive
+14,Adam bought Charlie some juice.,ditransitive
+14,Doug gave Bob some gin.,ditransitive
+14,Mark brought Bill some slime.,ditransitive
+14,Joe tossed some soup to Jason.,transitive
+14,Michael kicked some shampoo to Sam.,transitive
+14,Henry sent some acid to Edward.,transitive
+14,Harry chucked some honey to Mike.,transitive
+14,Fred sprinkled some vodka on Dylan.,caused-motion
+14,Steve dropped some tea on Eddie.,caused-motion
+14,Andrew spilled some wine on George.,caused-motion
+14,John dumped some oil on Chris.,caused-motion
+14,Joseph plastered Thomas with some syrup.,with-applicative
+14,Frank stained Don with some cream.,with-applicative
+14,Bruce brushed Aaron with some milk.,with-applicative
+14,William rubbed David with some soda.,with-applicative
+15,Thomas sent Bob some wine.,ditransitive
+15,Bruce bought Jack some water.,ditransitive
+15,Edward offered Harry some paint.,ditransitive
+15,Sam lent John some shampoo.,ditransitive
+15,Doug threw some ink to Fred.,transitive
+15,Aaron handed some gin to Paul.,transitive
+15,Bill passed some whisky to George.,transitive
+15,Charlie tossed some bleach to Henry.,transitive
+15,Don dumped some tea on Tom.,caused-motion
+15,Joe sprinkled some syrup on Mike.,caused-motion
+15,James poured some cream on Eddie.,caused-motion
+15,Joseph splashed some honey on Chris.,caused-motion
+15,William rubbed Andrew with some vodka.,with-applicative
+15,Frank stained Dylan with some juice.,with-applicative
+15,Mark covered Eric with some sand.,with-applicative
+15,Adam coated Jerry with some acid.,with-applicative
+16,Aaron threw William some water.,ditransitive
+16,Jerry offered David some yogurt.,ditransitive
+16,Doug lent Bruce some syrup.,ditransitive
+16,James gave Don some gasoline.,ditransitive
+16,Eddie handed some tea to Fred.,transitive
+16,Jason kicked some vodka to Andrew.,transitive
+16,Eric chucked some whisky to Harry.,transitive
+16,Joe tossed some blood to Dylan.,transitive
+16,Mark poured some oil on Bill.,caused-motion
+16,Edward spilled some coffee on Mike.,caused-motion
+16,John dropped some milk on George.,caused-motion
+16,Jack sprinkled some paint on Steve.,caused-motion
+16,Joseph coated Tom with some shampoo.,with-applicative
+16,Thomas sprayed Paul with some wine.,with-applicative
+16,Sam dabbed Adam with some sand.,with-applicative
+16,Charlie brushed Bob with some slime.,with-applicative
+17,Mark brought Steve some soda.,ditransitive
+17,Paul bought Aaron some vodka.,ditransitive
+17,Chris offered Thomas some bleach.,ditransitive
+17,Andrew handed Fred some juice.,ditransitive
+17,Harry gave some yogurt to Joe.,transitive
+17,Bill chucked some honey to Eddie.,transitive
+17,Don tossed some water to John.,transitive
+17,Jack kicked some ink to Dylan.,transitive
+17,Edward dumped some acid on Mike.,caused-motion
+17,James poured some shampoo on Henry.,caused-motion
+17,William sprayed some cream on Eric.,caused-motion
+17,Bruce dropped some wine on David.,caused-motion
+17,George plastered Tom with some gasoline.,with-applicative
+17,Jerry rubbed Joseph with some coffee.,with-applicative
+17,Michael covered Doug with some milk.,with-applicative
+17,Adam stained Jason with some whisky.,with-applicative
+18,Chris threw Bruce some soup.,ditransitive
+18,Eric brought Don some ink.,ditransitive
+18,Aaron sent Paul some sand.,ditransitive
+18,James offered Joe some gin.,ditransitive
+18,William chucked some oil to Charlie.,transitive
+18,Jack passed some milk to Tom.,transitive
+18,Dylan tossed some slime to John.,transitive
+18,Doug gave some honey to Andrew.,transitive
+18,Mark spilled some vodka on Sam.,caused-motion
+18,Eddie dropped some paint on Jerry.,caused-motion
+18,Jason sprinkled some bleach on Henry.,caused-motion
+18,Bill splashed some acid on Bob.,caused-motion
+18,David brushed Thomas with some syrup.,with-applicative
+18,Edward covered Joseph with some cream.,with-applicative
+18,Adam sprayed Mike with some beer.,with-applicative
+18,Steve coated Michael with some coffee.,with-applicative
+19,Steve lent Tom some bleach.,ditransitive
+19,Thomas sent Jack some cream.,ditransitive
+19,Joe threw Don some ink.,ditransitive
+19,Bruce offered Doug some syrup.,ditransitive
+19,Harry brought some gasoline to Mike.,transitive
+19,Chris gave some soda to Joseph.,transitive
+19,Dylan tossed some whisky to Bill.,transitive
+19,Jerry passed some gin to Charlie.,transitive
+19,John sprayed some water on Edward.,caused-motion
+19,Bob poured some coffee on James.,caused-motion
+19,Adam dropped some sand on Henry.,caused-motion
+19,Michael spilled some paint on Paul.,caused-motion
+19,Sam plastered Frank with some yogurt.,with-applicative
+19,David rubbed Aaron with some oil.,with-applicative
+19,Eric stained Fred with some beer.,with-applicative
+19,William covered Jason with some wine.,with-applicative
+20,Bruce brought Adam some wine.,ditransitive
+20,William bought Harry some paint.,ditransitive
+20,Joe handed Bob some yogurt.,ditransitive
+20,Eric passed Don some cream.,ditransitive
+20,Mark offered some beer to Mike.,transitive
+20,Edward threw some vodka to David.,transitive
+20,Frank chucked some juice to Thomas.,transitive
+20,Paul sent some soda to Andrew.,transitive
+20,Eddie sprayed some whisky on George.,caused-motion
+20,Henry sprinkled some shampoo on Doug.,caused-motion
+20,Steve splashed some slime on Dylan.,caused-motion
+20,Charlie dumped some blood on Aaron.,caused-motion
+20,Jerry plastered James with some sand.,with-applicative
+20,Michael coated Fred with some honey.,with-applicative
+20,Sam brushed Joseph with some coffee.,with-applicative
+20,Tom rubbed Bill with some ink.,with-applicative
+21,David passed Jason some beer.,ditransitive
+21,Don sent Bill some paint.,ditransitive
+21,Chris lent Michael some yogurt.,ditransitive
+21,Thomas bought William some acid.,ditransitive
+21,Charlie offered some soda to Edward.,transitive
+21,Tom gave some whisky to James.,transitive
+21,Harry handed some cream to Jack.,transitive
+21,Adam chucked some honey to Mike.,transitive
+21,Dylan sprinkled some oil on Jerry.,caused-motion
+21,Bruce splashed some soup on Mark.,caused-motion
+21,John dropped some slime on Paul.,caused-motion
+21,Sam dumped some sand on Andrew.,caused-motion
+21,George sprayed Eric with some coffee.,with-applicative
+21,Doug coated Henry with some tea.,with-applicative
+21,Steve covered Frank with some gin.,with-applicative
+21,Bob plastered Fred with some gasoline.,with-applicative
+22,Thomas gave Harry some yogurt.,ditransitive
+22,Michael threw Steve some vodka.,ditransitive
+22,Aaron handed Jerry some cream.,ditransitive
+22,Bruce served Frank some acid.,ditransitive
+22,Adam brought some soup to Andrew.,transitive
+22,Tom offered some beer to Henry.,transitive
+22,Joseph chucked some wine to Charlie.,transitive
+22,James tossed some soda to Mark.,transitive
+22,Eddie spilled some shampoo on Bill.,caused-motion
+22,David sprayed some water on Doug.,caused-motion
+22,John sprinkled some sand on Mike.,caused-motion
+22,Fred dropped some whisky on Sam.,caused-motion
+22,William coated Joe with some paint.,with-applicative
+22,Jack covered George with some ink.,with-applicative
+22,Jason dabbed Chris with some syrup.,with-applicative
+22,Eric rubbed Dylan with some oil.,with-applicative
+23,Don handed John some yogurt.,ditransitive
+23,David bought Bruce some soda.,ditransitive
+23,Sam served Paul some wine.,ditransitive
+23,Dylan passed Joseph some syrup.,ditransitive
+23,Mike gave some vodka to Eric.,transitive
+23,Henry tossed some acid to Frank.,transitive
+23,William brought some tea to Mark.,transitive
+23,Bob kicked some blood to Andrew.,transitive
+23,Chris sprayed some paint on Steve.,caused-motion
+23,Thomas sprinkled some honey on Jason.,caused-motion
+23,Adam dropped some water on Jack.,caused-motion
+23,Eddie poured some gasoline on Doug.,caused-motion
+23,Bill dabbed James with some milk.,with-applicative
+23,George coated Charlie with some coffee.,with-applicative
+23,Michael plastered Fred with some shampoo.,with-applicative
+23,Tom covered Aaron with some ink.,with-applicative
+24,Aaron handed Tom some cream.,ditransitive
+24,Joseph brought Don some gasoline.,ditransitive
+24,Doug passed Dylan some soup.,ditransitive
+24,Jason lent Harry some wine.,ditransitive
+24,John sent some sand to William.,transitive
+24,Joe tossed some vodka to Chris.,transitive
+24,Henry chucked some ink to Edward.,transitive
+24,Bob offered some shampoo to Charlie.,transitive
+24,Mark poured some milk on Jerry.,caused-motion
+24,George dropped some whisky on Adam.,caused-motion
+24,Mike dumped some beer on Sam.,caused-motion
+24,Bill splashed some soda on Jack.,caused-motion
+24,Andrew brushed Frank with some yogurt.,with-applicative
+24,Fred coated Steve with some honey.,with-applicative
+24,Eddie dabbed James with some coffee.,with-applicative
+24,Paul stained Bruce with some bleach.,with-applicative
+25,David lent Jerry some cream.,ditransitive
+25,Doug gave John some wine.,ditransitive
+25,Harry offered Frank some yogurt.,ditransitive
+25,Bill sent Don some sand.,ditransitive
+25,James brought some soda to Edward.,transitive
+25,Fred threw some whisky to Joseph.,transitive
+25,Charlie handed some coffee to Eric.,transitive
+25,Steve kicked some honey to William.,transitive
+25,Paul poured some juice on Aaron.,caused-motion
+25,Adam dumped some syrup on George.,caused-motion
+25,Andrew sprayed some acid on Joe.,caused-motion
+25,Bruce splashed some shampoo on Henry.,caused-motion
+25,Mark stained Jason with some tea.,with-applicative
+25,Dylan covered Tom with some soup.,with-applicative
+25,Eddie plastered Sam with some blood.,with-applicative
+25,Thomas coated Jack with some gasoline.,with-applicative
+26,Don lent Joseph some coffee.,ditransitive
+26,Jack passed Sam some milk.,ditransitive
+26,Fred handed Andrew some honey.,ditransitive
+26,David threw Steve some soda.,ditransitive
+26,Chris kicked some soup to Doug.,transitive
+26,Adam chucked some paint to Aaron.,transitive
+26,Paul offered some beer to Eric.,transitive
+26,Tom brought some ink to Charlie.,transitive
+26,John spilled some blood on Bill.,caused-motion
+26,Thomas poured some whisky on Frank.,caused-motion
+26,Eddie splashed some water on Dylan.,caused-motion
+26,Mark dumped some gin on Henry.,caused-motion
+26,Bruce rubbed Mike with some sand.,with-applicative
+26,Michael stained Harry with some shampoo.,with-applicative
+26,Bob plastered William with some slime.,with-applicative
+26,James dabbed Jason with some vodka.,with-applicative
+27,Jack gave Aaron some paint.,ditransitive
+27,Paul lent Steve some coffee.,ditransitive
+27,Bruce brought Tom some whisky.,ditransitive
+27,David handed Eric some tea.,ditransitive
+27,Thomas chucked some water to George.,transitive
+27,Adam tossed some blood to Bill.,transitive
+27,Michael threw some syrup to Edward.,transitive
+27,Doug kicked some bleach to Chris.,transitive
+27,Eddie dropped some honey on William.,caused-motion
+27,Jason poured some slime on Mike.,caused-motion
+27,Harry splashed some wine on Joseph.,caused-motion
+27,Dylan sprinkled some milk on Frank.,caused-motion
+27,Fred brushed Bob with some yogurt.,with-applicative
+27,John plastered Jerry with some beer.,with-applicative
+27,Henry coated Mark with some shampoo.,with-applicative
+27,Charlie stained Andrew with some gin.,with-applicative
+28,Jerry brought Mark some ink.,ditransitive
+28,Michael sent Charlie some vodka.,ditransitive
+28,Sam served Frank some coffee.,ditransitive
+28,Bill gave George some juice.,ditransitive
+28,Joe offered some yogurt to Edward.,transitive
+28,Mike tossed some syrup to Jason.,transitive
+28,Tom kicked some wine to Joseph.,transitive
+28,Chris handed some whisky to Adam.,transitive
+28,Paul spilled some soup on James.,caused-motion
+28,Steve dumped some beer on Henry.,caused-motion
+28,John dropped some honey on Bruce.,caused-motion
+28,Harry poured some gasoline on Jack.,caused-motion
+28,Aaron stained Dylan with some milk.,with-applicative
+28,Thomas brushed Eric with some gin.,with-applicative
+28,Bob covered William with some slime.,with-applicative
+28,Don dabbed Doug with some cream.,with-applicative
+29,Eric handed Andrew some water.,ditransitive
+29,Fred offered Adam some gasoline.,ditransitive
+29,Chris served Jason some shampoo.,ditransitive
+29,Thomas brought Bruce some juice.,ditransitive
+29,Mike tossed some soup to Harry.,transitive
+29,George threw some slime to Tom.,transitive
+29,William chucked some vodka to Steve.,transitive
+29,Joe sent some soda to Charlie.,transitive
+29,Frank sprinkled some wine on Jerry.,caused-motion
+29,Dylan dropped some honey on David.,caused-motion
+29,Paul splashed some whisky on Eddie.,caused-motion
+29,Sam spilled some blood on Henry.,caused-motion
+29,Mark covered Bob with some cream.,with-applicative
+29,Aaron sprayed Joseph with some ink.,with-applicative
+29,Doug brushed Bill with some sand.,with-applicative
+29,Michael plastered James with some yogurt.,with-applicative
+30,Bill offered Adam some beer.,ditransitive
+30,Mike bought Jack some sand.,ditransitive
+30,Michael gave Thomas some juice.,ditransitive
+30,Mark handed David some water.,ditransitive
+30,Jerry passed some vodka to Charlie.,transitive
+30,Chris threw some whisky to James.,transitive
+30,George kicked some oil to Don.,transitive
+30,Frank sent some yogurt to William.,transitive
+30,Bob splashed some tea on Eddie.,caused-motion
+30,Edward poured some syrup on John.,caused-motion
+30,Bruce sprinkled some slime on Sam.,caused-motion
+30,Doug spilled some paint on Fred.,caused-motion
+30,Andrew brushed Joseph with some shampoo.,with-applicative
+30,Henry coated Eric with some milk.,with-applicative
+30,Aaron stained Joe with some bleach.,with-applicative
+30,Tom plastered Harry with some cream.,with-applicative
+31,Bob brought Tom some gasoline.,ditransitive
+31,John gave Chris some soup.,ditransitive
+31,Harry lent Bill some beer.,ditransitive
+31,Thomas sent Adam some bleach.,ditransitive
+31,Mike offered some vodka to Eric.,transitive
+31,Paul threw some coffee to Eddie.,transitive
+31,Jason chucked some shampoo to Fred.,transitive
+31,Andrew passed some whisky to Henry.,transitive
+31,Aaron sprinkled some acid on Dylan.,caused-motion
+31,Joe dumped some tea on Joseph.,caused-motion
+31,George spilled some milk on Mark.,caused-motion
+31,Don poured some ink on James.,caused-motion
+31,Doug covered Sam with some cream.,with-applicative
+31,Frank plastered Bruce with some sand.,with-applicative
+31,Steve rubbed Charlie with some syrup.,with-applicative
+31,David stained Edward with some honey.,with-applicative
+32,Charlie brought Henry some juice.,ditransitive
+32,John bought Mark some oil.,ditransitive
+32,Adam handed Steve some beer.,ditransitive
+32,Bill threw Aaron some wine.,ditransitive
+32,Jerry gave some shampoo to Sam.,transitive
+32,Jason offered some yogurt to Eric.,transitive
+32,James chucked some tea to Don.,transitive
+32,Thomas sent some coffee to David.,transitive
+32,Bruce sprayed some milk on Chris.,caused-motion
+32,Paul dropped some soda on Joe.,caused-motion
+32,Jack poured some syrup on Mike.,caused-motion
+32,Edward sprinkled some slime on Michael.,caused-motion
+32,Tom plastered Bob with some water.,with-applicative
+32,Fred coated Joseph with some acid.,with-applicative
+32,Harry covered Eddie with some vodka.,with-applicative
+32,Doug brushed Dylan with some bleach.,with-applicative
+33,Sam served George some coffee.,ditransitive
+33,Jerry handed Bob some beer.,ditransitive
+33,Harry brought Frank some syrup.,ditransitive
+33,Thomas offered Charlie some blood.,ditransitive
+33,Aaron gave some acid to Tom.,transitive
+33,Eddie threw some gin to Andrew.,transitive
+33,Joe tossed some bleach to Mike.,transitive
+33,William kicked some ink to Eric.,transitive
+33,Don sprayed some tea on Paul.,caused-motion
+33,Bill spilled some vodka on Bruce.,caused-motion
+33,Doug dropped some gasoline on James.,caused-motion
+33,Michael sprinkled some sand on Fred.,caused-motion
+33,Henry brushed David with some wine.,with-applicative
+33,Chris coated Dylan with some water.,with-applicative
+33,Jack covered Mark with some oil.,with-applicative
+33,Adam dabbed Jason with some whisky.,with-applicative
+34,Andrew threw Don some cream.,ditransitive
+34,Thomas sent Eddie some beer.,ditransitive
+34,Michael served Mark some sand.,ditransitive
+34,Bob passed Eric some milk.,ditransitive
+34,John gave some slime to Frank.,transitive
+34,Bruce handed some gasoline to Paul.,transitive
+34,Charlie kicked some oil to Tom.,transitive
+34,David offered some vodka to Bill.,transitive
+34,Dylan sprinkled some gin on Jack.,caused-motion
+34,Adam splashed some syrup on Doug.,caused-motion
+34,Sam sprayed some shampoo on Fred.,caused-motion
+34,Henry spilled some acid on Mike.,caused-motion
+34,Aaron stained Steve with some wine.,with-applicative
+34,Joseph coated George with some honey.,with-applicative
+34,Jason plastered Joe with some coffee.,with-applicative
+34,Chris rubbed William with some yogurt.,with-applicative
+35,John gave David some yogurt.,ditransitive
+35,Dylan bought Don some juice.,ditransitive
+35,Thomas lent Andrew some tea.,ditransitive
+35,Paul passed Mark some wine.,ditransitive
+35,Adam handed some ink to William.,transitive
+35,Eric tossed some cream to Bill.,transitive
+35,Mike kicked some honey to Tom.,transitive
+35,James threw some oil to Michael.,transitive
+35,Jack splashed some whisky on Henry.,caused-motion
+35,Frank poured some bleach on Charlie.,caused-motion
+35,George spilled some blood on Eddie.,caused-motion
+35,Harry dropped some soup on Joe.,caused-motion
+35,Jason stained Jerry with some vodka.,with-applicative
+35,Chris plastered Doug with some milk.,with-applicative
+35,Steve coated Joseph with some paint.,with-applicative
+35,Bob dabbed Sam with some sand.,with-applicative
+36,David served Jerry some soda.,ditransitive
+36,Sam passed Bill some gasoline.,ditransitive
+36,Mark gave Aaron some slime.,ditransitive
+36,Harry threw Michael some gin.,ditransitive
+36,Chris offered some paint to Bob.,transitive
+36,George tossed some tea to Jason.,transitive
+36,Jack kicked some milk to Joseph.,transitive
+36,Mike chucked some whisky to Steve.,transitive
+36,Charlie sprayed some water on Eddie.,caused-motion
+36,William splashed some bleach on Joe.,caused-motion
+36,Adam spilled some blood on Thomas.,caused-motion
+36,Henry dropped some shampoo on Don.,caused-motion
+36,James covered Edward with some oil.,with-applicative
+36,Bruce brushed Andrew with some beer.,with-applicative
+36,Doug stained Tom with some acid.,with-applicative
+36,Frank rubbed Fred with some syrup.,with-applicative
+37,Henry offered William some shampoo.,ditransitive
+37,Charlie sent Mark some whisky.,ditransitive
+37,Bob served Harry some slime.,ditransitive
+37,Paul lent Michael some milk.,ditransitive
+37,Thomas gave some acid to George.,transitive
+37,Andrew brought some beer to Aaron.,transitive
+37,Tom passed some bleach to Doug.,transitive
+37,Joe kicked some tea to Chris.,transitive
+37,Bruce sprayed some vodka on Fred.,caused-motion
+37,Edward spilled some sand on Frank.,caused-motion
+37,John dumped some soda on Joseph.,caused-motion
+37,Don dropped some juice on Jerry.,caused-motion
+37,Eric brushed Steve with some paint.,with-applicative
+37,Jack coated Dylan with some blood.,with-applicative
+37,Sam covered James with some gin.,with-applicative
+37,Bill dabbed Adam with some gasoline.,with-applicative
+38,Mike lent Sam some tea.,ditransitive
+38,David bought Frank some water.,ditransitive
+38,Fred handed Jack some whisky.,ditransitive
+38,Mark threw Henry some acid.,ditransitive
+38,Eddie kicked some yogurt to George.,transitive
+38,James chucked some coffee to Eric.,transitive
+38,Doug brought some bleach to Andrew.,transitive
+38,Tom tossed some milk to Michael.,transitive
+38,Edward sprayed some vodka on Adam.,caused-motion
+38,Harry dumped some shampoo on Joe.,caused-motion
+38,Jerry dropped some honey on Charlie.,caused-motion
+38,Bob spilled some ink on Bill.,caused-motion
+38,Paul brushed Joseph with some sand.,with-applicative
+38,Chris plastered Dylan with some wine.,with-applicative
+38,Thomas covered John with some juice.,with-applicative
+38,Don stained Jason with some paint.,with-applicative
+39,Henry lent Doug some ink.,ditransitive
+39,Jerry bought Charlie some gin.,ditransitive
+39,Don offered Eric some milk.,ditransitive
+39,Edward sent Jason some paint.,ditransitive
+39,Fred gave some soda to Bob.,transitive
+39,James brought some juice to Aaron.,transitive
+39,David handed some water to Thomas.,transitive
+39,Tom tossed some syrup to Bill.,transitive
+39,Dylan sprinkled some slime on Joseph.,caused-motion
+39,Chris spilled some gasoline on Eddie.,caused-motion
+39,Michael dropped some blood on George.,caused-motion
+39,Harry poured some oil on John.,caused-motion
+39,William dabbed Adam with some cream.,with-applicative
+39,Joe rubbed Bruce with some tea.,with-applicative
+39,Frank sprayed Mike with some wine.,with-applicative
+39,Jack brushed Mark with some beer.,with-applicative
+40,Chris served Adam some sand.,ditransitive
+40,George brought Aaron some paint.,ditransitive
+40,Mike handed Don some vodka.,ditransitive
+40,Harry threw Jerry some cream.,ditransitive
+40,Michael kicked some ink to Eric.,transitive
+40,Eddie offered some soup to Mark.,transitive
+40,William gave some shampoo to Bill.,transitive
+40,Paul tossed some oil to Bruce.,transitive
+40,Steve spilled some blood on Thomas.,caused-motion
+40,Andrew poured some water on David.,caused-motion
+40,James dumped some honey on Jack.,caused-motion
+40,Frank dropped some yogurt on Tom.,caused-motion
+40,Charlie brushed Jason with some soda.,with-applicative
+40,John plastered Doug with some beer.,with-applicative
+40,Edward stained Joseph with some slime.,with-applicative
+40,Bob coated Joe with some bleach.,with-applicative
+41,William gave Mike some beer.,ditransitive
+41,Joseph sent Adam some acid.,ditransitive
+41,Charlie brought Don some vodka.,ditransitive
+41,Jason handed Eddie some bleach.,ditransitive
+41,Edward chucked some soda to Jerry.,transitive
+41,Bruce passed some soup to Bill.,transitive
+41,Dylan tossed some wine to Steve.,transitive
+41,George kicked some sand to Michael.,transitive
+41,Henry spilled some coffee on Doug.,caused-motion
+41,John poured some cream on Aaron.,caused-motion
+41,Thomas sprinkled some tea on Joe.,caused-motion
+41,Andrew dropped some shampoo on Chris.,caused-motion
+41,Harry dabbed James with some water.,with-applicative
+41,Mark sprayed Frank with some slime.,with-applicative
+41,Fred coated Jack with some honey.,with-applicative
+41,Paul brushed Sam with some milk.,with-applicative
+42,Bob offered James some cream.,ditransitive
+42,Harry passed Henry some gin.,ditransitive
+42,Don served Paul some beer.,ditransitive
+42,Eric lent Jerry some vodka.,ditransitive
+42,Jason handed some paint to Steve.,transitive
+42,Aaron threw some wine to Andrew.,transitive
+42,Charlie sent some yogurt to Joe.,transitive
+42,Chris tossed some whisky to David.,transitive
+42,Doug splashed some bleach on Edward.,caused-motion
+42,Bill sprayed some oil on Tom.,caused-motion
+42,Mike spilled some acid on Thomas.,caused-motion
+42,John poured some juice on Mark.,caused-motion
+42,Michael rubbed Eddie with some ink.,with-applicative
+42,Adam stained Fred with some sand.,with-applicative
+42,George covered Jack with some syrup.,with-applicative
+42,Joseph coated Dylan with some coffee.,with-applicative
+43,Fred threw Dylan some beer.,ditransitive
+43,John lent Jack some soda.,ditransitive
+43,Frank sent Joseph some acid.,ditransitive
+43,Andrew bought Sam some wine.,ditransitive
+43,Bob gave some vodka to Bill.,transitive
+43,Steve kicked some gasoline to Bruce.,transitive
+43,Henry chucked some bleach to Charlie.,transitive
+43,Doug brought some cream to Mark.,transitive
+43,Tom sprinkled some sand on Jason.,caused-motion
+43,Paul poured some paint on Mike.,caused-motion
+43,Aaron dropped some coffee on George.,caused-motion
+43,Jerry sprayed some water on Don.,caused-motion
+43,Harry rubbed James with some tea.,with-applicative
+43,David coated Chris with some milk.,with-applicative
+43,Edward plastered Thomas with some shampoo.,with-applicative
+43,Eddie dabbed Adam with some soup.,with-applicative
+44,Aaron served Eric some milk.,ditransitive
+44,Mark offered Joseph some syrup.,ditransitive
+44,Joe lent Steve some vodka.,ditransitive
+44,Harry bought Jerry some bleach.,ditransitive
+44,Bruce kicked some beer to Adam.,transitive
+44,Charlie tossed some acid to Doug.,transitive
+44,Sam brought some coffee to David.,transitive
+44,James chucked some ink to Bill.,transitive
+44,George sprinkled some yogurt on Don.,caused-motion
+44,Dylan sprayed some honey on Henry.,caused-motion
+44,Tom spilled some paint on Jason.,caused-motion
+44,Jack splashed some water on Eddie.,caused-motion
+44,Andrew rubbed Michael with some soup.,with-applicative
+44,Edward covered Fred with some shampoo.,with-applicative
+44,Thomas plastered Chris with some wine.,with-applicative
+44,William stained Frank with some juice.,with-applicative
+45,Adam bought Aaron some paint.,ditransitive
+45,Frank served Eddie some slime.,ditransitive
+45,Jerry lent Michael some cream.,ditransitive
+45,Mike threw Doug some wine.,ditransitive
+45,David brought some shampoo to John.,transitive
+45,Henry passed some bleach to William.,transitive
+45,Fred sent some beer to Joseph.,transitive
+45,Jack gave some tea to Bob.,transitive
+45,Eric spilled some whisky on Jason.,caused-motion
+45,Bruce splashed some yogurt on George.,caused-motion
+45,Dylan dropped some soup on Harry.,caused-motion
+45,Charlie dumped some soda on James.,caused-motion
+45,Thomas coated Edward with some syrup.,with-applicative
+45,Tom rubbed Steve with some oil.,with-applicative
+45,Sam stained Chris with some blood.,with-applicative
+45,Paul covered Joe with some acid.,with-applicative
+46,Joe brought Chris some wine.,ditransitive
+46,George offered Mark some coffee.,ditransitive
+46,Thomas bought Paul some yogurt.,ditransitive
+46,Edward lent Doug some cream.,ditransitive
+46,Tom tossed some syrup to Harry.,transitive
+46,Bob gave some acid to Dylan.,transitive
+46,Eddie handed some tea to David.,transitive
+46,Sam kicked some shampoo to Jack.,transitive
+46,Jason splashed some milk on Aaron.,caused-motion
+46,Eric dumped some soup on Steve.,caused-motion
+46,Andrew sprinkled some juice on Jerry.,caused-motion
+46,Frank poured some bleach on Bill.,caused-motion
+46,Don dabbed Fred with some ink.,with-applicative
+46,Joseph brushed Mike with some blood.,with-applicative
+46,Charlie sprayed Michael with some gin.,with-applicative
+46,Adam plastered John with some slime.,with-applicative
+47,Eric bought Thomas some juice.,ditransitive
+47,Don lent Bruce some water.,ditransitive
+47,William threw John some beer.,ditransitive
+47,Jerry gave Charlie some honey.,ditransitive
+47,James handed some soda to Aaron.,transitive
+47,Tom offered some bleach to Adam.,transitive
+47,Joe chucked some gin to Doug.,transitive
+47,Michael passed some wine to Bob.,transitive
+47,Mark sprinkled some slime on Eddie.,caused-motion
+47,Chris poured some yogurt on Frank.,caused-motion
+47,Sam dropped some milk on Andrew.,caused-motion
+47,Henry sprayed some vodka on George.,caused-motion
+47,Steve coated Jack with some whisky.,with-applicative
+47,Mike rubbed Fred with some soup.,with-applicative
+47,Bill brushed Paul with some sand.,with-applicative
+47,David covered Harry with some gasoline.,with-applicative
+48,Harry handed Henry some gin.,ditransitive
+48,Bob brought Steve some ink.,ditransitive
+48,Don offered Charlie some soda.,ditransitive
+48,Dylan threw Fred some vodka.,ditransitive
+48,Tom tossed some oil to Frank.,transitive
+48,Jerry chucked some soup to Thomas.,transitive
+48,Adam passed some whisky to William.,transitive
+48,Sam kicked some paint to Edward.,transitive
+48,George dropped some cream on Chris.,caused-motion
+48,Mike sprayed some honey on Jason.,caused-motion
+48,Jack spilled some gasoline on Joe.,caused-motion
+48,Bill poured some tea on Mark.,caused-motion
+48,Aaron stained Joseph with some beer.,with-applicative
+48,Eric plastered Paul with some water.,with-applicative
+48,James brushed Doug with some milk.,with-applicative
+48,David dabbed Bruce with some coffee.,with-applicative
+49,Bruce sent Adam some gasoline.,ditransitive
+49,Frank handed Andrew some coffee.,ditransitive
+49,Mark gave Jason some beer.,ditransitive
+49,Edward served Doug some oil.,ditransitive
+49,Bob kicked some slime to Bill.,transitive
+49,Paul chucked some blood to Aaron.,transitive
+49,Joe threw some sand to William.,transitive
+49,James passed some cream to Don.,transitive
+49,John dropped some juice on Thomas.,caused-motion
+49,Jack sprayed some whisky on Michael.,caused-motion
+49,Sam poured some yogurt on Eddie.,caused-motion
+49,Henry dumped some soda on Fred.,caused-motion
+49,Chris stained Tom with some syrup.,with-applicative
+49,George brushed Jerry with some water.,with-applicative
+49,Harry plastered David with some soup.,with-applicative
+49,Mike rubbed Charlie with some wine.,with-applicative
+50,Tom lent Joe some gasoline.,ditransitive
+50,Joseph sent Paul some yogurt.,ditransitive
+50,Don offered Edward some vodka.,ditransitive
+50,Eric threw John some soda.,ditransitive
+50,George gave some slime to Mark.,transitive
+50,Bob chucked some ink to Harry.,transitive
+50,Doug passed some acid to Henry.,transitive
+50,Sam tossed some soup to Fred.,transitive
+50,Thomas dumped some cream on Aaron.,caused-motion
+50,Michael sprinkled some honey on Mike.,caused-motion
+50,James spilled some blood on Bill.,caused-motion
+50,Bruce dropped some beer on Jack.,caused-motion
+50,Dylan covered Chris with some coffee.,with-applicative
+50,Steve brushed Andrew with some tea.,with-applicative
+50,David dabbed Adam with some whisky.,with-applicative
+50,Jerry stained Charlie with some gin.,with-applicative
+51,Andrew lent Charlie some wine.,ditransitive
+51,Bill passed Jason some gasoline.,ditransitive
+51,Paul handed Edward some bleach.,ditransitive
+51,Doug sent Jack some tea.,ditransitive
+51,Fred kicked some juice to Eric.,transitive
+51,Steve offered some paint to David.,transitive
+51,Harry gave some shampoo to John.,transitive
+51,Sam threw some yogurt to William.,transitive
+51,Bob spilled some blood on Joe.,caused-motion
+51,Frank dumped some acid on Adam.,caused-motion
+51,Aaron splashed some coffee on Don.,caused-motion
+51,Thomas sprayed some gin on Dylan.,caused-motion
+51,Eddie stained Henry with some honey.,with-applicative
+51,Mark coated Chris with some vodka.,with-applicative
+51,Bruce rubbed Tom with some milk.,with-applicative
+51,George brushed James with some beer.,with-applicative
+52,Michael handed Jerry some water.,ditransitive
+52,Charlie sent Frank some milk.,ditransitive
+52,John threw Adam some juice.,ditransitive
+52,Joe gave Mike some wine.,ditransitive
+52,Sam brought some tea to Tom.,transitive
+52,Paul offered some coffee to Fred.,transitive
+52,Bruce chucked some soup to Steve.,transitive
+52,Dylan kicked some gin to Chris.,transitive
+52,Doug splashed some soda on Harry.,caused-motion
+52,Joseph sprayed some sand on Bob.,caused-motion
+52,James sprinkled some syrup on Edward.,caused-motion
+52,Thomas spilled some slime on Don.,caused-motion
+52,Henry rubbed Jason with some whisky.,with-applicative
+52,Eric stained Andrew with some blood.,with-applicative
+52,George brushed William with some ink.,with-applicative
+52,Eddie coated Aaron with some vodka.,with-applicative
+53,Bruce served Andrew some oil.,ditransitive
+53,Chris offered Tom some honey.,ditransitive
+53,David brought James some whisky.,ditransitive
+53,Joseph sent Edward some soup.,ditransitive
+53,Sam tossed some cream to George.,transitive
+53,Michael handed some tea to Eric.,transitive
+53,Mark passed some bleach to Doug.,transitive
+53,Dylan chucked some juice to Henry.,transitive
+53,Bill sprayed some acid on Bob.,caused-motion
+53,Mike dropped some water on Thomas.,caused-motion
+53,Fred sprinkled some soda on Charlie.,caused-motion
+53,Paul splashed some syrup on Eddie.,caused-motion
+53,Aaron covered Harry with some blood.,with-applicative
+53,Don dabbed Joe with some ink.,with-applicative
+53,Steve plastered Adam with some milk.,with-applicative
+53,William coated Jason with some slime.,with-applicative
+54,Aaron brought Joe some coffee.,ditransitive
+54,Michael bought Jerry some gin.,ditransitive
+54,Dylan served Mike some ink.,ditransitive
+54,Doug handed Edward some soda.,ditransitive
+54,Andrew gave some water to Jason.,transitive
+54,George offered some blood to Don.,transitive
+54,John threw some tea to Fred.,transitive
+54,Jack tossed some paint to Bob.,transitive
+54,Sam dropped some syrup on Bruce.,caused-motion
+54,Paul sprayed some sand on David.,caused-motion
+54,Thomas dumped some oil on Bill.,caused-motion
+54,Mark spilled some gasoline on Joseph.,caused-motion
+54,Tom plastered James with some slime.,with-applicative
+54,Charlie rubbed Adam with some beer.,with-applicative
+54,Steve dabbed William with some juice.,with-applicative
+54,Frank coated Eddie with some soup.,with-applicative
+55,Michael served Dylan some honey.,ditransitive
+55,Mike gave Jason some juice.,ditransitive
+55,Paul lent David some paint.,ditransitive
+55,Aaron passed Mark some sand.,ditransitive
+55,Edward handed some syrup to Jerry.,transitive
+55,Jack brought some soup to Henry.,transitive
+55,Bob chucked some yogurt to Chris.,transitive
+55,Frank kicked some milk to William.,transitive
+55,Tom poured some vodka on Eddie.,caused-motion
+55,Harry sprayed some oil on Bill.,caused-motion
+55,George spilled some slime on Eric.,caused-motion
+55,Andrew dumped some bleach on Adam.,caused-motion
+55,Bruce covered Thomas with some acid.,with-applicative
+55,Doug coated John with some wine.,with-applicative
+55,Joe brushed James with some blood.,with-applicative
+55,Charlie dabbed Don with some tea.,with-applicative
+56,Sam gave Michael some oil.,ditransitive
+56,Joe served Aaron some gin.,ditransitive
+56,Don bought Fred some paint.,ditransitive
+56,Andrew sent Bob some acid.,ditransitive
+56,John brought some cream to Eddie.,transitive
+56,Eric chucked some gasoline to Joseph.,transitive
+56,Harry passed some milk to William.,transitive
+56,Adam offered some honey to Bill.,transitive
+56,Dylan dumped some ink on Jack.,caused-motion
+56,James spilled some whisky on Frank.,caused-motion
+56,Steve splashed some yogurt on Jason.,caused-motion
+56,David poured some wine on Mark.,caused-motion
+56,Charlie covered Chris with some blood.,with-applicative
+56,Jerry plastered Doug with some juice.,with-applicative
+56,Bruce stained Henry with some syrup.,with-applicative
+56,Thomas dabbed Edward with some water.,with-applicative
+57,Henry threw Jack some wine.,ditransitive
+57,Sam served Charlie some sand.,ditransitive
+57,Eddie brought Tom some oil.,ditransitive
+57,Mark bought Joe some cream.,ditransitive
+57,James chucked some slime to Don.,transitive
+57,Paul offered some honey to Harry.,transitive
+57,Adam passed some ink to Joseph.,transitive
+57,Chris tossed some water to David.,transitive
+57,John spilled some acid on Dylan.,caused-motion
+57,Doug dropped some vodka on Thomas.,caused-motion
+57,Aaron dumped some gasoline on Bruce.,caused-motion
+57,Frank sprayed some soup on Steve.,caused-motion
+57,Fred brushed William with some bleach.,with-applicative
+57,Edward coated Eric with some syrup.,with-applicative
+57,George dabbed Bill with some shampoo.,with-applicative
+57,Bob covered Michael with some milk.,with-applicative
+58,Tom lent Michael some slime.,ditransitive
+58,Adam offered David some milk.,ditransitive
+58,Jason handed Steve some yogurt.,ditransitive
+58,Paul gave William some water.,ditransitive
+58,Bruce threw some soda to Thomas.,transitive
+58,Sam tossed some gasoline to Chris.,transitive
+58,Joe sent some juice to Andrew.,transitive
+58,Mike kicked some honey to Joseph.,transitive
+58,Don spilled some whisky on Fred.,caused-motion
+58,Frank poured some cream on Edward.,caused-motion
+58,Harry splashed some oil on Doug.,caused-motion
+58,Jack sprayed some wine on Eddie.,caused-motion
+58,Henry covered George with some shampoo.,with-applicative
+58,Charlie brushed Mark with some ink.,with-applicative
+58,Bill dabbed Jerry with some paint.,with-applicative
+58,Eric coated John with some vodka.,with-applicative
+59,Mark offered Jack some wine.,ditransitive
+59,George handed Harry some oil.,ditransitive
+59,Mike sent Paul some paint.,ditransitive
+59,William brought Don some cream.,ditransitive
+59,Eric chucked some yogurt to James.,transitive
+59,Sam passed some ink to Jason.,transitive
+59,Frank threw some blood to Aaron.,transitive
+59,Henry tossed some juice to Andrew.,transitive
+59,Joe spilled some tea on Edward.,caused-motion
+59,Chris sprayed some syrup on Eddie.,caused-motion
+59,Adam sprinkled some water on Doug.,caused-motion
+59,Thomas dropped some acid on Dylan.,caused-motion
+59,Steve plastered David with some gin.,with-applicative
+59,Michael dabbed Bruce with some vodka.,with-applicative
+59,Charlie rubbed John with some shampoo.,with-applicative
+59,Bill stained Jerry with some coffee.,with-applicative
+60,Thomas offered Steve some milk.,ditransitive
+60,Jerry gave Chris some juice.,ditransitive
+60,Mike served Michael some coffee.,ditransitive
+60,Jason bought Jack some paint.,ditransitive
+60,Edward tossed some ink to William.,transitive
+60,Andrew chucked some gasoline to Fred.,transitive
+60,James brought some water to Bill.,transitive
+60,Harry passed some honey to Joseph.,transitive
+60,Aaron dropped some soda on David.,caused-motion
+60,Henry poured some beer on Bruce.,caused-motion
+60,Mark splashed some syrup on George.,caused-motion
+60,Paul dumped some vodka on Eric.,caused-motion
+60,Sam rubbed Tom with some cream.,with-applicative
+60,Dylan stained Adam with some yogurt.,with-applicative
+60,John dabbed Bob with some gin.,with-applicative
+60,Charlie sprayed Eddie with some wine.,with-applicative
+61,Harry offered Mark some bleach.,ditransitive
+61,Bob served Don some blood.,ditransitive
+61,Eddie gave Joe some shampoo.,ditransitive
+61,Andrew sent Sam some tea.,ditransitive
+61,Adam chucked some soup to William.,transitive
+61,Frank brought some gin to Aaron.,transitive
+61,Bruce handed some gasoline to Steve.,transitive
+61,Eric tossed some soda to Jason.,transitive
+61,Joseph dumped some beer on Henry.,caused-motion
+61,Michael splashed some whisky on Dylan.,caused-motion
+61,Jack spilled some oil on Charlie.,caused-motion
+61,Jerry sprinkled some juice on Mike.,caused-motion
+61,Thomas dabbed Fred with some honey.,with-applicative
+61,Bill covered Paul with some acid.,with-applicative
+61,James plastered Doug with some water.,with-applicative
+61,Chris sprayed Edward with some paint.,with-applicative
+62,Paul sent Tom some honey.,ditransitive
+62,Frank offered Fred some beer.,ditransitive
+62,James gave Joseph some oil.,ditransitive
+62,John handed Bruce some tea.,ditransitive
+62,David tossed some paint to Don.,transitive
+62,Doug passed some syrup to Jason.,transitive
+62,Henry kicked some bleach to William.,transitive
+62,Bob chucked some juice to Aaron.,transitive
+62,Edward dumped some soup on Harry.,caused-motion
+62,Steve spilled some slime on George.,caused-motion
+62,Mark sprayed some acid on Sam.,caused-motion
+62,Michael poured some sand on Bill.,caused-motion
+62,Thomas dabbed Mike with some coffee.,with-applicative
+62,Eric rubbed Adam with some ink.,with-applicative
+62,Jack covered Andrew with some wine.,with-applicative
+62,Jerry stained Dylan with some vodka.,with-applicative
+63,Mark gave Eddie some syrup.,ditransitive
+63,Henry lent Dylan some ink.,ditransitive
+63,Jason handed Paul some cream.,ditransitive
+63,Aaron passed Edward some whisky.,ditransitive
+63,Tom kicked some soup to Charlie.,transitive
+63,Jack chucked some yogurt to Frank.,transitive
+63,John offered some vodka to Bruce.,transitive
+63,Adam threw some beer to Don.,transitive
+63,James sprinkled some honey on William.,caused-motion
+63,Sam dumped some coffee on George.,caused-motion
+63,Doug splashed some water on David.,caused-motion
+63,Eric poured some slime on Joseph.,caused-motion
+63,Chris rubbed Harry with some gasoline.,with-applicative
+63,Michael covered Joe with some blood.,with-applicative
+63,Jerry stained Fred with some gin.,with-applicative
+63,Mike plastered Andrew with some paint.,with-applicative
+64,William lent Jack some honey.,ditransitive
+64,Tom served David some syrup.,ditransitive
+64,Henry passed Jerry some soda.,ditransitive
+64,Andrew offered Steve some gin.,ditransitive
+64,Doug handed some beer to Edward.,transitive
+64,Bruce kicked some shampoo to John.,transitive
+64,Fred chucked some cream to Bill.,transitive
+64,Paul tossed some wine to Aaron.,transitive
+64,Charlie dumped some juice on Thomas.,caused-motion
+64,Mark dropped some vodka on Eric.,caused-motion
+64,Harry splashed some water on Dylan.,caused-motion
+64,Jason poured some yogurt on Eddie.,caused-motion
+64,Mike plastered Bob with some milk.,with-applicative
+64,Michael dabbed Joseph with some slime.,with-applicative
+64,Sam stained James with some oil.,with-applicative
+64,Chris brushed Don with some whisky.,with-applicative
+65,Bob lent Joe some water.,ditransitive
+65,Mark brought Bill some honey.,ditransitive
+65,Frank bought Chris some whisky.,ditransitive
+65,Steve threw Sam some wine.,ditransitive
+65,James kicked some blood to Mike.,transitive
+65,Jerry tossed some juice to Jason.,transitive
+65,Jack passed some shampoo to Michael.,transitive
+65,Doug gave some cream to Aaron.,transitive
+65,Fred poured some soup on William.,caused-motion
+65,Edward sprayed some ink on Harry.,caused-motion
+65,Henry splashed some sand on Charlie.,caused-motion
+65,Tom dumped some syrup on Dylan.,caused-motion
+65,Adam dabbed Eddie with some vodka.,with-applicative
+65,Don stained Andrew with some yogurt.,with-applicative
+65,Joseph rubbed Thomas with some coffee.,with-applicative
+65,John plastered Eric with some gin.,with-applicative
+66,Mark brought John some wine.,ditransitive
+66,Bill sent Eric some bleach.,ditransitive
+66,Jason handed Charlie some soup.,ditransitive
+66,Steve bought Dylan some beer.,ditransitive
+66,Michael kicked some soda to Jerry.,transitive
+66,Tom passed some gin to George.,transitive
+66,William chucked some water to Doug.,transitive
+66,Andrew tossed some coffee to Mike.,transitive
+66,Chris dumped some cream on Adam.,caused-motion
+66,Eddie dropped some gasoline on Sam.,caused-motion
+66,Bob spilled some whisky on Don.,caused-motion
+66,Bruce splashed some slime on Frank.,caused-motion
+66,Fred brushed Jack with some blood.,with-applicative
+66,Paul plastered Edward with some yogurt.,with-applicative
+66,David coated Thomas with some milk.,with-applicative
+66,Joseph rubbed Joe with some vodka.,with-applicative
+67,Fred sent Eddie some slime.,ditransitive
+67,Bob offered Jerry some syrup.,ditransitive
+67,Jason served John some soup.,ditransitive
+67,Chris threw Frank some gasoline.,ditransitive
+67,Joseph gave some bleach to Sam.,transitive
+67,Bill brought some paint to Aaron.,transitive
+67,Mark passed some ink to Bruce.,transitive
+67,Michael chucked some shampoo to Tom.,transitive
+67,Mike splashed some soda on Adam.,caused-motion
+67,Don sprayed some juice on Doug.,caused-motion
+67,Steve poured some vodka on Charlie.,caused-motion
+67,Joe dumped some tea on Paul.,caused-motion
+67,Dylan stained Eric with some acid.,with-applicative
+67,Henry brushed Harry with some oil.,with-applicative
+67,Jack dabbed James with some beer.,with-applicative
+67,William covered David with some honey.,with-applicative
+68,Fred offered Sam some honey.,ditransitive
+68,Mike sent Aaron some water.,ditransitive
+68,Eddie handed Charlie some vodka.,ditransitive
+68,Harry threw Doug some syrup.,ditransitive
+68,Chris brought some ink to Frank.,transitive
+68,Tom gave some oil to Jerry.,transitive
+68,Mark passed some gin to Joe.,transitive
+68,John chucked some coffee to William.,transitive
+68,Steve dropped some shampoo on Joseph.,caused-motion
+68,Edward splashed some acid on Bob.,caused-motion
+68,Bill sprinkled some soda on Michael.,caused-motion
+68,George spilled some gasoline on Bruce.,caused-motion
+68,Eric brushed Jack with some whisky.,with-applicative
+68,Henry dabbed Jason with some yogurt.,with-applicative
+68,Don covered Adam with some milk.,with-applicative
+68,Thomas coated Andrew with some soup.,with-applicative
+69,Paul bought Jerry some vodka.,ditransitive
+69,Bob handed William some slime.,ditransitive
+69,Fred offered Jack some syrup.,ditransitive
+69,Mark sent Charlie some honey.,ditransitive
+69,Tom tossed some beer to Don.,transitive
+69,Thomas kicked some cream to Eric.,transitive
+69,Henry threw some wine to Harry.,transitive
+69,Edward chucked some paint to Dylan.,transitive
+69,Steve dropped some soup on Chris.,caused-motion
+69,Joseph poured some milk on Andrew.,caused-motion
+69,Frank spilled some gasoline on Bill.,caused-motion
+69,James sprayed some shampoo on Aaron.,caused-motion
+69,Mike dabbed Joe with some tea.,with-applicative
+69,Bruce coated Michael with some oil.,with-applicative
+69,John stained Jason with some water.,with-applicative
+69,David brushed Sam with some sand.,with-applicative
+70,Jack brought Fred some acid.,ditransitive
+70,Bruce gave Jason some slime.,ditransitive
+70,Steve sent Chris some juice.,ditransitive
+70,Eric lent William some vodka.,ditransitive
+70,Tom offered some yogurt to Jerry.,transitive
+70,George handed some water to James.,transitive
+70,Don kicked some milk to Harry.,transitive
+70,Joe passed some soup to Sam.,transitive
+70,David splashed some whisky on Paul.,caused-motion
+70,Henry spilled some tea on Andrew.,caused-motion
+70,Dylan sprinkled some coffee on Thomas.,caused-motion
+70,Mike sprayed some bleach on Joseph.,caused-motion
+70,Aaron covered John with some ink.,with-applicative
+70,Frank stained Adam with some gin.,with-applicative
+70,Bob plastered Michael with some soda.,with-applicative
+70,Edward rubbed Bill with some blood.,with-applicative
+71,Bill offered Jerry some gasoline.,ditransitive
+71,James handed Sam some oil.,ditransitive
+71,Harry lent Joseph some coffee.,ditransitive
+71,Mark served Edward some beer.,ditransitive
+71,Dylan sent some juice to Bob.,transitive
+71,Eddie kicked some acid to Doug.,transitive
+71,George brought some soup to Jason.,transitive
+71,Don threw some ink to John.,transitive
+71,Thomas poured some soda on Paul.,caused-motion
+71,Adam splashed some sand on Jack.,caused-motion
+71,Charlie dropped some slime on David.,caused-motion
+71,Andrew sprinkled some bleach on Bruce.,caused-motion
+71,Steve covered Eric with some cream.,with-applicative
+71,Aaron stained Mike with some yogurt.,with-applicative
+71,Henry coated Tom with some water.,with-applicative
+71,Frank plastered Michael with some tea.,with-applicative
+72,Sam sent Jason some cream.,ditransitive
+72,Thomas served Andrew some paint.,ditransitive
+72,George handed Eric some milk.,ditransitive
+72,Bill offered Jack some soda.,ditransitive
+72,Joseph kicked some bleach to Chris.,transitive
+72,Don brought some oil to William.,transitive
+72,Fred chucked some tea to Harry.,transitive
+72,Steve tossed some syrup to Bruce.,transitive
+72,Henry dropped some yogurt on John.,caused-motion
+72,Aaron dumped some beer on Adam.,caused-motion
+72,Doug sprayed some shampoo on Charlie.,caused-motion
+72,Paul sprinkled some slime on Jerry.,caused-motion
+72,Tom plastered Frank with some honey.,with-applicative
+72,James covered Eddie with some acid.,with-applicative
+72,Joe rubbed Mike with some juice.,with-applicative
+72,Mark dabbed Bob with some blood.,with-applicative
+73,Fred threw Paul some slime.,ditransitive
+73,Eric gave Bruce some soda.,ditransitive
+73,Steve offered William some water.,ditransitive
+73,Aaron passed Eddie some milk.,ditransitive
+73,Bill sent some acid to Mike.,transitive
+73,Jack tossed some paint to Frank.,transitive
+73,Charlie kicked some soup to Henry.,transitive
+73,Thomas brought some blood to John.,transitive
+73,Joe sprinkled some gin on Bob.,caused-motion
+73,Don dumped some coffee on Tom.,caused-motion
+73,Chris spilled some wine on David.,caused-motion
+73,Edward dropped some bleach on Jerry.,caused-motion
+73,George brushed Dylan with some oil.,with-applicative
+73,James sprayed Andrew with some yogurt.,with-applicative
+73,Sam coated Jason with some beer.,with-applicative
+73,Harry rubbed Mark with some cream.,with-applicative
+74,Steve served Paul some ink.,ditransitive
+74,Eddie offered Adam some whisky.,ditransitive
+74,Henry passed Bill some gasoline.,ditransitive
+74,Fred bought Michael some soup.,ditransitive
+74,Harry handed some tea to William.,transitive
+74,Edward threw some cream to Sam.,transitive
+74,George brought some juice to David.,transitive
+74,Dylan gave some blood to Chris.,transitive
+74,Andrew splashed some slime on Doug.,caused-motion
+74,Jerry dropped some shampoo on John.,caused-motion
+74,Aaron poured some wine on Joe.,caused-motion
+74,Bruce spilled some bleach on James.,caused-motion
+74,Tom rubbed Jack with some syrup.,with-applicative
+74,Thomas brushed Joseph with some vodka.,with-applicative
+74,Charlie coated Bob with some milk.,with-applicative
+74,Don sprayed Jason with some soda.,with-applicative
+75,Edward brought Dylan some gasoline.,ditransitive
+75,Jack lent Doug some slime.,ditransitive
+75,Bruce offered William some acid.,ditransitive
+75,James threw Eddie some soda.,ditransitive
+75,Andrew chucked some cream to Frank.,transitive
+75,Bob passed some whisky to Joe.,transitive
+75,Aaron handed some sand to George.,transitive
+75,Don sent some blood to Joseph.,transitive
+75,Sam poured some wine on John.,caused-motion
+75,Fred spilled some juice on Eric.,caused-motion
+75,Harry dropped some honey on David.,caused-motion
+75,Chris sprinkled some beer on Paul.,caused-motion
+75,Steve brushed Michael with some water.,with-applicative
+75,Jason coated Charlie with some oil.,with-applicative
+75,Henry dabbed Mark with some ink.,with-applicative
+75,Bill plastered Jerry with some bleach.,with-applicative
+76,George handed Thomas some sand.,ditransitive
+76,Mark bought David some shampoo.,ditransitive
+76,Joseph sent Charlie some bleach.,ditransitive
+76,Eric threw Bruce some cream.,ditransitive
+76,Doug passed some paint to James.,transitive
+76,Andrew kicked some beer to Jack.,transitive
+76,Paul offered some wine to Jerry.,transitive
+76,Edward brought some ink to Tom.,transitive
+76,Chris splashed some syrup on Mike.,caused-motion
+76,Dylan dropped some gin on Sam.,caused-motion
+76,Jason sprayed some whisky on Joe.,caused-motion
+76,Don spilled some tea on Henry.,caused-motion
+76,Fred coated Michael with some water.,with-applicative
+76,Harry covered William with some honey.,with-applicative
+76,Steve plastered Bob with some gasoline.,with-applicative
+76,Aaron rubbed Bill with some coffee.,with-applicative
+77,Aaron offered Mike some paint.,ditransitive
+77,George served Paul some shampoo.,ditransitive
+77,Bob passed Dylan some tea.,ditransitive
+77,Bill handed Don some milk.,ditransitive
+77,Bruce chucked some gin to Jason.,transitive
+77,Harry sent some acid to Andrew.,transitive
+77,Sam kicked some gasoline to Joseph.,transitive
+77,Tom threw some cream to William.,transitive
+77,James dropped some vodka on Frank.,caused-motion
+77,Henry splashed some juice on Eric.,caused-motion
+77,Michael sprayed some coffee on Doug.,caused-motion
+77,John poured some ink on Fred.,caused-motion
+77,Mark coated Eddie with some whisky.,with-applicative
+77,Thomas rubbed Jack with some sand.,with-applicative
+77,Chris plastered David with some yogurt.,with-applicative
+77,Jerry stained Charlie with some slime.,with-applicative
+78,James brought Eric some cream.,ditransitive
+78,Jason handed Chris some blood.,ditransitive
+78,Edward bought John some soda.,ditransitive
+78,Andrew offered Frank some coffee.,ditransitive
+78,Thomas kicked some milk to Bob.,transitive
+78,Tom passed some honey to Joe.,transitive
+78,Bruce chucked some soup to Sam.,transitive
+78,Aaron threw some gin to Dylan.,transitive
+78,Fred sprayed some oil on David.,caused-motion
+78,Paul poured some tea on Adam.,caused-motion
+78,Steve splashed some yogurt on Jerry.,caused-motion
+78,Doug spilled some slime on Mike.,caused-motion
+78,Harry coated Henry with some water.,with-applicative
+78,Jack dabbed George with some shampoo.,with-applicative
+78,Charlie plastered Bill with some acid.,with-applicative
+78,Michael covered Eddie with some gasoline.,with-applicative
+79,Fred offered Mark some sand.,ditransitive
+79,William gave John some vodka.,ditransitive
+79,Aaron lent Chris some ink.,ditransitive
+79,Andrew sent Jack some soup.,ditransitive
+79,Joseph passed some whisky to Harry.,transitive
+79,Don threw some paint to Eric.,transitive
+79,Dylan handed some oil to Paul.,transitive
+79,Joe tossed some cream to Jason.,transitive
+79,Jerry dropped some bleach on George.,caused-motion
+79,David poured some coffee on Bill.,caused-motion
+79,Doug sprayed some slime on Charlie.,caused-motion
+79,Bob sprinkled some tea on Michael.,caused-motion
+79,Adam coated Sam with some water.,with-applicative
+79,Steve stained Eddie with some beer.,with-applicative
+79,Henry rubbed Frank with some milk.,with-applicative
+79,Edward brushed Tom with some soda.,with-applicative
+80,Mark served Charlie some gasoline.,ditransitive
+80,Joseph sent Harry some tea.,ditransitive
+80,James handed Thomas some bleach.,ditransitive
+80,Tom offered Don some coffee.,ditransitive
+80,Bruce passed some sand to Fred.,transitive
+80,Chris gave some soup to Edward.,transitive
+80,Sam chucked some beer to Bob.,transitive
+80,Adam threw some milk to Jason.,transitive
+80,Bill dumped some slime on Michael.,caused-motion
+80,Jerry spilled some juice on Joe.,caused-motion
+80,George sprinkled some soda on William.,caused-motion
+80,Andrew poured some water on Steve.,caused-motion
+80,Paul stained Aaron with some shampoo.,with-applicative
+80,Mike dabbed John with some whisky.,with-applicative
+80,Frank coated Henry with some vodka.,with-applicative
+80,Jack covered Dylan with some honey.,with-applicative
+81,Adam offered Jack some blood.,ditransitive
+81,Harry threw Doug some oil.,ditransitive
+81,Andrew served Charlie some tea.,ditransitive
+81,Thomas gave William some gasoline.,ditransitive
+81,Bob brought some beer to Aaron.,transitive
+81,David handed some slime to Mark.,transitive
+81,James chucked some paint to George.,transitive
+81,Joseph passed some bleach to Edward.,transitive
+81,Eric sprayed some yogurt on Sam.,caused-motion
+81,Henry spilled some wine on Eddie.,caused-motion
+81,Fred splashed some acid on Bill.,caused-motion
+81,Dylan dumped some soup on Jason.,caused-motion
+81,Michael brushed Frank with some whisky.,with-applicative
+81,John rubbed Bruce with some sand.,with-applicative
+81,Tom covered Don with some water.,with-applicative
+81,Paul plastered Joe with some honey.,with-applicative
+82,Chris sent Harry some vodka.,ditransitive
+82,Jerry served Eddie some gasoline.,ditransitive
+82,John threw Joe some acid.,ditransitive
+82,Charlie lent Adam some water.,ditransitive
+82,Frank handed some cream to Mike.,transitive
+82,Joseph brought some soup to Tom.,transitive
+82,Andrew kicked some coffee to Sam.,transitive
+82,Mark offered some yogurt to Steve.,transitive
+82,Dylan splashed some sand on Bruce.,caused-motion
+82,David dropped some shampoo on William.,caused-motion
+82,George sprinkled some soda on Aaron.,caused-motion
+82,Jason poured some blood on Michael.,caused-motion
+82,Edward brushed James with some tea.,with-applicative
+82,Doug coated Henry with some gin.,with-applicative
+82,Jack dabbed Fred with some beer.,with-applicative
+82,Don stained Bob with some slime.,with-applicative
+83,Fred brought Doug some bleach.,ditransitive
+83,David sent William some gasoline.,ditransitive
+83,Mike lent Edward some paint.,ditransitive
+83,Eddie passed Jason some tea.,ditransitive
+83,George gave some juice to Eric.,transitive
+83,Bruce offered some whisky to Andrew.,transitive
+83,Michael threw some ink to James.,transitive
+83,Henry handed some wine to Charlie.,transitive
+83,Joseph splashed some syrup on Chris.,caused-motion
+83,Dylan dumped some soup on Steve.,caused-motion
+83,Bob sprayed some sand on Sam.,caused-motion
+83,Paul poured some blood on Don.,caused-motion
+83,Frank coated Joe with some coffee.,with-applicative
+83,Tom brushed Thomas with some soda.,with-applicative
+83,Jack rubbed Bill with some slime.,with-applicative
+83,Harry dabbed Aaron with some beer.,with-applicative
+84,Dylan offered George some slime.,ditransitive
+84,Jerry sent Joseph some ink.,ditransitive
+84,Eddie served William some acid.,ditransitive
+84,Jack passed Don some whisky.,ditransitive
+84,Henry tossed some shampoo to Tom.,transitive
+84,Mark handed some gin to Andrew.,transitive
+84,Adam kicked some beer to Joe.,transitive
+84,Steve brought some honey to Bob.,transitive
+84,Michael sprinkled some juice on Edward.,caused-motion
+84,Bruce dumped some bleach on Fred.,caused-motion
+84,Sam splashed some vodka on Jason.,caused-motion
+84,James dropped some wine on Mike.,caused-motion
+84,Chris brushed Frank with some blood.,with-applicative
+84,Paul dabbed Charlie with some syrup.,with-applicative
+84,David coated Doug with some yogurt.,with-applicative
+84,Eric covered John with some milk.,with-applicative
+85,Harry gave James some gin.,ditransitive
+85,Fred sent David some tea.,ditransitive
+85,Sam threw Paul some cream.,ditransitive
+85,Aaron brought Jason some whisky.,ditransitive
+85,Edward passed some slime to Bill.,transitive
+85,Eric chucked some ink to Mark.,transitive
+85,Michael kicked some gasoline to Chris.,transitive
+85,Bob tossed some syrup to Don.,transitive
+85,Charlie spilled some shampoo on Doug.,caused-motion
+85,Adam poured some yogurt on Henry.,caused-motion
+85,Bruce sprayed some bleach on Thomas.,caused-motion
+85,Dylan splashed some honey on Joe.,caused-motion
+85,Steve plastered William with some oil.,with-applicative
+85,George dabbed Jerry with some paint.,with-applicative
+85,Frank rubbed Tom with some juice.,with-applicative
+85,Mike covered Jack with some milk.,with-applicative
+86,Paul passed Henry some juice.,ditransitive
+86,George bought William some beer.,ditransitive
+86,Charlie brought James some shampoo.,ditransitive
+86,Tom threw John some milk.,ditransitive
+86,Harry kicked some cream to Joseph.,transitive
+86,Michael chucked some honey to Steve.,transitive
+86,Jerry gave some bleach to Bob.,transitive
+86,Andrew sent some gasoline to Adam.,transitive
+86,Chris sprinkled some gin on Edward.,caused-motion
+86,Sam dropped some soup on Bill.,caused-motion
+86,David dumped some wine on Joe.,caused-motion
+86,Thomas spilled some oil on Frank.,caused-motion
+86,Mike stained Fred with some whisky.,with-applicative
+86,Bruce brushed Jack with some water.,with-applicative
+86,Don covered Jason with some sand.,with-applicative
+86,Mark dabbed Doug with some vodka.,with-applicative
+87,Don handed Mark some honey.,ditransitive
+87,Bruce gave Fred some beer.,ditransitive
+87,George lent Joe some wine.,ditransitive
+87,Henry sent Jason some gasoline.,ditransitive
+87,Chris tossed some acid to Jerry.,transitive
+87,Mike passed some vodka to Harry.,transitive
+87,John kicked some shampoo to Frank.,transitive
+87,Dylan offered some yogurt to Paul.,transitive
+87,Eric sprinkled some juice on Eddie.,caused-motion
+87,Sam poured some blood on James.,caused-motion
+87,Joseph splashed some oil on Bill.,caused-motion
+87,Michael spilled some syrup on David.,caused-motion
+87,Thomas rubbed Jack with some ink.,with-applicative
+87,Edward covered Tom with some gin.,with-applicative
+87,Aaron sprayed Doug with some bleach.,with-applicative
+87,Adam brushed Andrew with some coffee.,with-applicative
+88,Edward bought Mark some yogurt.,ditransitive
+88,Henry threw Bob some soup.,ditransitive
+88,Andrew gave Steve some paint.,ditransitive
+88,Joe passed Doug some slime.,ditransitive
+88,Paul brought some cream to Bruce.,transitive
+88,Adam kicked some acid to Harry.,transitive
+88,Michael chucked some ink to Charlie.,transitive
+88,Frank offered some juice to Sam.,transitive
+88,Eric sprinkled some tea on George.,caused-motion
+88,Jason dumped some beer on Bill.,caused-motion
+88,Joseph spilled some bleach on Jack.,caused-motion
+88,Chris sprayed some water on Don.,caused-motion
+88,Fred stained Jerry with some blood.,with-applicative
+88,David brushed John with some shampoo.,with-applicative
+88,James rubbed Eddie with some milk.,with-applicative
+88,Thomas covered William with some soda.,with-applicative
+89,Joe threw Sam some vodka.,ditransitive
+89,Frank gave Chris some bleach.,ditransitive
+89,William served Jerry some blood.,ditransitive
+89,Jack lent Paul some ink.,ditransitive
+89,Harry passed some oil to Michael.,transitive
+89,Eddie sent some soup to Charlie.,transitive
+89,Steve offered some syrup to Thomas.,transitive
+89,Fred brought some paint to Bruce.,transitive
+89,David poured some beer on Mark.,caused-motion
+89,Aaron sprinkled some honey on Andrew.,caused-motion
+89,Jason splashed some soda on Edward.,caused-motion
+89,Mike sprayed some slime on Dylan.,caused-motion
+89,Joseph rubbed Don with some gasoline.,with-applicative
+89,John coated Bill with some water.,with-applicative
+89,Eric plastered George with some gin.,with-applicative
+89,Bob covered Adam with some acid.,with-applicative
+90,Jack brought Fred some slime.,ditransitive
+90,Doug threw Andrew some ink.,ditransitive
+90,Jason passed Edward some bleach.,ditransitive
+90,Bob bought Sam some shampoo.,ditransitive
+90,Don handed some milk to Michael.,transitive
+90,Adam gave some vodka to Steve.,transitive
+90,Paul sent some gasoline to Harry.,transitive
+90,George chucked some honey to Dylan.,transitive
+90,Eddie dropped some soup on Eric.,caused-motion
+90,Mike sprayed some yogurt on Frank.,caused-motion
+90,Bill poured some syrup on Mark.,caused-motion
+90,Joe dumped some sand on Aaron.,caused-motion
+90,John dabbed Tom with some acid.,with-applicative
+90,James brushed Henry with some beer.,with-applicative
+90,Joseph coated William with some paint.,with-applicative
+90,Thomas stained David with some juice.,with-applicative
+91,Fred served Charlie some vodka.,ditransitive
+91,Bill handed Eddie some coffee.,ditransitive
+91,Sam sent Mark some oil.,ditransitive
+91,Mike lent James some syrup.,ditransitive
+91,Edward tossed some whisky to Joseph.,transitive
+91,Harry threw some gin to Paul.,transitive
+91,William gave some wine to John.,transitive
+91,Bob offered some gasoline to Jerry.,transitive
+91,Jason dropped some tea on Joe.,caused-motion
+91,Michael splashed some paint on Steve.,caused-motion
+91,Frank poured some ink on Don.,caused-motion
+91,Doug sprayed some honey on Aaron.,caused-motion
+91,Bruce plastered Henry with some cream.,with-applicative
+91,Tom coated Andrew with some water.,with-applicative
+91,Thomas brushed George with some acid.,with-applicative
+91,Jack stained Dylan with some yogurt.,with-applicative
+92,Adam bought Henry some acid.,ditransitive
+92,Mike handed Bob some ink.,ditransitive
+92,Edward brought Jack some gasoline.,ditransitive
+92,Andrew served George some milk.,ditransitive
+92,Joseph chucked some bleach to Thomas.,transitive
+92,William tossed some oil to Harry.,transitive
+92,Paul passed some blood to Steve.,transitive
+92,Fred kicked some juice to Bruce.,transitive
+92,Chris sprinkled some coffee on Jerry.,caused-motion
+92,Aaron dumped some vodka on Mark.,caused-motion
+92,John spilled some whisky on Eric.,caused-motion
+92,Michael splashed some cream on David.,caused-motion
+92,Eddie covered Dylan with some sand.,with-applicative
+92,James rubbed Joe with some soup.,with-applicative
+92,Tom brushed Sam with some honey.,with-applicative
+92,Jason sprayed Frank with some beer.,with-applicative
+93,James gave George some shampoo.,ditransitive
+93,Sam passed Dylan some wine.,ditransitive
+93,Tom lent Paul some slime.,ditransitive
+93,Chris offered Jason some whisky.,ditransitive
+93,Andrew tossed some gasoline to Jack.,transitive
+93,John chucked some sand to Charlie.,transitive
+93,Aaron kicked some milk to Bill.,transitive
+93,Frank brought some water to Bob.,transitive
+93,Steve splashed some tea on Joseph.,caused-motion
+93,Michael dumped some honey on Jerry.,caused-motion
+93,Adam sprinkled some vodka on Mark.,caused-motion
+93,Don sprayed some syrup on Eric.,caused-motion
+93,Henry coated Harry with some bleach.,with-applicative
+93,David rubbed Bruce with some gin.,with-applicative
+93,Doug brushed Mike with some soup.,with-applicative
+93,Eddie stained Joe with some blood.,with-applicative
+94,Steve passed William some acid.,ditransitive
+94,Bob sent Jerry some slime.,ditransitive
+94,Joseph brought George some blood.,ditransitive
+94,Fred offered Bill some tea.,ditransitive
+94,Joe chucked some gasoline to Doug.,transitive
+94,James threw some water to Henry.,transitive
+94,Eddie gave some cream to Chris.,transitive
+94,Aaron tossed some ink to Thomas.,transitive
+94,Jason poured some shampoo on Michael.,caused-motion
+94,Mike sprinkled some gin on Charlie.,caused-motion
+94,David dropped some vodka on Paul.,caused-motion
+94,Bruce spilled some milk on Adam.,caused-motion
+94,Mark coated Edward with some bleach.,with-applicative
+94,Eric plastered Frank with some syrup.,with-applicative
+94,Don dabbed Jack with some honey.,with-applicative
+94,Dylan stained John with some paint.,with-applicative
+95,Sam threw Michael some oil.,ditransitive
+95,Chris brought Fred some gin.,ditransitive
+95,Doug handed Henry some juice.,ditransitive
+95,William sent Dylan some wine.,ditransitive
+95,Eddie passed some milk to Tom.,transitive
+95,Charlie chucked some ink to David.,transitive
+95,Adam tossed some whisky to Mike.,transitive
+95,George offered some acid to Joseph.,transitive
+95,Jerry spilled some coffee on James.,caused-motion
+95,Paul sprinkled some bleach on Aaron.,caused-motion
+95,John dumped some blood on Bruce.,caused-motion
+95,Bob splashed some soup on Steve.,caused-motion
+95,Eric sprayed Frank with some gasoline.,with-applicative
+95,Joe dabbed Bill with some water.,with-applicative
+95,Jack brushed Mark with some soda.,with-applicative
+95,Edward covered Harry with some syrup.,with-applicative
+96,Joseph served Thomas some yogurt.,ditransitive
+96,Don passed Eric some wine.,ditransitive
+96,Aaron gave John some soda.,ditransitive
+96,Frank sent Edward some beer.,ditransitive
+96,Fred brought some cream to Bob.,transitive
+96,Bruce handed some juice to Chris.,transitive
+96,Andrew offered some milk to Michael.,transitive
+96,Doug threw some ink to Eddie.,transitive
+96,Jack sprayed some blood on George.,caused-motion
+96,William spilled some vodka on Tom.,caused-motion
+96,James poured some tea on Paul.,caused-motion
+96,Adam splashed some sand on Dylan.,caused-motion
+96,Jason rubbed Steve with some acid.,with-applicative
+96,Henry coated Charlie with some coffee.,with-applicative
+96,David brushed Joe with some slime.,with-applicative
+96,Mark plastered Mike with some shampoo.,with-applicative
+97,Aaron offered Joseph some wine.,ditransitive
+97,Andrew bought Harry some slime.,ditransitive
+97,Dylan threw Fred some whisky.,ditransitive
+97,David sent Henry some gasoline.,ditransitive
+97,Michael handed some blood to Eric.,transitive
+97,William chucked some bleach to Tom.,transitive
+97,John tossed some acid to Joe.,transitive
+97,Jason passed some sand to Thomas.,transitive
+97,Sam dropped some gin on Doug.,caused-motion
+97,Adam sprinkled some cream on Steve.,caused-motion
+97,Paul spilled some vodka on Bob.,caused-motion
+97,Frank splashed some paint on Charlie.,caused-motion
+97,Bill coated Chris with some tea.,with-applicative
+97,Jerry stained Jack with some water.,with-applicative
+97,Don sprayed Bruce with some yogurt.,with-applicative
+97,James brushed Eddie with some milk.,with-applicative
+98,Chris gave Frank some oil.,ditransitive
+98,Henry brought Adam some coffee.,ditransitive
+98,Mike passed Jason some gasoline.,ditransitive
+98,Steve handed Eddie some cream.,ditransitive
+98,David threw some whisky to Bruce.,transitive
+98,Bill sent some shampoo to Joseph.,transitive
+98,George kicked some tea to Mark.,transitive
+98,Jerry offered some yogurt to Thomas.,transitive
+98,John poured some water on Sam.,caused-motion
+98,Tom splashed some slime on Eric.,caused-motion
+98,Paul dumped some honey on Don.,caused-motion
+98,Aaron spilled some acid on Joe.,caused-motion
+98,Fred rubbed Michael with some paint.,with-applicative
+98,Dylan coated Doug with some gin.,with-applicative
+98,Edward plastered Bob with some milk.,with-applicative
+98,William covered Harry with some wine.,with-applicative
+99,Joe brought Doug some paint.,ditransitive
+99,Adam threw Eddie some gin.,ditransitive
+99,George passed Joseph some bleach.,ditransitive
+99,Dylan gave Jack some syrup.,ditransitive
+99,Tom handed some gasoline to James.,transitive
+99,Charlie sent some yogurt to Sam.,transitive
+99,Don tossed some ink to Chris.,transitive
+99,Frank kicked some wine to William.,transitive
+99,Thomas sprinkled some acid on Eric.,caused-motion
+99,Aaron dumped some honey on Mark.,caused-motion
+99,Henry sprayed some milk on Mike.,caused-motion
+99,David spilled some oil on Bruce.,caused-motion
+99,Paul plastered Steve with some soda.,with-applicative
+99,Bill coated Fred with some blood.,with-applicative
+99,John covered Jerry with some juice.,with-applicative
+99,Edward brushed Andrew with some whisky.,with-applicative
