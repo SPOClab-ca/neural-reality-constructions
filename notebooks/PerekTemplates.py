@@ -91,7 +91,6 @@ LIQUID_NOUNS = [
   "milk",
   "oil",
   "paint",
-  "sand",
   "shampoo",
   "slime",
   "soda",
@@ -194,22 +193,22 @@ def gen_stimuli():
     "construction": "ditransitive"
   })
   
-  # Transitive
+  # To-dative
   sentences.append({
     "sentence": f"{names[8]} {transitive_verbs[0]} some {nouns[4]} to {names[9]}.",
-    "construction": "transitive"
+    "construction": "to-dative"
   })
   sentences.append({
     "sentence": f"{names[10]} {transitive_verbs[1]} some {nouns[5]} to {names[11]}.",
-    "construction": "transitive"
+    "construction": "to-dative"
   })
   sentences.append({
     "sentence": f"{names[12]} {transitive_verbs[2]} some {nouns[6]} to {names[13]}.",
-    "construction": "transitive"
+    "construction": "to-dative"
   })
   sentences.append({
     "sentence": f"{names[14]} {transitive_verbs[3]} some {nouns[7]} to {names[15]}.",
-    "construction": "transitive"
+    "construction": "to-dative"
   })
   
   # Caused motion
@@ -265,5 +264,5 @@ all_stimuli = pd.concat(all_stimuli)
 # In[7]:
 
 
-all_stimuli[['group', 'sentence', 'construction']].to_csv("templated-stimuli.csv", index=False)
+all_stimuli[['group', 'sentence', 'construction']].to_csv("../data/perek-templated.csv", index=False)
 
