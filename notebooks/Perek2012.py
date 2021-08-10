@@ -99,3 +99,34 @@ sns.scatterplot(x=df.PC1, y=df.PC2, hue=df.construction)
 plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
 plt.show()
 
+
+# ## Calculate pairwise Fisher discriminant
+
+# In[10]:
+
+
+cxns = df.construction.unique()
+results = []
+for i1 in range(4):
+  for i2 in range(i1+1, 4):
+    cxn1 = cxns[i1]
+    cxn2 = cxns[i2]
+    cxn1_vecs = sent_vecs[df[df.construction == cxn1].index.tolist(), layer]
+    cxn2_vecs = sent_vecs[df[df.construction == cxn2].index.tolist(), layer]
+
+    fisher_score = fisher_discriminant(['a'] * 4 + ['b'] * 4, np.vstack([cxn1_vecs, cxn2_vecs]))
+    results.append(pd.Series({
+      'cxn1': cxn1,
+      'cxn2': cxn2,
+      'fisher_score': fisher_score,
+    }))
+    
+results = pd.DataFrame(results)
+
+
+# In[11]:
+
+
+# Smaller Fisher score = semantically closer
+results.sort_values('fisher_score')
+
