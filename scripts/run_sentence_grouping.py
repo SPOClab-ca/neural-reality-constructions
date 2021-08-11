@@ -121,6 +121,7 @@ def run_perek():
     num_layers = sent_vecs.shape[1]
     cxns = df.construction.unique()
     for layer in range(num_layers):
+      cur_layer_results = {"group": group, "layer": layer}
       for i1 in range(4):
         for i2 in range(i1+1, 4):
           cxn1 = cxns[i1]
@@ -130,25 +131,20 @@ def run_perek():
 
           pair_name = f"{cxn1}_vs_{cxn2}"
           fisher_score = fisher_discriminant(['a'] * 4 + ['b'] * 4, np.vstack([cxn1_vecs, cxn2_vecs]))
-          results.append(pd.Series({
-            "group": group,
-            "layer": layer,
-            "cxn1": cxn1,
-            "cxn2": cxn2,
-            pair_name: fisher_score,
-          }))
+          cur_layer_results[pair_name] = fisher_score
+
+      results.append(pd.Series(cur_layer_results))
 
   results = pd.DataFrame(results)
 
-  # Todo: this logic is broken
-  import pdb; pdb.set_trace()
+  pairwise_feats = results.columns.tolist()[2:]
 
+  # Output format: layer, [all 6 means], [all 6 standard deviations]
+  print_log(pairwise_feats)
   for layer in range(num_layers):
-    print_log(
-      layer
-      #results[results.layer == layer].verb_fisher_discriminant.mean(),
-      #results[results.layer == layer].verb_fisher_discriminant.std(),
-    )
+    pairwise_feat_means = [results[results.layer == layer][feat].mean() for feat in pairwise_feats]
+    pairwise_feat_stds = [results[results.layer == layer][feat].std() for feat in pairwise_feats]
+    print_log(* [layer] + pairwise_feat_means + pairwise_feat_stds)
 
 
 if args.experiment == 'bencini-goldberg':
