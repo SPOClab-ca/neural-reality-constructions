@@ -14,7 +14,7 @@ import sys
 sys.path.insert(0, "../")
 from src.sent_encoder import SentEncoder
 
-df = pd.read_csv("../notebooks/templated_stimuli.csv")
+df = pd.read_csv("../notebooks/templated_stimuli_no_duplicates.csv")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--modelname", type=str, default="nyu-mll/roberta-med-small-1M-1")
