@@ -1,5 +1,5 @@
 import numpy as np
-from src.fisher_metric import fisher_discriminant
+from src.clustering_metrics import fisher_discriminant
 
 
 def test_fisher_discriminant():

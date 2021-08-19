@@ -10,8 +10,7 @@ from sklearn.cluster import AgglomerativeClustering
 from sentence_transformers import SentenceTransformer
 
 import src.sent_encoder
-from src.fisher_metric import fisher_discriminant
-from src.clustering import distance_to_clustering
+from src.clustering_metrics import fisher_discriminant, distance_to_clustering
 
 
 parser = argparse.ArgumentParser()
