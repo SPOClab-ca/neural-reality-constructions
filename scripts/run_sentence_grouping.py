@@ -6,10 +6,11 @@ import argparse
 import numpy as np
 import pandas as pd
 import random; random.seed(12345)
+from sklearn.cluster import AgglomerativeClustering
 from sentence_transformers import SentenceTransformer
 
 import src.sent_encoder
-from src.fisher_metric import fisher_discriminant
+from src.clustering_metrics import fisher_discriminant, distance_to_clustering
 
 
 parser = argparse.ArgumentParser()
@@ -87,6 +88,13 @@ def run_bencini_goldberg():
     for layer in range(num_layers):
       verb_fisher_discriminant = fisher_discriminant(df.verb.tolist(), sent_vecs[:, layer])
       cxn_fisher_discriminant = fisher_discriminant(df.construction.tolist(), sent_vecs[:, layer])
+
+      cluster_alg = AgglomerativeClustering(n_clusters=4)
+      cluster_labels = cluster_alg.fit_predict(sent_vecs[:, layer])
+
+      dist_to_verb = distance_to_clustering(cluster_labels, df.verb.tolist())
+      dist_to_cxn = distance_to_clustering(cluster_labels, df.construction.tolist())
+
       null_fisher_discriminant = fisher_discriminant(random_grouping, sent_vecs[:, layer])
 
       results.append({
@@ -95,6 +103,8 @@ def run_bencini_goldberg():
         "verb_fisher_discriminant": verb_fisher_discriminant,
         "cxn_fisher_discriminant": cxn_fisher_discriminant,
         "null_fisher_discriminant": null_fisher_discriminant,
+        "cluster4_distance_to_verb": dist_to_verb,
+        "cluster4_distance_to_cxn": dist_to_cxn
       })
 
   results = pd.DataFrame(results)
@@ -106,9 +116,13 @@ def run_bencini_goldberg():
       results[results.layer == layer].verb_fisher_discriminant.mean(),
       results[results.layer == layer].cxn_fisher_discriminant.mean(),
       results[results.layer == layer].null_fisher_discriminant.mean(),
+      results[results.layer == layer].cluster4_distance_to_verb.mean(),
+      results[results.layer == layer].cluster4_distance_to_cxn.mean(),
       results[results.layer == layer].verb_fisher_discriminant.std(),
       results[results.layer == layer].cxn_fisher_discriminant.std(),
-      results[results.layer == layer].null_fisher_discriminant.std()
+      results[results.layer == layer].null_fisher_discriminant.std(),
+      results[results.layer == layer].cluster4_distance_to_verb.std(),
+      results[results.layer == layer].cluster4_distance_to_cxn.std()
     )
 
 
