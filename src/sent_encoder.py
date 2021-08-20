@@ -84,11 +84,11 @@ class SentEncoder:
     assert method == 'glove' or method == 'fasttext'
 
     if method == 'glove' and self.glove is None:
-      self.glove = KeyedVectors.load_word2vec_format("./data/glove.840B.300d.txt", limit=50000)
+      self.glove = KeyedVectors.load_word2vec_format("./data/glove.840B.300d.txt", limit=200000)
     if method == 'fasttext' and self.fasttext is None:
       # No need to use the subword version (.bin) of fasttext because we can assume all of our words are
       # in-vocab, and this is faster.
-      self.fasttext = KeyedVectors.load_word2vec_format("./data/crawl-300d-2M-subword.vec", limit=50000)
+      self.fasttext = KeyedVectors.load_word2vec_format("./data/crawl-300d-2M-subword.vec", limit=200000)
 
     results = []
     for sent in sents:
