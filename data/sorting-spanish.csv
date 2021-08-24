@@ -1,0 +1,17 @@
+﻿group,sentence,verb,construction
+0,Carlos rompió el cristal.,romper,transitive
+0,Felipe dobló el periódico.,doblar,transitive
+0,Leonardo acabó su tesis.,acabar,transitive
+0,Isidro cortó el pan.,cortar,transitive
+0,Alfonso le rompió las gafas a Pepe.,romper,ditransitive
+0,Pablo le dobló el brazo a Lucas.,doblar,ditransitive
+0,Tomás le acabó la pasta de dientes a Santi.,acabar,ditransitive
+0,Jorge le cortó el paso a Yago.,cortar,ditransitive
+0,A Juan se le rompieron los pantalones.,romper,unplanned-reflexive
+0,A Pedro se le dobló el tobillo.,doblar,unplanned-reflexive
+0,A Luis se le acabaron los cigarrillos.,acabar,unplanned-reflexive
+0,A Ignacio se le cortó la conexión.,cortar,unplanned-reflexive
+0,La porcelana se rompe con facilidad.,romper,middle
+0,El aluminio se dobla bien.,doblar,middle
+0,Las carreras de 10 km se acaban sin problemas.,acabar,middle
+0,Esta tela se corta muy bien.,cortar,middle

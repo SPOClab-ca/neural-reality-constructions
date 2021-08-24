@@ -1,0 +1,17 @@
+﻿group,sentence,verb,construction
+0,Anita warf den Hammer.,werfen,transitive
+0,Michelle brachte das Buch.,bringen,transitive
+0,Karolin schnitt das Brot.,schneiden,transitive
+0,Maria nahm die Uhr.,nehmen,transitive
+0,Berta warf Linda den Bleistift.,werfen,ditransitive
+0,Simone brachte Lydia eine Einladung.,bringen,ditransitive
+0,Luisa schnitt Paula einen Apfel.,schneiden,ditransitive
+0,Sophia nahm Jasmin das Geld.,nehmen,ditransitive
+0,Erika warf den Schlüsselbund auf das Dach.,werfen,caused-motion
+0,Emma brachte den Ball ins Netz.,bringen,caused-motion
+0,Jennifer schnitt die Wurst auf den Teller.,schneiden,caused-motion
+0,Helena nahm die Rosen in das Haus.,nehmen,caused-motion
+0,Laura warf die Kisten auseinander.,werfen,resultative
+0,Leonie brachte die Stühle zusammen.,bringen,resultative
+0,Doris schnitt den Reifen auf.,schneiden,resultative
+0,Theresa nahm das Plakat herunter.,nehmen,resultative

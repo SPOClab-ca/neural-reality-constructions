@@ -15,14 +15,11 @@ from src.clustering_metrics import fisher_discriminant, distance_to_clustering
 
 parser = argparse.ArgumentParser()
 
-# bencini-goldberg or perek
-parser.add_argument('--experiment', type=str, default='bencini-goldberg')
+# {bencini-goldberg/perek}-{original/templates}
+parser.add_argument('--experiment', type=str, default='bencini-goldberg-original')
 
 # roberta-base, bert-base-uncased, glove, fasttext, etc
 parser.add_argument('--model_name', type=str, default='roberta-base')
-
-# original or templates
-parser.add_argument('--stimuli', type=str, default='original')
 
 # average or verb (only for LMs)
 parser.add_argument('--aggregate', type=str, default='average')
@@ -38,16 +35,16 @@ print_log(args)
 
 
 # Load original stimuli or templates
-if args.experiment == 'bencini-goldberg' and args.stimuli == 'original':
-  stimuli = pd.read_csv("data/bencini-goldberg.csv")
-elif args.experiment == 'bencini-goldberg' and args.stimuli == 'templates':
-  stimuli = pd.read_csv("data/bencini-goldberg-templated.csv")
-elif args.experiment == 'perek' and args.stimuli == 'original':
-  stimuli = pd.read_csv("data/perek2012.csv")
-elif args.experiment == 'perek' and args.stimuli == 'templates':
-  stimuli = pd.read_csv("data/perek-templated.csv")
-else:
-  assert(False)
+EXPERIMENT_DATA_FILES = {
+  'bencini-goldberg-original': "data/bencini-goldberg.csv",
+  'bencini-goldberg-templates': "data/bencini-goldberg-templated.csv",
+  'bencini-goldberg-german': "data/sorting-german.csv",
+  'bencini-goldberg-italian': "data/sorting-italian.csv",
+  'bencini-goldberg-spanish': "data/sorting-spanish.csv",
+  'perek-original': "data/perek2012.csv",
+  'perek-templates': "data/perek-templated.csv",
+}
+stimuli = pd.read_csv(EXPERIMENT_DATA_FILES[args.experiment])
 
 
 # If using SBERT: make the sentence vectors have the same shape as our
@@ -161,9 +158,9 @@ def run_perek():
     print_log(* [layer] + pairwise_feat_means + pairwise_feat_stds)
 
 
-if args.experiment == 'bencini-goldberg':
+if 'bencini-goldberg' in args.experiment:
   run_bencini_goldberg()
-elif args.experiment == 'perek':
+elif 'perek' in args.experiment:
   run_perek()
 else:
   assert(False)

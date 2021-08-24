@@ -1,0 +1,17 @@
+﻿group,sentence,verb,construction
+0,Lauda dà un esame.,dare,transitive
+0,Mario fa una torta.,fare,transitive
+0,Annalisa mette la giacca.,mettere,transitive
+0,Linda porta lo zaino.,portare,transitive
+0,Carlo dà una mela a Maria.,dare,prepositional-dative
+0,Luigi fa un piacere a Giovanna.,fare,prepositional-dative
+0,Riccardo mette il cappello al bambino.,mettere,prepositional-dative
+0,Laura porta la pizza a Francesco.,portare,prepositional-dative
+0,Luca dà una spinta a Franco.,dare,caused-motion
+0,Fabio fa entrare la macchina in garage.,fare,caused-motion
+0,Silvia mette la penna nel cassetto.,mettere,caused-motion
+0,Michele porta il libro in biblioteca.,portare,caused-motion
+0,Paolo dà una verniciata di verde alla porta.,dare,resultative
+0,Stefano fa bruciare il sugo.,fare,resultative
+0,Filippo mette la casa in ordine.,mettere,resultative
+0,Irene porta l'esercizio a termine.,portare,resultative
