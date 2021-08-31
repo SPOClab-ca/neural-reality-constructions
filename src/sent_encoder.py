@@ -74,7 +74,7 @@ class SentEncoder:
     else:
       rvecs = []
       for sent_toks, sent_vecs, main_verb in zip(all_toks, all_vecs, verbs):
-        verb_ix = [ix for ix in range(len(sent_toks)) if main_verb in sent_toks[ix]][0]
+        verb_ix = [ix for ix in range(len(sent_toks)) if sent_toks[ix].strip() in main_verb][0]
         rvecs.append(sent_vecs[verb_ix])
       return np.array(rvecs)
 
