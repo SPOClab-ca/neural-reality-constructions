@@ -32,17 +32,24 @@ class TestSentEncoder(unittest.TestCase):
     assert np.array_equal(sent_vecs[1], self.all_vecs[1][1])
 
 
-  def test_avg_word_vecs(self):
-    sent_vecs = self.encoder.avg_word_vecs(self.sents, method='glove')
+  def test_sent_vecs_from_word_vecs(self):
+    sent_vecs = self.encoder.sent_vecs_from_word_vecs(self.sents, method='glove')
     assert sent_vecs.shape == (2, 1, 300)
     assert np.array_equal(
       sent_vecs[0][0],
       0.5*self.encoder.glove['Good'] + 0.5*self.encoder.glove['morning']
     )
 
-    sent_vecs = self.encoder.avg_word_vecs(self.sents, method='fasttext')
+    sent_vecs = self.encoder.sent_vecs_from_word_vecs(self.sents, method='fasttext')
     assert sent_vecs.shape == (2, 1, 300)
     assert np.array_equal(
       sent_vecs[0][0],
       0.5*self.encoder.fasttext['Good'] + 0.5*self.encoder.fasttext['morning']
     )
+
+
+  def test_avg_contextual_word_vec(self):
+    are_vec = self.encoder.avg_contextual_word_vec(self.sents, "are")
+
+    assert are_vec.shape == (13, 768)
+    assert np.array_equal(are_vec, self.all_vecs[1][1])

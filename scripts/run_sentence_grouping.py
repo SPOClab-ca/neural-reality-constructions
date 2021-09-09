@@ -62,7 +62,7 @@ else:
 # Encode sentences based on configuration specified
 def encode_sentences(sentences):
   if args.model_name in ['glove', 'fasttext']:
-    return enc.avg_word_vecs(sentences, method=args.model_name)
+    return enc.sent_vecs_from_word_vecs(sentences, method=args.model_name)
   elif is_using_sbert:
     return sbert_encode(sentences)
   elif args.aggregate == 'average':

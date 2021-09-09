@@ -72,31 +72,13 @@ vecs_ditransitive.shape
 # In[7]:
 
 
-gave_sentences = [s for s in bnc_data if " gave " in s]
-vecs_gave = enc.sentence_vecs(gave_sentences, verbs=['gave'] * len(gave_sentences))[:, LAYER]
-
-
-# In[8]:
-
-
-vecs_gave.shape
-
-
-# In[9]:
-
-
-vec_gave_avg = vecs_gave.mean(axis=0)
-
-
-# In[10]:
-
-
-vec_gave_avg.shape
+gave_vec = enc.avg_contextual_word_vec(bnc_data, "gave")[LAYER]
+gave_vec.shape
 
 
 # ## Distance to "gave" for every contextual verb vector
 
-# In[11]:
+# In[8]:
 
 
 result_df = []
@@ -105,12 +87,12 @@ for ix, row in data.iterrows():
     'sent_ditransitive': row.sent_ditransitive,
     'sent_transitive': row.sent_transitive,
     'verb': row.verb,
-    'gave_dist_ditransitive': np.linalg.norm(vec_gave_avg - vecs_ditransitive[ix]),
-    'gave_dist_transitive': np.linalg.norm(vec_gave_avg - vecs_transitive[ix]),
+    'gave_dist_ditransitive': np.linalg.norm(gave_vec - vecs_ditransitive[ix]),
+    'gave_dist_transitive': np.linalg.norm(gave_vec - vecs_transitive[ix]),
     
     # Similar results if we use cosine instead of euclidean distance.
-    #'gave_dist_ditransitive': scipy.spatial.distance.cosine(vec_gave_avg, vecs_ditransitive[ix]),
-    #'gave_dist_transitive': scipy.spatial.distance.cosine(vec_gave_avg, vecs_transitive[ix]),
+    #'gave_dist_ditransitive': scipy.spatial.distance.cosine(gave_vec, vecs_ditransitive[ix]),
+    #'gave_dist_transitive': scipy.spatial.distance.cosine(gave_vec, vecs_transitive[ix]),
   }))
 
 result_df = pd.DataFrame(result_df)
@@ -120,7 +102,7 @@ result_df = pd.DataFrame(result_df)
 # 
 # Result: ditransitive is slightly closer to "gave" than transitive, but difference is not significant.
 
-# In[13]:
+# In[9]:
 
 
 gave_delta = result_df.gave_dist_transitive - result_df.gave_dist_ditransitive
@@ -129,14 +111,14 @@ print("Number of sentences where ditransitive closer to vec(gave):", np.sum(gave
 print("Number of sentences where transitive closer to vec(gave):", np.sum(gave_delta < 0))
 
 
-# In[14]:
+# In[10]:
 
 
 sns.histplot(gave_delta, bins=10)
 plt.show()
 
 
-# In[15]:
+# In[11]:
 
 
 scipy.stats.ttest_rel(result_df.gave_dist_transitive, result_df.gave_dist_ditransitive)

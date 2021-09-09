@@ -79,7 +79,7 @@ class SentEncoder:
       return np.array(rvecs)
 
 
-  def avg_word_vecs(self, sents, method):
+  def sent_vecs_from_word_vecs(self, sents, method):
     """Compute sentence vectors using traditional method of averaging word embeddings"""
     assert method == 'glove' or method == 'fasttext'
 
@@ -102,3 +102,16 @@ class SentEncoder:
           assert(False)
       results.append(np.array(wvecs).mean(axis=0))
     return np.array(results)[:, np.newaxis, :]
+
+
+  def avg_contextual_word_vec(self, corpus, word):
+    """Find average contextual word vector for a word, given a corpus (list of sentences,
+    some of which contain the word).
+    Returns: (num_layer, 768)
+    """
+    # Avoid picking up cases where our word is part of another word
+    w_padded = " " + word + " "
+    
+    w_sentences = [s for s in corpus if w_padded in s]
+    w_vecs = self.sentence_vecs(w_sentences, verbs=[word] * len(w_sentences))
+    return w_vecs.mean(axis=0)
