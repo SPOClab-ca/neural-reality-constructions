@@ -112,6 +112,6 @@ class SentEncoder:
     # Avoid picking up cases where our word is part of another word
     w_padded = " " + word + " "
     
-    w_sentences = [s for s in corpus if w_padded in s]
+    w_sentences = [s for s in corpus if w_padded in s and len(s) < 100]
     w_vecs = self.sentence_vecs(w_sentences, verbs=[word] * len(w_sentences))
     return w_vecs.mean(axis=0)
