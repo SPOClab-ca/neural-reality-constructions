@@ -23,6 +23,7 @@ import math
 import pickle
 import nltk
 from nltk.corpus import treebank
+import scipy
 
 import src.sent_encoder
 
@@ -110,7 +111,7 @@ prototype_vecs = {
 
 random.seed(12345)
 NUM_SENTENCES_PER_CXN = 1000
-sentences = defaultdict(list)
+templated_sentences = defaultdict(list)
 
 # Ditransitive: S/he nonseV-ed him/her the nonseN
 for i in range(NUM_SENTENCES_PER_CXN):
@@ -118,26 +119,74 @@ for i in range(NUM_SENTENCES_PER_CXN):
   pronoun2 = random.choice(["him", "her"])
   nonse_verb = random.choice(past_verbs)
   nonse_noun = random.choice(singular_nouns)
-  sentences['ditransitive'].append(f"{pronoun1} {nonse_verb} {pronoun2} the {nonse_noun}.")
+  templated_sentences['ditransitive'].append((
+    f"{pronoun1} {nonse_verb} {pronoun2} the {nonse_noun}.",
+    nonse_verb
+  ))
   
 # Resultative: S/he nonseV-ed it nonseAdj.
 for i in range(NUM_SENTENCES_PER_CXN):
   pronoun1 = random.choice(["He", "She"])
   nonse_verb = random.choice(past_verbs)
   nonse_adj = random.choice(adjectives)
-  sentences['resultative'].append(f"{pronoun1} {nonse_verb} it {nonse_adj}.")
+  templated_sentences['resultative'].append((
+    f"{pronoun1} {nonse_verb} it {nonse_adj}.",
+    nonse_verb
+  ))
   
 # Caused-motion: S/he nonseV-ed it on the nonseN.
 for i in range(NUM_SENTENCES_PER_CXN):
   pronoun1 = random.choice(["He", "She"])
   nonse_verb = random.choice(past_verbs)
   nonse_noun = random.choice(singular_nouns)
-  sentences['caused-motion'].append(f"{pronoun1} {nonse_verb} it on the {nonse_noun}.")
+  templated_sentences['caused-motion'].append((
+    f"{pronoun1} {nonse_verb} it on the {nonse_noun}.",
+    nonse_verb
+  ))
   
 # Removal: S/he nonseV-ed it from him/her.
 for i in range(NUM_SENTENCES_PER_CXN):
   pronoun1 = random.choice(["He", "She"])
   pronoun2 = random.choice(["him", "her"])
   nonse_verb = random.choice(past_verbs)
-  sentences['removal'].append(f"{pronoun1} {nonse_verb} it from {pronoun2}.")
+  templated_sentences['removal'].append((
+    f"{pronoun1} {nonse_verb} it from {pronoun2}.",
+    nonse_verb
+  ))
+
+
+# ## Get distances from cxn-verbs to proto-verbs
+
+# In[10]:
+
+
+verb_dist_results = []
+
+for cxn_type, cxn_sentences_and_verbs in templated_sentences.items():
+  cxn_sentences = [t[0] for t in cxn_sentences_and_verbs]
+  cxn_verbs = [t[1] for t in cxn_sentences_and_verbs]
+  cxn_verb_vecs = enc.sentence_vecs(cxn_sentences, cxn_verbs)[LAYER]
+  
+  for proto_verb, proto_verb_vec in prototype_vecs.items():
+    for cxn_verb_vec in cxn_verb_vecs:
+      dist = np.linalg.norm(proto_verb_vec - cxn_verb_vec)
+      #dist = scipy.spatial.distance.cosine(proto_verb_vec, cxn_verb_vec)
+      verb_dist_results.append(pd.Series({
+        'cxn': cxn_type,
+        'verb': proto_verb,
+        'dist': dist,
+      }))
+      
+verb_dist_results = pd.DataFrame(verb_dist_results)
+
+
+# ## Summarize results
+
+# In[11]:
+
+
+for verb in prototype_vecs.keys():
+  for cxn in templated_sentences.keys():
+    m = verb_dist_results[(verb_dist_results.cxn == cxn) & (verb_dist_results.verb == verb)].mean()
+    print(cxn, verb, float(m))
 
