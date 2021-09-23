@@ -113,13 +113,36 @@ prototype_vecs = {
 }
 
 
-# ## Generate sentences of each type
+# ## Alternate vecs for "gave"
 
 # In[10]:
 
 
-#random.seed(12345)
-NUM_SENTENCES_PER_CXN = 1000
+perek_data = pd.read_csv("../data/perek-templated.csv")
+
+gave_ditransitive_sents = [s for s in perek_data[perek_data.construction == 'ditransitive'].sentence if "gave" in s]
+gave_caused_motion_sents = [s for s in perek_data[perek_data.construction == 'to-dative'].sentence if "gave" in s]
+
+
+# In[11]:
+
+
+prototype_vecs = {
+  'gave-bnc': enc.avg_contextual_word_vec(bnc_data, "gave")[LAYER],
+  'gave-ditransitive': enc.avg_contextual_word_vec(gave_ditransitive_sents, "gave")[LAYER],
+  'gave-caused-motion': enc.avg_contextual_word_vec(gave_caused_motion_sents, "gave")[LAYER],
+  'gave-balanced': enc.avg_contextual_word_vec(gave_ditransitive_sents + gave_caused_motion_sents, "gave")[LAYER],
+  'gave-decontextual': enc.contextual_token_vecs(["gave"])[1][0][0][LAYER],
+}
+
+
+# ## Generate sentences of each type
+
+# In[12]:
+
+
+random.seed(12345)
+NUM_SENTENCES_PER_CXN = 5000
 templated_sentences = defaultdict(list)
 
 # Ditransitive: S/he nonseV-ed him/her the nonseN
@@ -166,7 +189,7 @@ for i in range(NUM_SENTENCES_PER_CXN):
 
 # ## Get distances from cxn-verbs to proto-verbs
 
-# In[11]:
+# In[13]:
 
 
 verb_dist_results = []
@@ -192,7 +215,7 @@ verb_dist_results = pd.DataFrame(verb_dist_results)
 
 # ## Summarize results
 
-# In[13]:
+# In[15]:
 
 
 for verb in prototype_vecs.keys():
