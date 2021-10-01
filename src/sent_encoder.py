@@ -3,6 +3,7 @@ from transformers import AutoTokenizer, AutoModel
 import numpy as np
 import torch
 import string
+import pickle
 from gensim.models import KeyedVectors
 from nltk import word_tokenize
 
@@ -16,6 +17,25 @@ class SentEncoder:
     self.glove = None
     self.fasttext = None
 
+    # For postprocessing. Dimensions (13, 768).
+    self.corpus_means = None
+    self.corpus_stds = None
+
+
+  def postprocess_standardize(self, vecs):
+    """Experimental: standardize each dimension according to mean and standard deviation in a corpus."""
+
+    # On first call, compute means and stds from BNC.
+    if self.corpus_means is None:
+      with open("../data/bnc.pkl", "rb") as f:
+        bnc_data = pickle.load(f)[:500]
+        _, token_vecs = self.contextual_token_vecs(bnc_data)
+        token_vecs = np.vstack(token_vecs)
+
+        self.corpus_means = np.mean(token_vecs, axis=0)
+        self.corpus_stds = np.std(token_vecs, axis=0)
+
+    return (vecs - self.corpus_means) / self.corpus_stds
 
 
   def contextual_token_vecs(self, sents):

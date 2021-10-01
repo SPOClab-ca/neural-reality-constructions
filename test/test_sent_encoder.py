@@ -24,6 +24,13 @@ class TestSentEncoder(unittest.TestCase):
     assert sent_vecs.shape == (2, 13, 768)
 
 
+  def test_postprocess_standardize(self):
+    sent_vecs = self.encoder.postprocess_standardize(self.encoder.sentence_vecs(self.sents))
+    assert sent_vecs.shape == (2, 13, 768)
+    assert self.encoder.corpus_means.shape == (13, 768)
+    assert self.encoder.corpus_stds.shape == (13, 768)
+
+
   def test_sentence_vecs_with_verb(self):
     sent_vecs = self.encoder.sentence_vecs(self.sents, ['morning', 'are'])
 
