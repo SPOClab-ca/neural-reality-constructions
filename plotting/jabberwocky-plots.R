@@ -47,7 +47,7 @@ ggplot(high_freq_df, aes(verb, cxn, fill=values)) +
   scale_x_discrete(position = "top") +
   scale_fill_distiller(palette = "RdYlGn",
     limits = c(min(high_freq_df$values) - 0.1, max(high_freq_df$values) + 0.1)) +
-  geom_text(aes(label = values), color="#303030") +
+  geom_text(aes(label = sprintf("%0.3f", values)), color="#303030") +
   theme_minimal() +
   theme(legend.position = "none") +
   theme(text = element_text(size=15))
@@ -62,9 +62,53 @@ ggplot(low_freq_df, aes(verb, cxn, fill=values)) +
   scale_x_discrete(position = "top") +
   scale_fill_distiller(palette = "RdYlGn",
     limits = c(min(low_freq_df$values) - 0.1, max(low_freq_df$values) + 0.1)) +
-  geom_text(aes(label = values), color="#303030") +
+  geom_text(aes(label = sprintf("%0.3f", values)), color="#303030") +
   theme_minimal() +
   theme(legend.position = "none") +
   theme(text = element_text(size=15))
 
 ggsave("jg-grid-low-freq.pdf", width=4.5, height=3.5)
+
+
+# fig:jg-barplot-high-freq
+high_freq_bar_df = data.frame(
+  Condition=c("Congruent", "Incongruent"),
+  Distance=c(11.628, 11.947),
+  CI_Distance=c(0.036, 0.023)
+) %>%
+  mutate(Condition=factor(Condition, levels=Condition))
+
+high_freq_bar_df %>%
+  ggplot(aes(x=Condition, y=Distance)) +
+    geom_bar(stat="identity") +
+    xlab("") +
+    ylab("Euclidean distance") +
+    coord_cartesian(ylim = c(11, 13)) + 
+    geom_errorbar(aes(ymin=Distance-CI_Distance, ymax=Distance+CI_Distance),
+                  position=position_dodge(0.9), width=0.3, size=1) +
+    theme_minimal() +
+    theme(text = element_text(size=14))
+
+ggsave("jg-barplot-high-freq.pdf", width=3, height=3)
+
+
+# fig:jg-barplot-low-freq
+low_freq_bar_df = data.frame(
+  Condition=c("Congruent", "Incongruent"),
+  Distance=c(12.157, 12.604),
+  CI_Distance=c(0.038, 0.026)
+) %>%
+  mutate(Condition=factor(Condition, levels=Condition))
+
+low_freq_bar_df %>%
+  ggplot(aes(x=Condition, y=Distance)) +
+    geom_bar(stat="identity") +
+    xlab("") +
+    ylab("Euclidean distance") +
+    coord_cartesian(ylim = c(11, 13)) + 
+    geom_errorbar(aes(ymin=Distance-CI_Distance, ymax=Distance+CI_Distance),
+                  position=position_dodge(0.9), width=0.3, size=1) +
+    theme_minimal() +
+    theme(text = element_text(size=14))
+
+ggsave("jg-barplot-low-freq.pdf", width=3, height=3)
