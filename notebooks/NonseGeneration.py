@@ -102,7 +102,7 @@ LAYER = 11
 enc = src.sent_encoder.SentEncoder()
 
 
-# In[ ]:
+# In[9]:
 
 
 prototype_vecs = {
@@ -110,35 +110,16 @@ prototype_vecs = {
   'made': enc.avg_contextual_word_vec(bnc_data, "made")[LAYER],
   'put': enc.avg_contextual_word_vec(bnc_data, "put")[LAYER],
   'took': enc.avg_contextual_word_vec(bnc_data, "took")[LAYER],
-}
-
-
-# ## Alternate vecs for "gave"
-
-# In[10]:
-
-
-perek_data = pd.read_csv("../data/perek-templated.csv")
-
-gave_ditransitive_sents = [s for s in perek_data[perek_data.construction == 'ditransitive'].sentence if "gave" in s]
-gave_caused_motion_sents = [s for s in perek_data[perek_data.construction == 'to-dative'].sentence if "gave" in s]
-
-
-# In[11]:
-
-
-prototype_vecs = {
-  'gave-bnc': enc.avg_contextual_word_vec(bnc_data, "gave")[LAYER],
-  'gave-ditransitive': enc.avg_contextual_word_vec(gave_ditransitive_sents, "gave")[LAYER],
-  'gave-caused-motion': enc.avg_contextual_word_vec(gave_caused_motion_sents, "gave")[LAYER],
-  'gave-balanced': enc.avg_contextual_word_vec(gave_ditransitive_sents + gave_caused_motion_sents, "gave")[LAYER],
-  'gave-decontextual': enc.contextual_token_vecs(["gave"])[1][0][0][LAYER],
+  #'handed': enc.avg_contextual_word_vec(bnc_data, "handed")[LAYER],
+  #'turned': enc.avg_contextual_word_vec(bnc_data, "turned")[LAYER],
+  #'placed': enc.avg_contextual_word_vec(bnc_data, "placed")[LAYER],
+  #'removed': enc.avg_contextual_word_vec(bnc_data, "removed")[LAYER],
 }
 
 
 # ## Generate sentences of each type
 
-# In[12]:
+# In[10]:
 
 
 random.seed(12345)
@@ -189,7 +170,22 @@ for i in range(NUM_SENTENCES_PER_CXN):
 
 # ## Get distances from cxn-verbs to proto-verbs
 
-# In[13]:
+# In[11]:
+
+
+def is_congruent(cxn, verb):
+  if cxn == 'ditransitive':
+    return verb in ['gave', 'handed']
+  if cxn == 'resultative':
+    return verb in ['made', 'turned']
+  if cxn == 'caused-motion':
+    return verb in ['put', 'placed']
+  if cxn == 'removal':
+    return verb in ['took', 'removed']
+  return False
+
+
+# In[12]:
 
 
 verb_dist_results = []
@@ -202,11 +198,11 @@ for cxn_type, cxn_sentences_and_verbs in templated_sentences.items():
   for proto_verb, proto_verb_vec in prototype_vecs.items():
     for i, cxn_verb_vec in enumerate(cxn_verb_vecs):
       dist = np.linalg.norm(proto_verb_vec - cxn_verb_vec)
-      #dist = scipy.spatial.distance.cosine(proto_verb_vec, cxn_verb_vec)
       verb_dist_results.append(pd.Series({
         'cxn_sentence': cxn_sentences[i],
         'cxn': cxn_type,
         'verb': proto_verb,
+        'congruent': is_congruent(cxn_type, proto_verb),
         'dist': dist,
       }))
       
@@ -215,12 +211,21 @@ verb_dist_results = pd.DataFrame(verb_dist_results)
 
 # ## Summarize results
 
-# In[15]:
+# In[13]:
 
 
 for verb in prototype_vecs.keys():
   for cxn in templated_sentences.keys():
-    m = verb_dist_results[(verb_dist_results.cxn == cxn) & (verb_dist_results.verb == verb)].mean()
-    sd = verb_dist_results[(verb_dist_results.cxn == cxn) & (verb_dist_results.verb == verb)].std()
+    m = verb_dist_results[(verb_dist_results.cxn == cxn) & (verb_dist_results.verb == verb)].dist.mean()
+    sd = verb_dist_results[(verb_dist_results.cxn == cxn) & (verb_dist_results.verb == verb)].dist.std()
     print(cxn, verb, float(m), float(sd))
+
+
+# In[14]:
+
+
+print('Mean congruent:', verb_dist_results[verb_dist_results.congruent].dist.mean())
+print('Std congruent:', verb_dist_results[verb_dist_results.congruent].dist.std())
+print('Mean incongruent:', verb_dist_results[~verb_dist_results.congruent].dist.mean())
+print('Std incongruent:', verb_dist_results[~verb_dist_results.congruent].dist.std())
 
