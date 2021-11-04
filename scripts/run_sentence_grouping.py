@@ -1,6 +1,5 @@
 """
-Run either Bencini & Goldberg (sentence sorting) experiments on different
-sentence embeddings.
+Run Bencini & Goldberg (sentence sorting) experiments on different LMs.
 """
 import argparse
 import pandas as pd

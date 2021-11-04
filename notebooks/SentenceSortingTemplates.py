@@ -8,22 +8,9 @@
 # In[1]:
 
 
-import sys
-sys.path.append('../')
-
-import numpy as np
 import pandas as pd
-import matplotlib
-import matplotlib.pyplot as plt
-import seaborn as sns
-import tqdm
-import torch
-from collections import defaultdict
 import random
-import math
-import pickle
 
-get_ipython().run_line_magic('matplotlib', 'inline')
 get_ipython().run_line_magic('load_ext', 'autoreload')
 get_ipython().run_line_magic('autoreload', '2')
 pd.options.display.max_columns = 100
@@ -256,5 +243,5 @@ all_stimuli = pd.concat(all_stimuli)
 # In[13]:
 
 
-all_stimuli[['group', 'sentence', 'verb', 'construction']].to_csv("templated_stimuli.csv", index=False)
+all_stimuli[['group', 'sentence', 'verb', 'construction']].to_csv("bencini-goldberg-templated.csv", index=False)
 
