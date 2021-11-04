@@ -4,8 +4,6 @@ import numpy as np
 import torch
 import string
 import pickle
-from gensim.models import KeyedVectors
-from nltk import word_tokenize
 
 
 BATCH_SIZE = 32
@@ -14,28 +12,6 @@ class SentEncoder:
   def __init__(self, model_name='roberta-base'):
     self.model_name = model_name
     self.auto_model = None
-    self.glove = None
-    self.fasttext = None
-
-    # For postprocessing. Dimensions (13, 768).
-    self.corpus_means = None
-    self.corpus_stds = None
-
-
-  def postprocess_standardize(self, vecs):
-    """Experimental: standardize each dimension according to mean and standard deviation in a corpus."""
-
-    # On first call, compute means and stds from BNC.
-    if self.corpus_means is None:
-      with open("../data/bnc.pkl", "rb") as f:
-        bnc_data = pickle.load(f)[:500]
-        _, token_vecs = self.contextual_token_vecs(bnc_data)
-        token_vecs = np.vstack(token_vecs)
-
-        self.corpus_means = np.mean(token_vecs, axis=0)
-        self.corpus_stds = np.std(token_vecs, axis=0)
-
-    return (vecs - self.corpus_means) / self.corpus_stds
 
 
   def contextual_token_vecs(self, sents):
@@ -97,31 +73,6 @@ class SentEncoder:
         verb_ix = [ix for ix in range(len(sent_toks)) if sent_toks[ix].strip() in main_verb][0]
         rvecs.append(sent_vecs[verb_ix])
       return np.array(rvecs)
-
-
-  def sent_vecs_from_word_vecs(self, sents, method):
-    """Compute sentence vectors using traditional method of averaging word embeddings"""
-    assert method == 'glove' or method == 'fasttext'
-
-    if method == 'glove' and self.glove is None:
-      self.glove = KeyedVectors.load_word2vec_format("./data/glove.840B.300d.txt", limit=200000)
-    if method == 'fasttext' and self.fasttext is None:
-      # No need to use the subword version (.bin) of fasttext because we can assume all of our words are
-      # in-vocab, and this is faster.
-      self.fasttext = KeyedVectors.load_word2vec_format("./data/crawl-300d-2M-subword.vec", limit=200000)
-
-    results = []
-    for sent in sents:
-      wvecs = []
-      for tok in word_tokenize(sent):
-        if method == 'glove':
-          wvecs.append(self.glove[tok])
-        elif method == 'fasttext':
-          wvecs.append(self.fasttext[tok])
-        else:
-          assert(False)
-      results.append(np.array(wvecs).mean(axis=0))
-    return np.array(results)[:, np.newaxis, :]
 
 
   def avg_contextual_word_vec(self, corpus, word):

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Verb construction templates
+# # Sentence sorting templates
 # 
 # Generate 4x4 design stimuli sets similar to Bencini and Goldberg (2000).
 

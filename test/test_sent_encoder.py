@@ -24,35 +24,12 @@ class TestSentEncoder(unittest.TestCase):
     assert sent_vecs.shape == (2, 13, 768)
 
 
-  def test_postprocess_standardize(self):
-    sent_vecs = self.encoder.postprocess_standardize(self.encoder.sentence_vecs(self.sents))
-    assert sent_vecs.shape == (2, 13, 768)
-    assert self.encoder.corpus_means.shape == (13, 768)
-    assert self.encoder.corpus_stds.shape == (13, 768)
-
-
   def test_sentence_vecs_with_verb(self):
     sent_vecs = self.encoder.sentence_vecs(self.sents, ['morning', 'are'])
 
     assert sent_vecs.shape == (2, 13, 768)
     assert np.array_equal(sent_vecs[0], self.all_vecs[0][1])
     assert np.array_equal(sent_vecs[1], self.all_vecs[1][1])
-
-
-  def test_sent_vecs_from_word_vecs(self):
-    sent_vecs = self.encoder.sent_vecs_from_word_vecs(self.sents, method='glove')
-    assert sent_vecs.shape == (2, 1, 300)
-    assert np.array_equal(
-      sent_vecs[0][0],
-      0.5*self.encoder.glove['Good'] + 0.5*self.encoder.glove['morning']
-    )
-
-    sent_vecs = self.encoder.sent_vecs_from_word_vecs(self.sents, method='fasttext')
-    assert sent_vecs.shape == (2, 1, 300)
-    assert np.array_equal(
-      sent_vecs[0][0],
-      0.5*self.encoder.fasttext['Good'] + 0.5*self.encoder.fasttext['morning']
-    )
 
 
   def test_avg_contextual_word_vec(self):
