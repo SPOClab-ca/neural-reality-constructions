@@ -53,8 +53,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="640.58616"
-     inkscape:cy="316.82081"
+     inkscape:cx="620.65633"
+     inkscape:cy="155.1964"
      inkscape:document-units="mm"
      inkscape:current-layer="g841"
      inkscape:document-rotation="0"
@@ -82,7 +82,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -635,27 +635,27 @@
       <text
          xml:space="preserve"
          style="font-size:16px;line-height:1.25;font-family:sans-serif;stroke-width:0.75"
-         x="-193.77721"
-         y="-338.34143"
+         x="-221.36922"
+         y="-336.0838"
          id="text2008"
          transform="scale(1,-1)"><tspan
            sodipodi:role="line"
            id="tspan2006"
-           x="-193.77721"
-           y="-338.34143"
-           style="font-size:16px;stroke-width:0.75">Humans</tspan></text>
+           x="-221.36922"
+           y="-336.0838"
+           style="font-size:16px;stroke-width:0.75">Human data</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:16px;line-height:1.25;font-family:sans-serif;stroke-width:0.75"
-         x="186.98621"
-         y="-336.93182"
+         x="154.02998"
+         y="-335.03778"
          id="text2008-9"
          transform="scale(1,-1)"><tspan
            sodipodi:role="line"
            id="tspan2006-6"
-           x="186.98621"
-           y="-336.93182"
-           style="font-size:16px;stroke-width:0.75">LMs</tspan></text>
+           x="154.02998"
+           y="-335.03778"
+           style="font-size:16px;stroke-width:0.75">Language models</tspan></text>
       <path
          style="fill:none;stroke:#000000;stroke-width:1.03465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.13858, 1.03465;stroke-dashoffset:0;stroke-opacity:1"
          d="M 9.0752308,344.72778 V 0.7708254"
