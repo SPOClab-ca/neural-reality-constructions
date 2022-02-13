@@ -24,16 +24,27 @@ class TestSentEncoder(unittest.TestCase):
     assert sent_vecs.shape == (2, 13, 768)
 
 
+  def test_standardize(self):
+    alt_encoder = src.sent_encoder.SentEncoder(model_name='roberta-base', standardize=True)
+    sent_vecs = self.encoder.sentence_vecs(self.sents)
+    alt_vecs = alt_encoder.sentence_vecs(self.sents)
+
+    assert alt_encoder.corpus_means.shape == (13, 768)
+    assert alt_encoder.corpus_stds.shape == (13, 768)
+    assert alt_vecs.shape == (2, 13, 768)
+    assert not np.allclose(alt_vecs, sent_vecs, atol=1e-6)
+
+
   def test_sentence_vecs_with_verb(self):
     sent_vecs = self.encoder.sentence_vecs(self.sents, ['morning', 'are'])
 
     assert sent_vecs.shape == (2, 13, 768)
-    assert np.array_equal(sent_vecs[0], self.all_vecs[0][1])
-    assert np.array_equal(sent_vecs[1], self.all_vecs[1][1])
+    assert np.allclose(sent_vecs[0], self.all_vecs[0][1], atol=1e-6)
+    assert np.allclose(sent_vecs[1], self.all_vecs[1][1], atol=1e-6)
 
 
   def test_avg_contextual_word_vec(self):
     are_vec = self.encoder.avg_contextual_word_vec(self.sents, "are")
 
     assert are_vec.shape == (13, 768)
-    assert np.array_equal(are_vec, self.all_vecs[1][1])
+    assert np.allclose(are_vec, self.all_vecs[1][1], atol=1e-6)

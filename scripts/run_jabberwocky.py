@@ -13,6 +13,7 @@ parser = argparse.ArgumentParser()
 
 # high-freq or low-freq
 parser.add_argument('--condition', default='high-freq')
+parser.add_argument('--standardize', type=bool, default=False)
 
 def print_log(*s):
   with open('experiments.log', 'a') as outf:
@@ -29,7 +30,7 @@ with open("data/bnc.pkl", "rb") as f:
 
 
 LAYER = 11
-enc = src.sent_encoder.SentEncoder()
+enc = src.sent_encoder.SentEncoder(standardize=args.standardize)
 
 
 CONSTRUCTIONS = ['ditransitive', 'resultative', 'caused-motion', 'removal']

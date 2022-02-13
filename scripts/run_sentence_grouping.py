@@ -14,6 +14,7 @@ parser = argparse.ArgumentParser()
 # original/templates/german/italian/spanish
 parser.add_argument('--dataset', type=str, default='templates')
 parser.add_argument('--model_name', type=str, default='roberta-base')
+parser.add_argument('--standardize', action='store_true')
 
 def print_log(*s):
   with open('experiments.log', 'a') as outf:
@@ -32,7 +33,7 @@ EXPERIMENT_DATA_FILES = {
   'spanish': "data/sorting-spanish.csv",
 }
 stimuli = pd.read_csv(EXPERIMENT_DATA_FILES[args.dataset])
-enc = src.sent_encoder.SentEncoder(model_name=args.model_name)
+enc = src.sent_encoder.SentEncoder(model_name=args.model_name, standardize=args.standardize)
 
 
 def run_bencini_goldberg():

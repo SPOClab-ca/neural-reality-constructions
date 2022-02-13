@@ -9,9 +9,25 @@ import pickle
 BATCH_SIZE = 32
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 class SentEncoder:
-  def __init__(self, model_name='roberta-base'):
+  def __init__(self, model_name='roberta-base', standardize=False):
     self.model_name = model_name
     self.auto_model = None
+    self.standardize=False
+
+    # Compute means and standard deviations for post-processing standardization, if enabled.
+    if standardize:
+      with open("data/bnc.pkl", "rb") as f:
+        bnc_data = pickle.load(f)[:500]
+
+      _, token_vecs = self.contextual_token_vecs(bnc_data)
+      token_vecs = np.vstack(token_vecs)
+
+      self.corpus_means = np.mean(token_vecs, axis=0)
+      self.corpus_stds = np.std(token_vecs, axis=0)
+
+    # Set this after computing means and stds so that we don't try to standardize while
+    # computing them.
+    self.standardize = standardize
 
 
   def contextual_token_vecs(self, sents):
@@ -54,7 +70,12 @@ class SentEncoder:
               token_vecs.append(vecs[:, sent_ix, tok_ix, :])
 
         all_tokens.append(tokens)
-        sentence_token_vecs.append(np.array(token_vecs))
+        token_vecs = np.array(token_vecs)
+
+        if self.standardize:
+          token_vecs = (token_vecs - self.corpus_means) / self.corpus_stds
+
+        sentence_token_vecs.append(token_vecs)
 
     return all_tokens, sentence_token_vecs
 
