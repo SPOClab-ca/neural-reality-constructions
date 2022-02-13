@@ -20,21 +20,33 @@ Li, B., Zhu, Z., Thomas, G., Rudzicz, F., and Xu, Yang. 2022. Neural reality of 
 
 ## Dependencies
 
-The project was developed with the following library versions. Running with other versions may not work or produce incorrect results.
+The project was developed with the following library versions.
 
-* TODO
+* Python 3.9.9
+* numpy==1.22.0
+* pandas==1.3.5
+* scipy==1.7.3
+* scikit-learn==1.0.2
+* torch==1.10.1
+* transformers==4.15.0
 
 ## Setup Instructions
 
 1. Clone this repo: `git clone https://github.com/SPOClab-ca/neural-reality-constructions`
-2. TODO
+2. Download BNC Baby (4m word sample) from [this link](http://www.natcorp.ox.ac.uk/) and extract into `data/bnc/`
+3. Run BNC preprocessing script: `python scripts/process_bnc.py --bnc_dir=data/bnc/download/Texts --to=data/bnc.pkl`
+2. (Optional) Run unit tests: `PYTHONPATH=. python -m pytest test`
 
-## Run experiments
-
-TODO: write instructions.
-
-## Run unit tests
+## Run sentence sorting (Case study 1)
 
 ```
-PYTHONPATH=. pytest tests
+PYTHONPATH=. python scripts/run_sentence_grouping.py --dataset=templates --model_name=roberta-base
+```
+
+Outputs four numbers: mean verb deviation, mean construction deviation, std of verb deviation, std of construction deviation.
+
+## Run Jabberwocky (Case study 2)
+
+```
+PYTHONPATH=. python scripts/run_jabberwocky.py --condition high-freq
 ```
